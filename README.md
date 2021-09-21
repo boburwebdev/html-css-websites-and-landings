@@ -1,1 +1,1 @@
-# html-css-websites-and-landings
+# HTML & CSS - websites and landings
