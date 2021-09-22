@@ -209,8 +209,11 @@ a {
     list-style: none;
 }
 
-.slick-dots button {
+.featured .slick-dots button {
     background-color: #332208;
+}
+
+.slick-dots button {
     font-size: 0;
     width: 8px;
     height: 8px;
@@ -424,4 +427,63 @@ a {
     left: 34px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+
+.reviews {
+    background-color: #332208;
+    color: #fefefe;
+    padding: 100px 0;
+}
+
+.reviews__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 70px;
+}
+
+.reviews__slider_item {
+    min-height: 300px;
+    padding: 45px 30px;
+    margin-right: 30px;
+    text-align: center;
+    border: 1px solid #C5AC2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slick-initialized .reviews__slider_item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.reviews__item_text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.reviews__slider_item:last-child {
+    margin-right: 0;
+}
+
+.reviews__item_name {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+}
+
+.reviews .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.reviews .slick-dots button {
+    background-color: #C5AC2D;
+    margin: 0 5px;
 }
