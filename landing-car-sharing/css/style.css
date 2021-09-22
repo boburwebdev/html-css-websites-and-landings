@@ -75,9 +75,12 @@ a {
 }
 
 
+.featured {
+    padding-bottom: 100px;
+}
+
 .featured__wrapper {
     display: flex;
-    margin-bottom: 100px;
 }
 
 .featured__left, 
@@ -249,4 +252,76 @@ a {
 
 .featured__docs__link:hover {
     border-bottom: 1px solid transparent;
+}
+
+
+.rent_terms {
+    padding: 100px 0;
+}
+
+.rent_terms__wrapper {
+    display: flex;
+}
+
+.rent_terms__desc {
+    width: 25%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rent_terms__desc_title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.rent_terms__desc_text {
+    margin-bottom: 20px;
+}
+
+.rent_terms__desc_text:last-child {
+    margin-bottom: 40px;
+}
+
+.rent_terms__desc .btn__download {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.rent_terms__item {
+    flex-grow: 1;
+    text-align: center;
+    width: calc(25% - 50px);
+    min-height: 350px;
+    margin-left: 50px;
+    padding: 0 30px 25px;
+    border: 1px solid #332208;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rent_terms__item_num,
+.rent_terms__item_title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.rent_terms__item_num {
+    font-size: 96px;
+    line-height: 115px;
+    opacity: .05;
+}
+
+.rent_terms__item_title {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.rent_terms__item_text {
+    margin-top: auto;
 }
