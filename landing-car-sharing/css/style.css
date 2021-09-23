@@ -362,6 +362,7 @@ a {
 .benefits__list_item {
     text-align: right;
     margin-bottom: 27px;
+    position: relative;
 }
 
 .benefits__list_item::after {
@@ -372,8 +373,9 @@ a {
     height: 16px;
     margin-left: 10px;
     border-radius: 50%;
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .benefits__list_item:nth-child(1),
@@ -617,6 +619,11 @@ a {
     .featured__slider_img {
         width: 100%;
     }
+
+    .benefits__img {
+        flex: unset;
+        width: 50%;
+    }
 }
 
 @media (max-width: 968px) {
@@ -761,6 +768,34 @@ a {
     .rent_terms__item_title {
         margin-bottom: 15px;
     }
+
+    .benefits__title {
+        text-align: center;
+    }
+
+    .benefits__wrapper {
+        flex-direction: column;
+    }
+
+    .benefits__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefits__wrapper .benefits__list .benefits__list_item {
+        margin: 0 20px 20px;
+    }
+
+    .benefits__desc {
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .benefits__img {
+        width: 80%;
+    }
 }
 
 @media (max-width: 640px) {
@@ -774,7 +809,6 @@ a {
     .rent_terms__item+.rent_terms__item {
         margin-left: auto;
     }
-
 }
 
 @media (max-width: 420px) {
