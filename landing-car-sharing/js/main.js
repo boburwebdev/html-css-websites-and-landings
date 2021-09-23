@@ -14,4 +14,8 @@ $(function(){
         slidesToShow: 4,
         slidesToScroll: 1
     })
+
+    $('.menu_hamburger').click(function() {
+        $('.menu_list').toggleClass('show');
+    })
 });
