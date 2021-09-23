@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Car Sharing - Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <img class="header__logo_img" src="images/logo.svg" alt="logo">
+        </a>
+
+        <nav class="menu">
+          <button class="menu_hamburger"></button>
+          <ul class="menu_list">
+            <li class="menu_list_item"><a class="menu_link" href="#">О Нас</a></li>
+            <li class="menu_list_item"><a class="menu_link" href="#">Автопарк</a></li>
+            <li class="menu_list_item"><a class="menu_link" href="#">Отзывы</a></li>
+            <li class="menu_list_item"><a class="menu_link" href="#">Условия</a></li>
+            <li class="menu_list_item"><a class="menu_link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="phone_link" href="tel:380999999090">
+          +38 (099) 999 90 90
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="featured">
+    <div class="container">
+      <div class="featured__wrapper">
+        <div class="featured__left">
+          <div class="featured__cta">
+            <h1 class="featured__cta_title">
+              Каршеринг в Киеве <br>
+              LUX автомобили 
+            </h1>
+            <div class="featured__cta_desc">
+              Закажи эксклюзивный автомобиль через <br>
+              мобильное приложение в любой точке города
+            </div>
+            <a class="btn btn__download" href="#">Скачать приложение</a>
+          </div>
+          <div class="featured__offers">
+            <div class="featured__offers_item">
+              <img class="featured__offer_img" src="images/featured_offer_car.svg" alt="featured_offer">
+              <div class="featured_offer_desc">Более 300 автомобилей в вашем распоряжении</div>
+            </div>
+            <div class="featured__offers_item">
+              <img class="featured__offer_img" src="images/featured_offer_card.svg" alt="featured_offer">
+              <div class="featured_offer_desc">Дешевле такси и собственного автомобиля</div>
+            </div>
+            <div class="featured__offers_item">
+              <img class="featured__offer_img" src="images/featured_offer_map.svg" alt="feature_offer">
+              <div class="featured_offer_desc">Лучшие автомобили в любой точке города</div>
+            </div>
+          </div>
+        </div>
+        <div class="featured__right">
+          <div class="featured__slider">
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+            <div class="featured__slider_item">
+              <img class="featured__slider_img" src="images/featured_slider_img.png" alt="slider_image">
+              <ul class="featured__slider__info_list">
+                <li class="featured__slider__info_list_item">4 грн/мин</li>
+                <li class="featured__slider__info_list_item">5 мест</li>
+                <li class="featured__slider__info_list_item">50 тыс. км пробег</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <ul class="featured__docs_list">
+            <li class="featured__docs_list_item">
+              <a class="featured__docs__link" href="#">Условия аренды автомобиля</a>
+            </li>
+            <li class="featured__docs_list_item">
+              <a class="featured__docs__link" href="#">Публичный договор</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rent_terms">
+    <div class="container">
+      <div class="rent_terms__wrapper">
+
+        <div class="rent_terms__desc">
+          <h2 class="rent_terms__desc_title">
+            Условия аренды автомобиля
+          </h2>
+          <p class="rent_terms__desc_text">
+            Мы ценим каждого клиента и предоставляем качественный сервис каршеринга в Киеве.
+          </p>
+          <p class="rent_terms__desc_text">
+            Именно для того, что бы Вам было приятно и безопасно пользоваться нашим сервисом на постоянной основе, мы выделили несколько условий для того, чтобы взять машину в аренду
+          </p>
+          <a class="btn btn__download" href="#">Скачать приложение</a>
+        </div>
+
+        <div class="rent_terms__item">
+          <div class="rent_terms__item_num">01</div>
+          <h3 class="rent_terms__item_title">Опыт вождения <br> от 2х лет</h3>
+          <p class="rent_terms__item_text">
+            Для того, чтобы арендовать автомобиль, Вам необходимо зарегестрировать свои прав в нашем мобильном приложении
+          </p>
+        </div>
+
+        <div class="rent_terms__item">
+          <div class="rent_terms__item_num">02</div>
+          <h3 class="rent_terms__item_title">Только по Киеву</h3>
+          <p class="rent_terms__item_text">
+            Наши автомобили работают только в пределах города Киев. За город на наших автомобилях, к сожалению, выезжать нельзя.</p>
+        </div>
+
+        <div class="rent_terms__item">
+          <div class="rent_terms__item_num">03</div>
+          <h3 class="rent_terms__item_title">Мобильный телефон и интернет</h3>
+          <p class="rent_terms__item_text">
+            Для использования нашего сервиса Вам необходим мобильный телефон и интернет. Бронирование, оплата и вся отчетность происходит онлайн.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="benefits">
+    <div class="container">
+      <h2 class="benefits__title">
+        Преимущества
+      </h2>
+      <div class="benefits__wrapper">
+
+        <ul class="benefits__list">
+          <li class="benefits__list_item">мойка авто каждую неделю</li>
+          <li class="benefits__list_item">премиум автомобили</li>
+          <li class="benefits__list_item">мощный двигатель</li>
+          <li class="benefits__list_item">поддержка 24/7</li>
+          <li class="benefits__list_item">бензин за наш счет</li>
+          <li class="benefits__list_item">парковка по всему городу</li>
+          <li class="benefits__list_item">каждый месяц ТО автомобиля</li>
+        </ul>
+
+        <img class="benefits__img" src="images/benefits_img.png" alt="benefits_image">
+        
+        <div class="benefits__desc">
+          <p class="benefits__desc_text">Вы можете выбрать один из 300 наших автомобилей, насладиться сервисом, повысить уровень жизни, не покупая дорогой автомобиль, успевать везде и каждый день ездить на новом премиум автомобиле.</p>
+          <p class="benefits__desc_text">
+            Посмотрите видео презентацию нашего сервиса и выберите автомобиль уже сейчас!
+          </p>
+
+          <a class="btn btn__watch_presentation" data-fancybox href="https://www.youtube.com/watch?v=Ii4HKg7hw18">ПОСМОТРЕТЬ ПРЕЗЕНТАЦИЮ</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">
+        Отзывы
+      </h2>
+      <div class="reviews__slider">
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Михаил, 28 лет
+          </div>
+          <div class="reviews__item_text">
+            Очень рад, что Вы есть!
+            Пока еще бэху купить не могу, но покататься взять - это отличная возможность!
+            Такое ощущение, что у меня личный огромный автопарк элитных тачек)))
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Инна, 35 лет
+          </div>
+          <div class="reviews__item_text">
+            Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на Ваших машинах.
+            Удобно, что расчет по минутам, это экономит бюджет компании.
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Марина, 30 лет
+          </div>
+          <div class="reviews__item_text">
+            Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу машину поблизости. Всегда чистая, свежая, приятно садиться в нее. До работы или на шопинг еду с комфортом. 
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Игорь, 25 лет
+          </div>
+          <div class="reviews__item_text">
+            Ребята, Вы ТОПЧИК!
+            Брал машину на свидание, покатал девушку, она в восторге, я доволен, все счастливы)
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Марина, 30 лет
+          </div>
+          <div class="reviews__item_text">
+            Люблю Ваш сервис. Не люблю такси. В приложении быстро нахожу машину поблизости. Всегда чистая, свежая, приятно садиться в нее. До работы или на шопинг еду с комфортом. 
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Михаил, 28 лет
+          </div>
+          <div class="reviews__item_text">
+            Очень рад, что Вы есть!
+            Пока еще бэху купить не могу, но покататься взять - это отличная возможность!
+            Такое ощущение, что у меня личный огромный автопарк элитных тачек)))
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Инна, 35 лет
+          </div>
+          <div class="reviews__item_text">
+            Очень радует Ваш сервис. Встречаю ВИП клиентов всегда только на Ваших машинах.
+            Удобно, что расчет по минутам, это экономит бюджет компании.
+          </div>
+        </div>
+
+        <div class="reviews__slider_item">
+          <div class="reviews__item_name">
+            Игорь, 25 лет
+          </div>
+          <div class="reviews__item_text">
+            Ребята, Вы ТОПЧИК!
+            Брал машину на свидание, покатал девушку, она в восторге, я доволен, все счастливы)
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="request">
+    <div class="container">
+      <div class="request__wrapper">
+        <img class="request__img" src="images/request_img.png" alt="request_image">
+        <form class="request__form">
+          <h2 class="request__title">
+            Остались вопросы?
+          </h2>
+          <p class="request__text">
+            Мы перезвоним Вам и проконсультируем по любому вопросу
+          </p>
+
+          <div class="request__form_inputs">
+            <input class="request__input" type="text" placeholder="Имя">
+            <input class="request__input" type="text" placeholder="Телефон">
+          </div>
+
+          <button class="btn btn__submit" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+
+        <div class="footer__top">
+          <a class="btn btn__download"  href="#">Скачать приложение</a>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu_list_item"><a class="menu_link" href="#">О Нас</a></li>
+              <li class="menu_list_item"><a class="menu_link" href="#">Автопарк</a></li>
+              <li class="menu_list_item"><a class="menu_link" href="#">Отзывы</a></li>
+              <li class="menu_list_item"><a class="menu_link" href="#">Условия</a></li>
+              <li class="menu_list_item"><a class="menu_link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="phone_link" href="tel:380999999090">
+            +38 (099) 999 90 90
+          </a>
+        </div>
+
+        <ul class="footer__social_media__list">
+
+          <li class="footer__social_media_item">
+            <a href="#" class="footer__social_media_link">
+              <img class="footer__social_media_icon" src="images/icon_facebook.svg" alt="facebook icon">
+            </a>
+          </li>
+          
+          <li class="footer__social_media_item">
+            <a href="#" class="footer__social_media_link">
+              <img class="footer__social_media_icon" src="images/icon_instagram.svg" alt="instagram icon">
+            </a>
+          </li>
+          
+          <li class="footer__social_media_item">
+            <a href="#" class="footer__social_media_link">
+              <img class="footer__social_media_icon" src="images/icon_youtube.svg" alt="youtube icon">
+            </a>
+          </li>
+            
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
