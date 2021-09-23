@@ -597,6 +597,17 @@ a {
 
 
 @media (max-width: 1200px) {
+    .featured {
+        padding-bottom: 80px;
+    }
+
+    .rent_terms,
+    .benefits,
+    .reviews,
+    .request {
+        padding: 80px 0;
+    }
+
     .featured__left {
         padding: 80px 50px 0 0;
     }
@@ -657,6 +668,18 @@ a {
 }
 
 @media (max-width: 878px) {
+    .featured {
+        padding-bottom: 60px;
+    }
+
+    .rent_terms,
+    .benefits,
+    .reviews,
+    .request {
+        padding: 60px 0;
+    }
+
+
     .menu {
         order: 1;
     }
@@ -824,6 +847,24 @@ a {
     .request__form {
         padding: 0;
         margin-top: 40px;
+    }
+
+
+    .footer__wrapper {
+        padding: 40px 0 20px;
+    }
+
+    .footer .menu {
+        display: none;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .footer__top .btn__download {
+        margin-bottom: 30px;
     }
 }
 
