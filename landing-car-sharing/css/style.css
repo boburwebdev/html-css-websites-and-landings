@@ -125,6 +125,7 @@ a {
     text-transform: uppercase;
     transition: all .3s;
     display: inline-block;
+    cursor: pointer;
 }
 
 .btn__download {
@@ -486,4 +487,65 @@ a {
 .reviews .slick-dots button {
     background-color: #C5AC2D;
     margin: 0 5px;
+}
+
+
+.request {
+    padding: 100px 0;
+}
+
+.request__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.request__img,
+.request__form {
+    flex: 1;
+}
+
+.request__form {
+    padding: 0 90px;
+}
+
+.request__title {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+
+.request__text {
+    margin-bottom: 50px;
+}
+
+.request__input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.request__input:focus {
+    outline: none;
+}
+
+.request__input::placeholder {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1B1818;
+}
+
+.request__form_inputs {
+    margin-bottom: 50px;
+}
+
+.btn__submit {
+    border: 0;
+    outline: 0;
+    padding: 16px 36px;
 }
