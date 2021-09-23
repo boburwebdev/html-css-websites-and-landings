@@ -627,6 +627,17 @@ a {
     .featured__offers_item {
         margin-right: 20px;
     }
+
+    .rent_terms__item {
+        width: calc(25% - 30px);
+        margin-left: 30px;
+        padding: 0 20px 25px;
+    }
+
+    .rent_terms__item_num {
+        font-size: 80px;
+        line-height: 96px;
+    }
 }
 
 @media (max-width: 878px) {
@@ -719,6 +730,51 @@ a {
     .featured__docs_list {
         margin-top: 40px;
     }
+
+
+    .rent_terms__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .rent_terms__desc {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .rent_terms__desc .btn__download {
+        align-self: center;
+    }
+
+    .rent_terms__item {
+        width: 30%;
+        min-height: 300px;
+        margin-left: 0px;
+        padding: 0 15px 20px;
+    }
+
+    .rent_terms__item + .rent_terms__item {
+        margin-left: 5%;
+    }
+
+    .rent_terms__item_title {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .rent_terms__item {
+        flex-grow: 0;
+        width: 80%;
+        min-height: 240px;
+        margin: 0 auto 20px;
+    }
+
+    .rent_terms__item+.rent_terms__item {
+        margin-left: auto;
+    }
+
 }
 
 @media (max-width: 420px) {
