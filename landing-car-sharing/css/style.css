@@ -796,6 +796,18 @@ a {
     .benefits__img {
         width: 80%;
     }
+
+    .reviews__title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews__slider_item {
+        min-height: 350px;
+        padding: 35px 20px;
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -809,6 +821,7 @@ a {
     .rent_terms__item+.rent_terms__item {
         margin-left: auto;
     }
+
 }
 
 @media (max-width: 420px) {
@@ -847,5 +860,12 @@ a {
 
     .featured__docs__link {
         font-size: 14px;
+    }
+
+    .reviews__slider_item {
+        min-height: 240px;
+        padding: 35px 25px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
