@@ -5,7 +5,12 @@ $(function(){
         autoplay: true,
         infinite: true,
         fade: true,
-        autoplaySpeed: 2000
+        responsive: [{
+            breakpoint: 878,
+            settings: {
+                dots: false
+            }
+        }]
     });
 
     $('.reviews__slider').slick({
