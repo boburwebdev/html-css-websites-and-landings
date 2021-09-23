@@ -549,3 +549,42 @@ a {
     outline: 0;
     padding: 16px 36px;
 }
+
+.footer {
+    background-color: #332208;
+}
+
+.footer__wrapper {
+    padding: 75px 0;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer__social_media__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social_media_item + .footer__social_media_item {
+    margin-left: 30px;
+}
+
+.footer__social_media_link {
+    display: inline-block;
+    transition: all .3s;
+}
+
+.footer__social_media_link:hover {
+    transform: scale(1.2);
+}
+
+.footer__social_media_link:active {
+    transform: translate(0px, 2px);
+}
