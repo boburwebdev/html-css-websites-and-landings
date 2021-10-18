@@ -1,0 +1,44 @@
+.nav {
+    padding: 35px 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &_text {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        &_item + &_item {
+            margin-left: 42px;
+        }
+
+        &_link {
+            color: $color-base;
+            line-height: 24px;
+            transition: all .3s;
+
+            &:hover {
+                color: $color-highlight;
+            }
+
+            &.active {
+                color: $color-highlight;
+                font-weight: 700;
+            }
+        }
+    }
+}
+

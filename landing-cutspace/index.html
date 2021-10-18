@@ -5,9 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CutSpace - Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>CutSpace - Landing Page</h1>
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__row">
+                <div class="nav__logo">
+                    <img class="nav__logo_img" src="img/logo.svg" alt="logo">
+                    <span class="nav__logo_text">CutSpace</span>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__list_item"><a class="nav__list_link active" href="#">Home</a></li>
+                    <li class="nav__list_item"><a class="nav__list_link" href="#">About us</a></li>
+                    <li class="nav__list_item"><a class="nav__list_link" href="#">Find Space</a></li>
+                    <li class="nav__list_item"><a class="nav__list_link" href="#">Share Space</a></li>
+                    <li class="nav__list_item"><a class="nav__list_link" href="#">Promote Space</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__row">
+                <div class="hero__content">
+                    <h1 class="hero__content_title">Find your custom matched commercial real estate space</h1>
+                    <p class="hero__content_description">In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique</p>
+                    <form class="hero__content_form" id="hero__content_form">
+                        <label class="hero__content_form_label">
+                            <input class="hero__content_form_input" id="hero__content_form_input" type="email" placeholder="Your email address">
+                        </label>
+                        <button class="btn btn__orange" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="hero__img">
+                    <img class="hero__img_image" src="img/hero.jpg" alt="hero img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

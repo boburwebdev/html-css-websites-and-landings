@@ -1,0 +1,80 @@
+.hero {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        width: 65%;
+        z-index: 2;
+
+        &_title {
+            font-size: 54px;
+            line-height: 79px;
+            margin-bottom: 25px;
+        }
+
+        &_description {
+            max-width: 470px;
+            margin-bottom: 42px;
+        }
+
+        &_form {
+            max-width: 470px;
+            border-radius: 50px;
+            display: flex;
+            box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+
+            &_label {
+                flex-grow: 1;
+                padding: 16px 20px 16px 72px;
+                position: relative;
+                cursor: pointer;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    background-image: url(../img/icon-envelope.svg);
+                    background-repeat: no-repeat;
+                    width: 24px;
+                    height: 19px;
+                    position: absolute;
+                    top: 50%;
+                    left: 30px;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &_input {
+                border: none;
+                width: 100%;
+
+                &::placeholder {
+                    color: $color-placeholder;
+                }
+            }
+        }
+
+        .form__active {
+            box-shadow: 0px 17px 42px rgba(247, 132, 52, .4);
+            transition: all .3s;
+        }
+    }
+
+    &__img {
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        border-bottom-left-radius: 0px;
+        overflow: hidden;
+        width: 50%;
+        margin-left: -10%;
+        z-index: 1;
+
+        &_image {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
