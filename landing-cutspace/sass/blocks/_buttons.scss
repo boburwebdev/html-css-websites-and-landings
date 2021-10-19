@@ -5,6 +5,11 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all .3s;
+
+    &:active {
+        transform: scale(.95) translateZ(0);
+        backface-visibility: hidden;
+    }
 }
 
 .btn__orange {
@@ -12,11 +17,16 @@
     color: $color-white;
 
     &:hover {
-        background-color: darken($color-highlight, 10%);
+        background-color: darken($color-highlight, 15%);
     }
+}
 
-    &:active {
-        transform: scale(.95) translateZ(0);
-        backface-visibility: hidden;
+.btn__white {
+    background-color: $color-white;
+    color: $color-base;
+
+    &:hover {
+        background-color: $color-base;
+        color: $color-white;
     }
 }
