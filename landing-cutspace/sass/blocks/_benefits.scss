@@ -37,13 +37,15 @@
                 align-items: center;
                 justify-content: center;
                 transition: all .3s;
+            }
 
-                &:hover {
+            &:hover {
+                .benefits__icon_wrapper {
                     background-color: $color-highlight;
+                }
 
-                    .benefits__content_item__icon {
-                        fill: $color-white;
-                    }
+                .benefits__content_item__icon {
+                    fill: $color-white;
                 }
             }
 
