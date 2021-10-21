@@ -40,6 +40,18 @@ body {
   line-height: 62px;
   letter-spacing: 0.8px; }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .logo_text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px; }
+
 .nav {
   padding: 35px 0; }
   .nav__row {
@@ -638,3 +650,56 @@ body {
       margin-bottom: 30px; }
   .expert__img_content {
     display: block; }
+
+.footer {
+  margin-bottom: 80px; }
+  .footer__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .footer__left {
+    max-width: 525px;
+    padding-right: 225px; }
+    .footer__left .footer__logo {
+      margin-bottom: 15px; }
+    .footer__left_text {
+      margin-bottom: 40px; }
+    .footer__left .footer__social_list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .footer__left .footer__social_list__item:not(:first-child) {
+        margin-left: 30px; }
+      .footer__left .footer__social_list__item:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: -webkit-transform .3s;
+        transition: -webkit-transform .3s;
+        -o-transition: transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s; }
+  .footer__nav_title {
+    font-size: 21px;
+    line-height: 31px;
+    margin-bottom: 15px; }
+  .footer__nav_list_item {
+    margin-bottom: 10px; }
+  .footer__nav_list_link {
+    color: #323232;
+    font-size: 14px;
+    line-height: 27px;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    .footer__nav_list_link:hover {
+      color: #F78434; }

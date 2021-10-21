@@ -1,0 +1,59 @@
+.footer {
+    margin-bottom: 80px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        max-width: 525px;
+        padding-right: 225px;
+        
+        .footer__logo {
+            margin-bottom: 15px;
+        }
+
+        &_text {
+            margin-bottom: 40px;
+        }
+
+        .footer__social_list {
+            display: flex;
+            justify-content: flex-start;
+
+            &__item:not(:first-child) {
+                margin-left: 30px;
+            }
+
+            &__item:hover {
+                transform: scale(1.2);
+                transition: transform .3s;
+            }
+        }
+    }
+
+    &__nav {
+        &_title {
+            font-size: 21px;
+            line-height: 31px;
+            margin-bottom: 15px;
+        }
+
+        &_list_item {
+            margin-bottom: 10px;
+        }
+
+        &_list_link {
+            color: $color-base;
+            font-size: 14px;
+            line-height: 27px;
+            transition: color .3s;
+
+            &:hover {
+                color: $color-highlight;
+            }
+        }
+    }
+}
