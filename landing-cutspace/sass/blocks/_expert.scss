@@ -1,0 +1,51 @@
+.expert {
+    margin-bottom: 100px;
+    position: relative;
+
+    &__bg {
+        background-color: $color-green;
+        clip-path: polygon(0 33%, 100% 5%, 100% 100%, 0% 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &__row {
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-image: url(../img/expert-oval.svg);
+            background-repeat: no-repeat;
+            width: 743px;
+            height: 371px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
+    &__content {
+        color: $color-white;
+        max-width: 360px;
+        margin: 0 190px 55px 0;
+
+        .expert__title {
+            margin-bottom: 15px;
+        }
+
+        .expert__text {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img_content {
+        display: block;
+    }
+}

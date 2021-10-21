@@ -1,0 +1,102 @@
+.reviews {
+    margin-bottom: 100px;
+
+    &__header {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_text {
+            width: 30%;
+            color: $color-light-grey;
+        }
+    }
+
+    &__title {
+        width: 40%;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url(../img/reviews-shape.svg);
+            background-repeat: no-repeat;
+            display: block;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: -40px;
+            right: -40px;
+        }
+
+        .reviews__video_link {
+            display: block;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-image: url(../img/icon-play.svg);
+                background-repeat: no-repeat;
+                background-color: #fff;
+                background-position: center;
+                display: block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                opacity: 0;
+                transition: all .3s;
+            }
+        }
+
+        &_item {
+            width: 31%;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: all .3s;
+
+            &__inner {
+                padding: 30px;
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 52px rgba($color-black, 0.08);
+
+                .reviews__content_city {
+                    color: $color-highlight;
+                }
+
+                .reviews__video_link::before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &_text {
+            margin-bottom: 20px;
+        }
+
+        &_author {
+            font-weight: 700;
+        }
+
+        &_city {
+            color: $color-green;
+            transition: all .3s;
+        }
+
+        &_img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    }
+}
