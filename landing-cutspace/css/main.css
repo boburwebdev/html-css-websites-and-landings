@@ -354,3 +354,67 @@ body {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%); }
+
+.who_we_serve {
+  margin-bottom: 100px; }
+  .who_we_serve__header {
+    margin-bottom: 45px;
+    text-align: center; }
+  .who_we_serve__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 30px;
+    column-gap: 30px; }
+    .who_we_serve__content_item {
+      background-color: #fff;
+      color: #323232;
+      border-radius: 10px;
+      padding: 40px 120px;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+      -webkit-transition: background-color .3s, color .3s;
+      -o-transition: background-color .3s, color .3s;
+      transition: background-color .3s, color .3s; }
+      .who_we_serve__content_item .who_we_serve__content_icon {
+        fill: #F78434;
+        -webkit-transition: fill .3s;
+        -o-transition: fill .3s;
+        transition: fill .3s; }
+      .who_we_serve__content_item:hover {
+        background-color: #F78434;
+        color: #fff; }
+        .who_we_serve__content_item:hover .who_we_serve__content_icon {
+          fill: #fff; }
+        .who_we_serve__content_item:hover .btn__white {
+          background-color: #fff; }
+      .who_we_serve__content_item .who_we_serve__text {
+        margin-bottom: 25px; }
+  .who_we_serve .btn__white {
+    color: #F78434; }
+    .who_we_serve .btn__white:hover {
+      background-color: #d65d08;
+      color: #fff;
+      -webkit-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s; }

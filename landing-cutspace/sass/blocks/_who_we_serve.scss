@@ -1,0 +1,62 @@
+.who_we_serve {
+    margin-bottom: 100px;
+
+    &__header {
+        margin-bottom: 45px;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 30px;
+
+        &_item {
+            background-color: $color-white;
+            color: $color-base;
+            border-radius: 10px;
+            padding: 40px 120px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+            transition: background-color .3s, color .3s;
+
+            .who_we_serve__content_icon {
+                fill: $color-highlight;
+                transition: fill .3s;
+            }
+
+            &:hover {
+                background-color: $color-highlight;
+                color: $color-white;
+
+                .who_we_serve__content_icon {
+                    fill: $color-white;
+                }
+
+                .btn__white {
+                    background-color: $color-white;
+                }
+            }
+
+            .who_we_serve__text {
+                margin-bottom: 25px;
+            }
+            
+        }
+    }
+
+    .btn__white {
+        color: $color-highlight;
+
+        &:hover {
+            background-color: darken($color-highlight, 15%);
+            color: $color-white;
+            transition: all .3s;
+        }
+    }
+}
