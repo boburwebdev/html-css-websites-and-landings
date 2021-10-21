@@ -1,5 +1,19 @@
 .who_we_serve {
     margin-bottom: 100px;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        background-color: $color-grey-bg;
+        width: 100%;
+        height: calc(100% + 150px);
+        position: absolute;
+        left: 0;
+        top: -70%;
+        z-index: -1;
+    }
+    
 
     &__header {
         margin-bottom: 45px;

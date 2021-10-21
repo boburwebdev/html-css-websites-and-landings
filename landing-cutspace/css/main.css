@@ -277,7 +277,9 @@ body {
 
 .cta {
   color: #fff;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1; }
   .cta__row {
     background-color: #58BEBF;
     padding: 90px 0;
@@ -356,7 +358,18 @@ body {
         transform: translateY(-50%); }
 
 .who_we_serve {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  position: relative; }
+  .who_we_serve::before {
+    content: '';
+    display: block;
+    background-color: #F5F6FA;
+    width: 100%;
+    height: calc(100% + 150px);
+    position: absolute;
+    left: 0;
+    top: -70%;
+    z-index: -1; }
   .who_we_serve__header {
     margin-bottom: 45px;
     text-align: center; }
@@ -418,3 +431,80 @@ body {
       -webkit-transition: all .3s;
       -o-transition: all .3s;
       transition: all .3s; }
+
+.benefits {
+  margin-bottom: 100px; }
+  .benefits__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .benefits__title {
+    text-align: center;
+    margin-bottom: 60px; }
+  .benefits__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .benefits__content_item {
+      width: 23%;
+      padding: 0 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center; }
+      .benefits__content_item .benefits__icon_wrapper {
+        background-color: rgba(88, 190, 191, 0.2);
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s; }
+        .benefits__content_item .benefits__icon_wrapper:hover {
+          background-color: #F78434; }
+          .benefits__content_item .benefits__icon_wrapper:hover .benefits__content_item__icon {
+            fill: #fff; }
+      .benefits__content_item__icon {
+        fill: #58BEBF;
+        -webkit-transition: fill .3s;
+        -o-transition: fill .3s;
+        transition: fill .3s; }
+    .benefits__content_title {
+      font-size: 24px;
+      line-height: 42px; }
