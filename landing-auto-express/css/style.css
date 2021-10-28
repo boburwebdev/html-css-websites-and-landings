@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 80vh;
+}
+
+.header__top {
+    padding-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top_phone {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 53px;
+}
+
+.header__content {
+    padding: 105px 0 120px;
+    position: relative;
+}
+
+.header__title {
+    max-width: 800px;
+    font-size: 72px;
+    line-height: 107px;
+    text-transform: uppercase;
+}
+
+.header__subtitle {
+    max-width: 800px;
+    font-size: 36px;
+    line-height: 53px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.header__desc {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 15px 55px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transform: scale(1);
+    backface-visibility: hidden;
+    transition: all .3s;
+}
+
+.btn__purple {
+    background-color: #5A0D67;
+    color: #fff;
+}
+
+.btn__purple:hover {
+    background-color: #fff;
+    color: #5A0D67;
+}
+
+.btn:active {
+    transform: scale(.96);
+    backface-visibility: hidden;
+}
+
+.header__social_list {
+    list-style: none;
+    display: flex;
+    margin: 70px 0 0 66px;
+}
+
+.header__social_list_item+.header__social_list_item {
+    margin-left: 20px;
+}
+
+.header__social_list_link {
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.header__social_list_link:hover {
+    transform: scale(1.2);
+}
+
+.header__social_list_link:active {
+    transform: scale(1.1);
+}
+
+.header__main_img {
+    position: absolute;
+    bottom: -200px;
+    right: 0px;
+}
