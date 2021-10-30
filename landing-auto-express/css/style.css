@@ -76,6 +76,7 @@ header {
 }
 
 .btn {
+    font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
@@ -386,4 +387,80 @@ header {
 .slick-dots .slick-active button {
     background-color: #21062A;
     height: 3px;
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacts__info,
+.contacts__form {        
+    flex: 1;
+}
+
+.contacts__info {
+    padding-top: 50px;
+}
+
+.contacts__info_box:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts__info_title {
+    color: #5A0D67;
+    font-weight: 300;
+}
+
+.contacts__form {
+    background-color: #21062A;
+    padding: 50px 75px 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts__form_title {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.contacts__form_title::after {
+    background-color: #fff;
+}
+
+.contacts__form_input {
+    background-color: transparent;
+    color: #c4c4c4;
+    width: 100%;
+    height: 75px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.contacts__form_input:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.contacts__form_input::placeholder {
+    color: #c4c4c4;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-align: center;
+}
+
+.btn__contacts {
+    font-weight: 300;
+    border: 0;
+    outline: 0;
+    margin-top: 66px;
+    padding: 14px 73px;
 }
