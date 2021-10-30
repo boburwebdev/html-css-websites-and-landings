@@ -105,26 +105,29 @@ header {
     backface-visibility: hidden;
 }
 
-.header__social_list {
+.social_list {
     list-style: none;
     display: flex;
+}
+
+.header__social_list {
     margin: 70px 0 0 66px;
 }
 
-.header__social_list_item+.header__social_list_item {
+.social_list_item+.social_list_item {
     margin-left: 20px;
 }
 
-.header__social_list_link {
+.social_list_link {
     transform: scale(1);
     transition: all .3s;
 }
 
-.header__social_list_link:hover {
+.social_list_link:hover {
     transform: scale(1.2);
 }
 
-.header__social_list_link:active {
+.social_list_link:active {
     transform: scale(1.1);
 }
 
@@ -463,4 +466,26 @@ header {
     outline: 0;
     margin-top: 66px;
     padding: 14px 73px;
+}
+
+
+.footer {
+    background-color: #21062A;
+}
+
+.footer__row {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__link {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+}
+
+.footer__link:hover {
+    border-bottom: 1px solid #fff;
 }
