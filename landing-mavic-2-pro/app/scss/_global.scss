@@ -1,0 +1,72 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #fff;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    margin: 0;
+}
+
+.container {
+    width: 1240px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section__full_height {
+    background-image: url(../images/section__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100vh;
+    position: relative;
+    padding: 75px 0 50px;
+}
+
+.section__title {
+    color: #FFFFFF;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.section__scroll {
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
