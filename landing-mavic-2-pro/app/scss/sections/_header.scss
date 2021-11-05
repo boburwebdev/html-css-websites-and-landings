@@ -1,0 +1,68 @@
+.header {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 30px;
+    }
+
+    .nav__list {
+        display: flex;
+        @extend %ubuntu-medium;
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+
+        &-item:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        &-link {
+            padding-bottom: 5px;
+            border-bottom: 2px solid transparent;
+            transition: border .3s;
+
+            &:hover {
+                border-bottom: 2px solid $color-white;
+            }
+        }
+    }
+
+    &__cta_btn {
+        background-color: transparent;
+        color: $color-white;
+        @extend %ubuntu-medium;
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+        border: 1px solid $color-white;
+        border-radius: 3px;
+        padding: 7px 28px;
+        margin-right: 8px;
+        transition: all .5s;
+        display: inline-block;
+        backface-visibility: hidden;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+        }
+
+        &:active {
+            transform: scale(.9);
+            backface-visibility: hidden;
+        }
+    }
+
+    &__cta_phone {
+        @extend %ubuntu-bold;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
