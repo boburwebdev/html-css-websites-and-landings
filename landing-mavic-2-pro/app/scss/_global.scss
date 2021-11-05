@@ -11,6 +11,9 @@ html {
 
 body {
     color: #fff;
+    @extend %ubuntu-light;
+    font-style: 17px;
+    line-height: 26px;
     min-width: 320px;
     overflow-x: hidden;
     position: relative;
@@ -55,11 +58,12 @@ h6 {
 }
 
 .section__title {
+    @extend %sf-regular;
     color: #FFFFFF;
-    font-family: 'SF Pro Display', sans-serif;
-    font-weight: normal;
     font-size: 44px;
     line-height: 53px;
+    padding-left: 25px;
+    margin-bottom: 55px;
 }
 
 .section__scroll {
