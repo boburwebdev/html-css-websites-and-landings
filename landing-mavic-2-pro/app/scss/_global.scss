@@ -1,3 +1,5 @@
+@import "vars";
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -99,4 +101,28 @@ p {
     right: 0;
     bottom: 0;
     z-index: 10;
+}
+
+.btn {
+    background-color: transparent;
+    color: $color-white;
+    @extend %ubuntu-medium;
+    text-transform: uppercase;
+    border: 1px solid $color-white;
+    border-radius: 3px;
+    padding: 7px 28px;
+    transition: all .5s;
+    display: inline-block;
+    cursor: pointer;
+    backface-visibility: hidden;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    &:active {
+        transform: scale(.9);
+        backface-visibility: hidden;
+    }
 }

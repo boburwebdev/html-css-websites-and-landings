@@ -1,0 +1,122 @@
+.contacts {
+    padding-bottom: 30px;
+
+    &__row {
+        display: flex;
+        padding-left: 55px;
+        margin-bottom: 20px;
+    }
+
+    &__cities {
+        max-width: 240px;
+        margin-right: 60px;
+    }
+
+    &__city_item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__city_title,
+    &__form_title {
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    &__city_link,
+    &__form_text {
+        @extend %ubuntu-light;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    &__city_link-email {
+        border-bottom: 1px solid transparent;
+        transition: all .3s;
+
+        &:hover {
+            border-bottom: 1px solid $color-white;
+        }
+    }
+
+    &__form {
+        width: 570px;
+        margin-right: 106px;
+
+        &_text {
+            margin-bottom: 12px;
+        }
+
+        &_inputs {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_input,
+        &_message {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: $color-white;
+            @extend %ubuntu-regular;
+            border: none;
+            padding: 15px;
+
+            &::placeholder {
+                color: rgba(#fff, .4);
+                @extend %ubuntu-regular;
+                font-size: 13px;
+                line-height: 17px;
+            }
+        }
+
+        &_input {
+            width: 49%;
+            margin-bottom: 10px;
+        }
+
+        &_message {
+            width: 100%;
+            height: 144px;
+            resize: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    .btn__submit {
+        @extend %ubuntu-bold;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 9px 15px;
+    }
+
+    &__social_media {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+
+            &_item:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__link {
+            opacity: .5;
+            transition: opacity .3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .copyright {
+        width: 100%;
+        @extend %ubuntu-light;
+        font-size: 13px;
+        line-height: 17px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 80px;
+    }
+}

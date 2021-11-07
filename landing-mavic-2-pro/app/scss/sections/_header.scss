@@ -35,29 +35,10 @@
     }
 
     &__cta_btn {
-        background-color: transparent;
-        color: $color-white;
-        @extend %ubuntu-medium;
         font-size: 15px;
         line-height: 17px;
-        text-transform: uppercase;
-        border: 1px solid $color-white;
-        border-radius: 3px;
         padding: 7px 28px;
         margin-right: 8px;
-        transition: all .5s;
-        display: inline-block;
-        backface-visibility: hidden;
-
-        &:hover {
-            background-color: $color-white;
-            color: $color-black;
-        }
-
-        &:active {
-            transform: scale(.9);
-            backface-visibility: hidden;
-        }
     }
 
     &__cta_phone {
