@@ -1,0 +1,128 @@
+@import "vars";
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #fff;
+    @extend %ubuntu-light;
+    font-style: 17px;
+    line-height: 26px;
+    min-width: 320px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1240px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.section__full_height {
+    background-image: url(../images/section__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 100vh;
+    // height: 100vh;
+    position: relative;
+    padding: 75px 0 50px;
+
+    &::before {
+        content: '';
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .section__wrapper {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.section__title {
+    @extend %sf-regular;
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 53px;
+    padding-left: 25px;
+    padding-top: 150px;
+    margin-bottom: 55px;
+}
+
+.section__scroll {
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.btn {
+    background-color: transparent;
+    color: $color-white;
+    @extend %ubuntu-medium;
+    text-transform: uppercase;
+    border: 1px solid $color-white;
+    border-radius: 3px;
+    padding: 7px 28px;
+    transition: all .5s;
+    display: inline-block;
+    cursor: pointer;
+    backface-visibility: hidden;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-black;
+    }
+
+    &:active {
+        transform: scale(.9);
+        backface-visibility: hidden;
+    }
+}

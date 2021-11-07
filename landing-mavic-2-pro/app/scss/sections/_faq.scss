@@ -1,0 +1,75 @@
+.faq {
+    &__title {
+        padding-left: 50px;
+    }
+
+    &__inner {
+        padding-left: 50px;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 757px;
+
+        &:nth-child(3) {
+            position: relative;
+
+            &::after {
+                content: url(../images/faq__bg.png);
+                width: 319px;
+                height: 125px;
+                position: absolute;
+                top: -34px;
+                right: -391px;
+                z-index: -1;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &.faq__item-active {
+            .faq__item__answer_box {
+                display: block;
+            }
+
+            .faq__item_question::after {
+                transform: rotate(180deg);
+            }
+        }
+
+        &_question {
+            @extend %ubuntu-medium;
+            font-size: 21px;
+            line-height: 28px;
+            padding: 20px 40px 25px;
+            position: relative;
+            cursor: pointer;
+
+            &::after {
+                content: url(../images/icon__arrow-down.svg);
+                background-color: $color-white;
+                width: 72px;
+                height: 67px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                right: -72px;
+            }
+        }
+
+        &__answer_box {
+            display: none;
+        }
+
+        &_text {
+            font-size: 15px;
+            line-height: 23px;
+            padding: 0 50px 75px;
+        }
+    }
+}
