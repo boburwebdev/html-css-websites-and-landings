@@ -5,4 +5,10 @@ $(function(){
         nextArrow: `<button class="slider__btn slider__btn_right"><svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.78161 17L9 9L0.78161 1"/></svg></button>`,
     });
 
+    $('.faq__item_question').on('click', function() {
+        // $('.faq__item').removeClass('faq__item-active');
+        $(this).parent().toggleClass('faq__item-active');
+    });
+
+    
 })
