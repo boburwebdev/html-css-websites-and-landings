@@ -205,10 +205,10 @@ body{
   line-height: 24px;
 }
 
-
+/* 
 .list{
 
-}
+} */
 .list__title{
   font-weight: 700;
   color: #303030;
@@ -225,6 +225,34 @@ body{
   background-size: cover;
   background-position: top center;
   position: relative;
+  margin-top: -180px;
+}
+.tabs__content_desc {
+  background-color: #f6f9f3;
+  width: 445px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+}
+.tabs__content_text {
+  border: 1px solid #c5dab5;
+  padding: 40px 50px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.tabs__content_link {
+  background-color: #f6f9f3;
+  color: #7eb152;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  left: 55px;
+  bottom: 16px;
+}
+.tabs__content_link:hover {
+  text-decoration: none;
 }
 .list__inner{
   display: flex;
@@ -239,14 +267,63 @@ body{
   font-size: 14px;
   line-height: 20px;
   color: #303030;
-  padding: 20px 0;
+  padding: 28px 45px 20px 0;
   border-bottom: 1px solid #e6efde;
   text-transform: uppercase;
   cursor: pointer;
 }
+.tab.active {
+  position: relative;
+}
+.tab.active::after {
+  content: '';
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 10px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
 .tab span{
   color: #a4c58c;
   margin-right: 18px;
+}
+.tabs__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tabs__box .tab {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+.tabs__box .tab:nth-child(1),
+.tabs__box .tab:nth-child(2) {
+  border-right: 1px solid #e6efde;
+}
+.tabs__box .tab:nth-child(3),
+.tabs__box .tab:nth-child(4) {
+  padding-left: 40px;
+}
+.tabs__box .tab:nth-child(2) {
+  order: 3;
+}
+.tabs__box .tab:nth-child(3) {
+  order: 2;
+}
+.tabs__box .tab:nth-child(4) {
+  order: 4;
+}
+.tabs__box .tab span {
+  font-size: 12px;
+  font-weight: 600;
 }
 .tab-item{
   display: none;
@@ -274,5 +351,29 @@ body{
 }
 .item-3{
   left: 227px;
+  top: 35px;
+}
+.item-4{
+  left: 255px;
+  top: 155px;
+}
+.item-5{
+  left: 229px;
+  top: 42px;
+}
+.item-6{
+  left: 227px;
   top: 135px;
+}
+.item-7{
+  left: 229px;
+  top: 35px;
+}
+.item-8{
+  left: 229px;
+  top: 212px;
+}
+.item-9{
+  left: 229px;
+  top: 35px;
 }
