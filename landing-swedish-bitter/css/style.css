@@ -549,7 +549,7 @@ body{
 }
 
 .history {
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 
 .history__wrapper {
@@ -664,4 +664,52 @@ body{
   position: absolute;
   right: 60px;
   top: 25px;
+}
+
+.quote {
+  width: 100%;
+  padding: 200px 0;
+  position: relative;
+}
+
+.quote::before,
+.quote::after {
+  content: '';
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.quote::before {
+  background-image: url(../images/quote_bg_left.png);
+  background-position: left top;
+  left: 0;
+}
+.quote::after {
+  background-image: url(../images/quote_bg_right.png);
+  background-position: right top;
+  right: 0;
+}
+.quote__inner {
+  max-width: 770px;
+  padding: 60px 0;
+  margin: 0 auto;
+  border-top: 2px solid #a4c58c;
+  border-bottom: 2px solid #a4c58c;
+  text-align: center;
+}
+.quote__text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 45px;
+}
+.quote__author {
+  font-size: 18px;
+  line-height: 30px;
+}
+.quote__author_subtext {
+  color: #9a9a9a;
 }
