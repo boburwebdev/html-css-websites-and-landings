@@ -20,6 +20,31 @@ body{
   margin: 0 auto;
   overflow: hidden;
 }
+.section__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+.btn {
+  background-color: #7eb252;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: absolute;
+  cursor: pointer;
+}
+.btn:after {
+  content: '';
+  background-image: url(../images/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+}
 .header__inner{
   display: flex;
   justify-content: space-between;
@@ -146,27 +171,12 @@ body{
   color: #c8dcba;
 }
 
-.top-form button{
-  position: absolute;
-  right: 0;
-  bottom: 0;
+.top-form .btn{
   padding: 22px 110px 22px 70px;
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  background-color: #7eb252;
-  text-transform: uppercase;
-  cursor: pointer;
+  bottom: 0;
+  right: 0;
 }
-.top-form button:after{
-  content: '';
-  background-image: url(../images/arrow-right.png);
-  width: 31px;
-  height: 9px;
-  position: absolute;
+.top-form .btn:after{
   right: 60px;
   top: 25px;
 }
@@ -215,9 +225,6 @@ body{
   margin-bottom: 200px;
 }
 .list__title{
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
   max-width: 470px;
   margin-bottom: 30px;
 }
@@ -409,24 +416,10 @@ body{
   margin-top: 20px;
   position: relative;
 }
-.list__cta_link {
-  background-color: #7eb252;
-  color: #fff;
+.btn__list_cta {
   padding: 28px 155px 28px 125px;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  cursor: pointer;
 }
-.list__cta_link:after {
-  content: '';
-  background-image: url(../images/arrow-right.png);
-  width: 31px;
-  height: 9px;
-  position: absolute;
+.btn__list_cta:after {
   right: 100px;
   top: 30px;
 }
@@ -438,6 +431,7 @@ body{
 .popularity__wrapper {
   min-height: 645px;
   position: relative;
+  overflow: unset;
 }
 
 .popularity__wrapper::before {
@@ -482,30 +476,14 @@ body{
   border-bottom: 0;
   padding: 40px;
 }
-.popularity__cta_link {
-  background-color: #7eb252;
-  color: #fff;
-  border: 1px solid #c8dcba;
-  border-top: 0;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: flex;
+.btn__popularity {
   padding: 28px 40px;
-  cursor: pointer;
+  line-height: 14px;
+  display: flex;
   position: relative;
 }
 
-.popularity__cta_link:after {
-  content: '';
-  background-image: url(../images/arrow-right.png);
-  background-repeat: no-repeat;
-  width: 31px;
-  height: 9px;
-  position: absolute;
+.btn__popularity:after {
   right: 20px;
   top: 30px;
 }
@@ -514,9 +492,6 @@ body{
   padding: 50px 0 0 70px;
 }
 .popularity__desc_title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
   margin-bottom: 50px;
 }
 .popularity__desc_subtitle {
@@ -578,8 +553,6 @@ body{
 }
 
 .history__title {
-  font-size: 40px;
-  line-height: 50px;
   margin-bottom: 45px;
 }
 
@@ -642,27 +615,14 @@ body{
   line-height: 20px;
 }
 
-.history__form_btn {
-  background-color: #7eb252;
-  color: #fff;
+.btn__history_form {
   width: 100%;
   padding: 22px 125px 22px 95px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  font-weight: 700;
   letter-spacing: .5px;
-  text-transform: uppercase;
   position: relative;
-  cursor: pointer;
 }
 
-.history__form_btn:after {
-  content: '';
-  background-image: url(../images/arrow-right.png);
-  width: 31px;
-  height: 9px;
-  position: absolute;
+.btn__history_form:after {
   right: 60px;
   top: 25px;
 }
@@ -713,6 +673,7 @@ body{
 }
 .quote__author_subtext {
   color: #9a9a9a;
+  font-size: 16px;
 }
 
 .what_you_get {
@@ -722,8 +683,6 @@ body{
 .what_you_get__title {
   max-width: 520px;
   margin-bottom: 110px;
-  font-size: 40px;
-  line-height: 50px;
 }
 
 .what_you_get__inner {
@@ -781,10 +740,9 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 }
 .what_you_get__item_icon {
-  z-index: 2;
+  position: relative; /* puts icon above the number; another solution is to use z-index for both number and for an icon */
 }
 .what_you_get__item_name {
   font-size: 14px;
@@ -792,4 +750,211 @@ body{
   text-transform: uppercase;
   line-height: 20px;
   letter-spacing: .5px;
+}
+
+.ingredients {
+  margin-bottom: 200px;
+}
+
+.ingredients__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.ingredients__item {
+  background-color: #f6f9f3;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #a4c58c;
+  width: 270px;
+  min-height: 270px;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+  cursor: pointer;
+}
+
+.ingredients__item_number {
+  font-weight: 700;
+  display: inline-block;
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: 0px 0px;
+}
+
+.ingredient__item_name {
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  transform: rotate(-90deg) translateX(100%);
+  transform-origin: bottom right;
+}
+
+.ingredients__item:hover .ingredients__item_overlay {
+  opacity: 1;
+}
+
+.ingredients__item_overlay {
+  background-color: rgba(116, 159, 60, .6);
+  color: #fff;
+  padding: 0 10px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 230px;
+  height: 230px;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.ingredients__item_overlay::before {
+  background-image: url(../images/ingredients_item_overlay_bg.jpg);
+  background-repeat: no-repeat;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  z-index: 1;
+  transition: all .5s;
+}
+
+.ingredients__item_overlay__name {
+  z-index: 2;
+}
+
+.ingredients__item:first-child {
+  background-image: url(../images//ingredients_01.jpg);
+}
+.ingredients__item:nth-child(2) {
+  background-image: url(../images//ingredients_02.jpg);
+}
+
+
+.ingredients__second_row .ingredients__item:nth-child(1) {
+  background-image: url(../images//ingredients_03.jpg);
+}
+.ingredients__second_row .ingredients__item:nth-child(2) {
+  background-image: url(../images//ingredients_04.jpg);
+}
+.ingredients__second_row .ingredients__item:nth-child(3) {
+  background-image: url(../images//ingredients_05.jpg);
+}
+.ingredients__second_row .ingredients__item:nth-child(4) {
+  background-image: url(../images//ingredients_06.jpg);
+}
+
+
+.ingredients__third_row .ingredients__item:nth-child(1) {
+  background-image: url(../images//ingredients_07.jpg);
+}
+.ingredients__third_row .ingredients__item:nth-child(2) {
+  background-image: url(../images//ingredients_08.jpg);
+}
+.ingredients__third_row .ingredients__item:nth-child(3) {
+  background-image: url(../images//ingredients_09.jpg);
+}
+.ingredients__third_row .ingredients__item:nth-child(4) {
+  background-image: url(../images//ingredients_10.jpg);
+}
+
+.ingredients__first_row {
+  align-items: flex-end;
+}
+
+.ingredients__desc {
+  width: 570px;
+  padding-left: 70px;
+}
+
+.ingredients__title {
+  margin-bottom: 55px;
+}
+
+.ingredients__desc_list {
+  list-style: none;
+  margin-bottom: 44px;
+}
+
+.ingredients__desc_list_item {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.ingredients__desc_list_item::before {
+  content: "";
+  background-color: #a4c58c;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.ingredients__desc_list_item + .ingredients__desc_list_item {
+  margin-top: 34px;
+}
+
+.ingredients__fourth_row .ingredients__desc {
+  width: 835px;
+  padding: 45px 60px 90px;
+  border: 1px solid #c8dcba;
+  position: relative;
+}
+
+.ingredients__fourth_row .ingredients__desc_wrapper {
+  padding: 20px;
+}
+
+.ingredients__fourth_row .ingredients__desc_list {
+  margin-bottom: 0;
+}
+
+.ingredients__desc_text {
+  line-height: 20px;
+}
+
+.ingredients__desc_text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.btn__ingredients {
+  padding: 25px 100px 25px 65px;
+  bottom: 0;
+  right: 0;
+}
+
+.btn__ingredients::after {
+  top: 27px;
+  right: 50px;
+}
+
+.ingredients__fourth_row .ingredients__item {
+  background-image: url(../images//ingredients_11.jpg);
+}
+
+.ingredients__item_text {
+  color: #303030;
+  width: 100px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
 }
