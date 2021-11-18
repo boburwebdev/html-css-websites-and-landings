@@ -6,8 +6,10 @@
         background-image: url(../images/about_us__bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         width: 33%;
         min-height: 700px;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 0;
@@ -36,8 +38,17 @@
     }
 
     &__content {
+        flex: 1;
         font-size: 18px;
         line-height: 27px;
         margin-right: 60px;
+    }
+
+    &__image-wrapper {
+        flex: 1;
+    }
+
+    &__image {
+        width: 100%;
     }
 }
