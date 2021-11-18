@@ -1,3 +1,5 @@
+@import "vars";
+
 * {
     box-sizing: border-box;
 }
@@ -27,4 +29,26 @@ a {
     color: inherit;
     text-decoration: none;
     font-family: inherit;
+}
+
+.section__margins {
+    margin: 100px 0;
+}
+
+.section__title {
+    color: $color-red;
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-color: $color-red;
+        width: 100px;
+        height: 4px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
 }
