@@ -4,7 +4,7 @@ const membershipSwiper = new Swiper('.membership .swiper', {
   updateOnWindowResize: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.membership-swiper-pagination',
     type: 'bullets',
     clickable: true
   },
@@ -24,12 +24,6 @@ const trainersSwiper = new Swiper('.trainers .swiper', {
   loop: true,
   slidesPerView: 1,
   updateOnWindowResize: true,
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true
-  },
   
   navigation: {
     nextEl: '.swiper-button-next',
@@ -42,5 +36,29 @@ const trainersSwiper = new Swiper('.trainers .swiper', {
   },
 });
 
+const newsSwiper = new Swiper('.news .swiper', {
+  loop: false,
+  slidesPerView: 'auto',
+  updateOnWindowResize: true,
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+    el: '.news-swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  
+  lazy: {
+    loadPrevNext: true,
+    loadPrevNextAmount: 1
+  },
+});
+
+
 membershipSwiper();
 trainersSwiper();
+newsSwiper();
