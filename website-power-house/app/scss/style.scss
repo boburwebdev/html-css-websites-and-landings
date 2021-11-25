@@ -1,0 +1,29 @@
+@import './global';
+@import './vars';
+@import './buttons';
+
+@import './sections/header';
+@import './sections/hero';
+@import './sections/about';
+@import './sections/clubs';
+@import './sections/membership';
+@import './sections/trainers';
+@import './sections/news';
+@import './sections/footer';
+
+
+@import './media/global';
+@import './media/buttons';
+
+@import './media/header';
+@import './media/hero';
+@import './media/about';
+@import './media/clubs';
+@import './media/membership';
+@import './media/trainers';
+@import './media/news';
+@import './media/footer';
+
+.hide {
+    display: none;
+}

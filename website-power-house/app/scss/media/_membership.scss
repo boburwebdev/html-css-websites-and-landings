@@ -1,0 +1,107 @@
+@media (max-height: 768px) {
+    .membership {
+        &__title {
+            margin-bottom: 64px;
+        }
+
+        &__item {
+            flex: 0 0 360px;
+            padding: 40px 0;
+
+            &-top {
+                padding: 0 30px 20px;
+            }
+
+            &-title {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            &-price {
+                font-size: 40px;
+                line-height: 52px;
+            }
+
+            &-list {
+                padding: 0 50px;
+                margin-bottom: 40px;
+
+                &--item {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .membership {
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: unset;
+            bottom: -40px;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            left: unset;
+            right: 0;
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: 0;
+            right: unset;
+        }
+
+        .membership-swiper-pagination {
+            text-align: center;
+            bottom: -35px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .membership {
+        &__title {
+            margin-bottom: 44px;
+        }
+
+        &__item {
+            flex: 0 0 280px;
+            margin-right: 24px;
+            padding: 40px 0;
+
+            &-top {
+                padding: 0 30px 20px;
+            }
+
+            &-title {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            &-price {
+                font-size: 40px;
+                line-height: 52px;
+            }
+
+            &-list {
+                padding: 0 50px;
+                margin-bottom: 40px;
+
+                &--item {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
