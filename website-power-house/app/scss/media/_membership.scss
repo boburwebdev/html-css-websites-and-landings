@@ -1,0 +1,76 @@
+@media (max-height: 768px) {
+    .membership {
+        &__title {
+            margin-bottom: 64px;
+        }
+
+        &__item {
+            flex: 0 0 360px;
+            padding: 40px 0;
+
+            &-top {
+                padding: 0 30px 20px;
+            }
+
+            &-title {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            &-price {
+                font-size: 40px;
+                line-height: 52px;
+            }
+
+            &-list {
+                padding: 0 50px;
+                margin-bottom: 40px;
+
+                &--item {
+                    font-size: 16px;
+                    line-height: 22px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            position: relative;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: -100px;
+        }
+
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            left: unset;
+            right: 0;
+        }
+
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            left: unset;
+            right: 40px;
+        }
+
+        .membership-swiper-pagination {
+            text-align: left;
+            width: 100%;
+            position: relative;
+            bottom: -30px;
+            left: 0;
+        }
+
+        .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

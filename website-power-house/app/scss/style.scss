@@ -10,3 +10,17 @@
 @import './sections/trainers';
 @import './sections/news';
 @import './sections/footer';
+
+
+@import './media/global';
+@import './media/buttons';
+@import './media/header';
+@import './media/hero';
+@import './media/about';
+@import './media/clubs';
+@import './media/membership';
+@import './media/trainers';
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,75 @@
+@media (max-width: 1400px) {
+    .clubs {
+        &__item {
+            &-number {
+                font-size: 80px;
+                line-height: 80px;
+                bottom: 40px;
+                left: 30px;
+            }
+
+            &-title {
+                font-size: 28px;
+                line-height: 36px;
+                bottom: 30px;
+                left: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .clubs {
+        flex-wrap: wrap;
+
+        &__item {
+            width: 49vw;
+            height: 49vw;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .clubs {
+
+        &__item {
+            width: 48vw;
+            height: 48vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .clubs {
+        &__item {
+            &-number {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+    }
+}
+@media (max-width: 480px) {
+    .clubs {
+        &__item {
+            &-number {
+                font-size: 60px;
+                line-height: 60px;
+                bottom: 15px;
+                left: 20px;
+            }
+
+            &-title {
+                font-size: 18px;
+                line-height: 30px;
+                bottom: 15px;
+                left: 20px;
+            }
+        }
+    }
+}

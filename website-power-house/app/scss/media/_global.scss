@@ -1,0 +1,11 @@
+@media (max-width: 880px) {
+.section__title {
+    text-align: center;
+    
+    &::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+}

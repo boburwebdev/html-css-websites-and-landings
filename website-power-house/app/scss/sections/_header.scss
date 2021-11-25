@@ -44,7 +44,7 @@
 
         &-item:not(:last-child) {
             padding-right: 15px;
-            border-right: 2px solid $color-white;
+            border-right: 2px solid rgba($color-white, .2);
         }
 
         &-item:not(:first-child) {
