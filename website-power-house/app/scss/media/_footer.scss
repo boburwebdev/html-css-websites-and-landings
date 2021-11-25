@@ -1,0 +1,50 @@
+@media (max-width: 1100px) {
+    .footer {
+        &__left,
+        .hero__info {
+            flex: 1;
+        }
+
+        .menu__list {
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+        }
+
+        .hero__info {
+            margin-left: 50px;
+        }
+
+    }
+}
+
+@media (max-width: 880px) {
+    .footer {
+        &__row {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__left {
+            margin-bottom: 60px;
+        }
+        
+        .menu__list {
+            margin: 0 20px 60px;
+        }
+
+        &__copyright {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .footer {
+        .hero__info {
+            display: flex;
+            margin-left: 0;
+        }
+    }
+}

@@ -33,8 +33,13 @@
         }
     }
 
-    .menu__list {
+    .menu__list-wrapper {
+        display: flex;
+    }
 
+    .menu__list {
+        margin: 0 40px;
+        
         &-item {
             text-transform: uppercase;
 
