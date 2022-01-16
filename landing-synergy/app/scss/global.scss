@@ -38,3 +38,37 @@ ul {
     margin: 0 auto;
     position: relative;
 }
+
+.section__padding {
+    padding: 200px 0;
+}
+
+.section__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__title {
+    font-size: 36px;
+    line-height: 46px;
+    padding-left: 23px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: $color-green-accent;
+        display: block;
+        width: 3px;
+        height: 48px;
+        position: absolute;
+        left: 0;
+        top: -1px;
+    }
+}
+
+.section__desc {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 28px;
+}
