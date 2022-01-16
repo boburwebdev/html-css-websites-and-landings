@@ -1,0 +1,40 @@
+@import "vars.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $color-black;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .3s;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1224px;
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}

@@ -1,0 +1,116 @@
+.hero {
+    background-image: url(../images/hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: $color-white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        @include sourcesrfpro;
+        font-size: 54px;
+        line-height: 72px;
+        max-width: 600px;
+
+        span {
+            color: $color-green-accent;
+        }
+    }
+
+    &__text {
+        max-width: 496px;
+        @include montreg;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 105px;
+
+        &-item {
+            padding: 0 31px;
+            font-size: 14px;
+            line-height: 26px;
+            position: relative;
+
+            &::after {
+                content: '';
+                background-color: $color-green-accent;
+                display: block;
+                width: 1px;
+                height: 18px;
+                position: absolute;
+                top: 4px;
+                right: 0;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__get-in-touch {
+        @include montsembd;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+
+        &:hover {
+            svg {
+                margin-left: 15px;
+            }
+        }
+
+        &:active {
+            svg {
+                margin-left: 12px;
+            }
+        }
+        
+        svg {
+            margin-left: 10px;
+            transition: all .3s;
+        }
+    }
+
+    &__arrows-down {
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(3px);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+}
