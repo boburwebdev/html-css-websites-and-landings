@@ -1,0 +1,94 @@
+.projects {
+    background-color: $color-gray-bg;
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+
+        &__text {
+            max-width: 392px;
+            padding: 40px 0 40px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__subtitle {
+            color: $color-green-accent;
+            @include montreg;
+            font-size: 14px;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+
+        &__title {
+            @include sourcesrfpro;
+            font-size: 64px;
+            line-height: 84px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-color: $color-green-accent;
+                display: block;
+                width: 3px;
+                height: 60px;
+                position: absolute;
+                top: 10px;
+                left: -23px;
+            }
+        }
+
+        &__view-more {
+            color: $color-green-accent;
+            @include montsembd;
+            font-size: 16px;
+            line-height: 16px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-left: 10px;
+                transition: all .3s;
+            }
+
+            &:hover svg {
+                margin-left: 15px;
+            }
+        }
+
+        &__image {
+            width: 808px;
+            height: 640px;
+            object-fit: cover;
+        }
+    }
+
+    .projects-swiper-pagination {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 40px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #c7c7c7;
+        width: 60px;
+        height: 4px;
+        border-radius: 0;
+        opacity: 1;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0 0 30px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $color-green-accent;
+    }
+}

@@ -18,6 +18,7 @@ function browsersync() {
 
 function scripts() {
     return src([
+        'node_modules/swiper/swiper-bundle.min.js',
         'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -27,15 +28,18 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss')
-            .pipe(scss({ outputStyle: 'compressed'}))
-            .pipe(concat('style.min.css'))
-            .pipe(autoprefixer({
-                overrideBrowserslist: ['last 10 version'],
-                grid: true
-            }))
-            .pipe(dest('app/css'))
-            .pipe(browserSync.stream());
+    return src([
+            'node_modules/swiper/swiper-bundle.min.css',
+            'app/scss/style.scss'
+        ])
+        .pipe(scss({ outputStyle: 'compressed'}))
+        .pipe(concat('style.min.css'))
+        .pipe(autoprefixer({
+            overrideBrowserslist: ['last 10 version'],
+            grid: true
+        }))
+        .pipe(dest('app/css'))
+        .pipe(browserSync.stream());
 }
 
 function images() {
