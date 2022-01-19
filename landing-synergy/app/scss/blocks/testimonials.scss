@@ -1,0 +1,126 @@
+.testimonials {
+    &-item {
+        background-color: $color-gray-bg;
+        width: 808px;
+        padding: 40px 40px 185px;
+        margin: 146px auto 40px;
+
+        &__top {
+            display: flex;
+        }
+
+        &__profile {
+            width: 140px;
+            height: 140px;
+            margin-right: 30px;
+            margin-top: -80px;
+
+            &-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__social-media {
+            display: flex;
+
+            &--item:not(last-child) {
+                margin-right: 15px;
+            }
+
+            &--item {
+                svg {
+                    path {
+                        transition: all .3s;
+                        fill: $color-black;
+                    }
+                }
+            }
+
+            &--item:hover {
+                svg {
+                    path {
+                        fill: $color-green-accent;
+                    }
+                }
+            }
+        }
+
+        &__author {
+            margin-top: 30px;
+
+            &-name {
+                color: $color-black;
+                @include sourcesrfpro;
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            &-company {
+                color: $color-green-accent;
+                @include montreg;
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+
+        &__quote {
+            color: $color-gray-text;
+            margin-top: 150px;
+            @include montreg;
+            font-size: 18px;
+            line-height: 28px;
+            position: relative;
+
+            &::before {
+                content: '';
+                background-image: url(../images/icon-quote-open.svg);
+                background-repeat: no-repeat;
+                width: 58px;
+                height: 45px;
+                position: absolute;
+                left: 0;
+                top: -65px;
+            }
+            
+            &::after {
+                content: '';
+                background-image: url(../images/icon-quote-close.svg);
+                background-repeat: no-repeat;
+                width: 58px;
+                height: 45px;
+                position: absolute;
+                right: 0;
+                bottom: -65px;
+            }
+           
+        }
+
+    }
+
+    .testimonials-swiper-pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #c7c7c7;
+        width: 60px;
+        height: 4px;
+        border-radius: 0;
+        opacity: 1;
+
+        &:first-child {
+            margin: 0;
+        }
+    }
+
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 0 0 30px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $color-green-accent;
+    }
+}
