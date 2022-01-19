@@ -2,8 +2,13 @@
     &-item {
         background-color: $color-gray-bg;
         width: 808px;
-        padding: 40px 40px 185px;
+        padding: 40px 40px 95px;
         margin: 146px auto 40px;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, .15);
+        }
 
         &__top {
             display: flex;
@@ -12,8 +17,9 @@
         &__profile {
             width: 140px;
             height: 140px;
-            margin-right: 30px;
-            margin-top: -80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: -80px 30px 0 0;
 
             &-img {
                 width: 100%;
@@ -48,7 +54,7 @@
         }
 
         &__author {
-            margin-top: 30px;
+            margin-top: 20px;
 
             &-name {
                 color: $color-black;
@@ -67,7 +73,7 @@
 
         &__quote {
             color: $color-gray-text;
-            margin-top: 150px;
+            margin-top: 90px;
             @include montreg;
             font-size: 18px;
             line-height: 28px;
@@ -76,23 +82,25 @@
             &::before {
                 content: '';
                 background-image: url(../images/icon-quote-open.svg);
+                background-size: cover;
                 background-repeat: no-repeat;
-                width: 58px;
-                height: 45px;
+                width: 44px;
+                height: 35px;
                 position: absolute;
                 left: 0;
-                top: -65px;
+                top: -50px;
             }
             
             &::after {
                 content: '';
                 background-image: url(../images/icon-quote-close.svg);
+                background-size: cover;
                 background-repeat: no-repeat;
-                width: 58px;
-                height: 45px;
+                width: 45px;
+                height: 35px;
                 position: absolute;
                 right: 0;
-                bottom: -65px;
+                bottom: -50px;
             }
            
         }
