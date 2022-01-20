@@ -1,0 +1,146 @@
+.contacts {
+    background-color: $color-green-bg;
+    padding: 100px 0;
+
+    &__inner {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__image-wrapper {
+        max-width: 496px;
+        height: 700px;
+        margin-right: 60px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__right {
+        flex: 1;
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        &-item--subinfo {
+            color: $color-gray-text;
+            @include montreg;
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &-item--info {
+            color: $color-black;
+            @include montsembd;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        padding-top: 60px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &::before {
+            content: '';
+            background-color: $color-green-accent;
+            height: 3px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &-title {
+            color: $color-black;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        &-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        &-input,
+        &-textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid rgba($color-black, 0.15);
+            width: 100%;
+            @include montreg;
+            font-size: 18px;
+            transition: all .3s;
+            padding: 14px 0;
+        }
+
+        &-textarea {
+            resize: none;
+            height: 180px;
+        }
+
+        &-input:focus,
+        &-textarea:focus {
+            outline: transparent;
+            border-bottom: 2px solid $color-green-accent;
+        }
+
+        &-input:focus ~ &-label,
+        &-input.not-empty ~ &-label {
+            color: $color-green-accent;
+            font-size: 12px;
+            transform: translateY(-10px);
+        }
+
+        &-textarea:focus ~ &-label,
+        &-textarea.not-empty ~ &-label {
+            color: $color-green-accent;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+
+        &-label {
+            transition: all .3s;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .btn__submit {
+            background-color: $color-green-accent;
+            color: $color-white;
+            padding: 14px 40px;
+            @include montmed;
+            font-size: 18px;
+            line-height: 28px;
+            cursor: pointer;
+            border: 0;
+            outline: transparent;
+            transition: all .3s;
+            align-self: flex-end;
+
+            &:hover {
+                background-color: darken($color-green-accent, 5%);
+            }
+
+            &:active {
+                transform: translateY(2px);
+            }
+        }
+    }
+}

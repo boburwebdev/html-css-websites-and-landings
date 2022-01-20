@@ -1,0 +1,12 @@
+.footer {
+    background-color: $color-green-bg;
+
+    &__inner {
+        color: $color-gray-text;
+        font-size: 14px;
+        padding: 20px 0;
+        border-top: 2px solid rgba($color-black, 0.25);
+        display: flex;
+        justify-content: center;
+    }
+}
