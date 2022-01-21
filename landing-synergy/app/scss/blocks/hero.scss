@@ -20,7 +20,7 @@
         @include sourcesrfpro;
         font-size: 54px;
         line-height: 72px;
-        max-width: 600px;
+        max-width: 58%;
 
         span {
             color: $color-green-accent;
@@ -28,7 +28,7 @@
     }
 
     &__text {
-        max-width: 496px;
+        max-width: 40%;
         @include montreg;
         font-size: 18px;
         line-height: 36px;
