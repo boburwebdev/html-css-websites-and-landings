@@ -1,0 +1,23 @@
+@mixin montreg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin montmed {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin montsembd {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin sourcesrfpro {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    font-style: normal;
+}
