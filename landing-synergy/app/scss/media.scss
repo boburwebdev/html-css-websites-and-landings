@@ -1,0 +1,47 @@
+@media (max-height: 768px) {
+    .section__padding {
+        padding: 100px 0;
+    }
+
+    .what-we-do {
+        &__inner {
+            margin-top: 100px;
+        }
+    }
+
+    .projects {
+        &-item {
+
+            &__text {
+                max-width: 420px;
+            }
+
+            &__subtitle {
+                font-size: 12px;
+                line-height: 12px;
+            }
+
+            &__title {
+                font-size: 54px;
+                line-height: 72px;
+
+                &::before {
+                    height: 48px;
+                }
+            }
+
+            &__image {
+                width: 720px;
+                height: 480px;
+            }
+        }
+    }
+
+    .team {
+        padding-bottom: 50px;
+
+        &__inner {
+            margin-top: 100px;
+        }
+    }
+}

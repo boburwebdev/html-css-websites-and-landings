@@ -45,6 +45,13 @@
         }
     }
 
+    &__phone,
+    &__email {
+        &:hover {
+            color: $color-green-accent;
+        }
+    }
+
     &__form {
         width: 100%;
         padding-top: 60px;
