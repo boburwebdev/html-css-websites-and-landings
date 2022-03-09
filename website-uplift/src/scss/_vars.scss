@@ -2,7 +2,10 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-barlow: "Barlow Semi Condensed", sans-serif;
+  // --font-barlow-medium: "Barlow Semi Condensed Medium", sans-serif;
+  // --font-barlow-semibold: "Barlow Semi Condensed Semibold", sans-serif;
+  // --font-barlow-bold: "Barlow Semi Condensed Bold", sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
