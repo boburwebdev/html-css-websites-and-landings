@@ -71,3 +71,121 @@ a {
 .header__menu-list--link:hover {
     border-bottom: 2px solid #2f3f54;
 }
+
+
+.hero {
+    background-image: url(../images/hero__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    padding: 160px 0 180px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__features {
+    margin-bottom: 5px;
+}
+
+.hero__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero__subtitle {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 3px;
+}
+
+.hero__desc {
+    margin-bottom: 34px;
+}
+
+.hero__list {
+    list-style: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.hero__list-item {
+    margin-bottom: 3px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.hero__list-item::before {
+    content: '';
+    background-image: url(../images/hero__list-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero__btn {
+    background-color: #267ae9;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 18px 48px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin-bottom: 16px;
+}
+
+.hero__btn:hover {
+    background-color: #1c6cd4;
+}
+
+
+.hero__right {
+    position: relative;
+    padding-top: 28px;
+    padding-right: 165px;
+}
+
+.hero__price {
+    background-color: #fff;
+    color: #212121;
+    position: absolute;
+    top: -10px;
+    right: 60px;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0 50px;
+}
+
+.hero__price-main {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.hero__price-subtext:first-child {
+    align-self: flex-start;
+}
+
+.hero__price-subtext:last-child {
+    align-self: flex-end;
+}
