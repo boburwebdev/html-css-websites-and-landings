@@ -344,3 +344,99 @@ ul {
 .pricing__cards-btn:active {
     transform: scale(.98);
 }
+
+.footer {
+    background-image: url(../images/footer__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #718db2;
+    padding: 84px 0 124px;
+    font-size: 13px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__col {
+    flex: 1;
+}
+
+.footer__col:first-child {
+    margin-right: 69px;
+    border-bottom: 1px solid #3d4d60;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.footer__company_desc {
+    padding-bottom: 32px;
+    padding-right: 20px;
+}
+
+.footer__title {
+    color: #d0e4ff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 26px;
+}
+
+.footer__list-item {
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+
+.footer__form-input,
+.footer__form-textarea {
+    background-color: transparent;
+    color: #718db2;
+    border: 1px solid #3e4e61;
+    font-family: 'Lato', sans-serif;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 12px 10px;
+}
+
+.footer__form-input {
+    border-bottom: 0;
+}
+
+.footer__form-textarea {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.footer__form-input::placeholder,
+.footer__form-textarea::placeholder {
+    color: #718db2;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+}
+
+.footer__form-btn {
+    background-color: #2575e7;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 12px;
+    border: 0;   
+}
+
+.footer__form-btn:hover {
+    background-color: #0f61cc;
+}
+
+.footer__form-btn:active {
+    transform: scale(.98);
+}
