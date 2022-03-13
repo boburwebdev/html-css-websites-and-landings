@@ -53,6 +53,10 @@ ul {
     min-height: 87px;
 }
 
+.header__hamburger-icon {
+    display: none;
+}
+
 .header__menu-list {
     display: flex;
 }
@@ -248,7 +252,7 @@ ul {
 
 .pricing__cards-item {
     font-family: 'Roboto', sans-serif;
-    width: 360px;
+    width: 32%;
     padding: 130px 42px 135px 48px;
     box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
     position: relative;
@@ -270,7 +274,8 @@ ul {
     justify-content: center;
     position: absolute;
     top: -235px;
-    left: 48px;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50%;
 }
 
@@ -365,6 +370,7 @@ ul {
 }
 
 .reviews__slider-item {
+    background-color: #fff;
     width: 525px;
     min-height: 350px;
     font-size: 16px;
@@ -396,8 +402,8 @@ ul {
 }
 
 .reviews__slider .slick-dots li.slick-active button {
-    border: 2px solid #267ae9;
     background-color: #fff;
+    border: 2px solid #267ae9;
 }
 
 .reviews__item-image_box {
@@ -416,6 +422,7 @@ ul {
 }
 
 .reviews__item-content {
+    background-color: #fff;
     width: 330px;
     padding: 20px 40px;
     display: flex;
@@ -447,6 +454,7 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer {
@@ -543,4 +551,8 @@ ul {
 
 .footer__form-btn:active {
     transform: scale(.98);
+}
+
+.hide {
+    display: none;
 }

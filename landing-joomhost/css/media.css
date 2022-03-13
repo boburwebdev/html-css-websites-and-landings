@@ -1,0 +1,239 @@
+@media (max-width: 1265px) {
+    .reviews__slider .slick-list {
+        margin: 0;
+        padding: 0 0 75px;
+    }
+
+    .reviews__slider .slick-track {
+        margin: 0;
+    }
+
+    .reviews__slider-item {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1106px) {
+    .reviews__slider-item {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .reviews__item-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 968px) {
+    .header__menu-list {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 87px;
+        padding: 0 15px;
+    }
+
+    .header__menu-list--item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .header__menu-list--item:first-child {
+        border-top: 2px solid #000;
+    }
+
+    .header__menu-list--link {
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 14px;
+        border-bottom: 2px solid #000;
+    }
+
+    .header__menu-list--link:hover {
+        background-color: #f1f1f1;
+    }
+
+    .header__hamburger-icon {
+        display: block;
+        width: 28px;
+        cursor: pointer;
+    }
+
+    .header__hamburger-icon--item {
+        background-color: #000;
+        height: 4px;
+        margin-bottom: 4px;
+    }
+
+    .hero__right {
+        padding-right: 40px;
+    }
+
+    .hero__price {
+        right: 30px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .hero__price-main {
+        font-size: 44px;
+    }
+
+    .partners__list-item {
+        margin: 0 20px 40px;
+    }
+
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0;
+    }
+    
+    .hero__inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__left {
+        text-align: center;
+    }
+
+    .hero__list {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__right {
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .hero__price {
+        right: -40px;
+    }
+
+    .pricing {
+        padding: 80px 0 30px;
+    }
+
+    .pricing__title {
+        margin-bottom: 20px;
+    }
+
+    .pricing__desc-text {
+        max-width: 585px;
+        margin: 0 auto 60px;
+    }
+
+    .pricing__cards {
+        flex-wrap: wrap;
+    }
+
+    .pricing__cards-item {
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .reviews {
+        padding: 80px 0 30px;
+    }
+
+    .reviews__title {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        padding: 44px 0 64px;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__col {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__col:first-child {
+        margin-right: 0;
+    }
+
+    .footer__col:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__title {
+        margin-bottom: 16px;
+    }
+
+    .footer__company_desc {
+        padding-right: 0px;
+    }
+
+    .footer__form-textarea {
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .footer__form-btn {
+        padding: 12px 40px;
+    }
+}
+
+@media (max-width: 520px) {
+    .hero__right {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .hero__img {
+        width: 90%;
+    }
+
+    .hero__price {
+        right: 0px;
+        width: 160px;
+        height: 160px;
+        padding: 0 25px;
+    }
+    
+    .hero__price-main {
+        font-size: 36px;
+    }
+
+    .hero__price-subtext {
+        font-size: 12px;
+    }
+    
+    .section__title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .reviews__slider-item {
+        flex-direction: column;
+    }
+
+    .reviews__item-image_box {
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 968px) {
+    .header__menu-list {
+        display: flex !important;
+    }
+}
