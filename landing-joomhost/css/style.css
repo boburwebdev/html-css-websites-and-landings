@@ -439,6 +439,16 @@ ul {
     font-weight: 300;
 }
 
+.partners {
+    padding: 105px 0;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .footer {
     background-image: url(../images/footer__bg.jpg);
     background-repeat: no-repeat;
