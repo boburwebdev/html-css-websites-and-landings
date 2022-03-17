@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    height: 5000px;
+    line-height: 24px;
 }
 
 a {
@@ -182,4 +182,60 @@ ul {
 .hero .hero__slider-dots li.slick-active button {
     background-color: rgba(255, 255, 255, 1);
     width: 15px;
+}
+
+
+
+.specialization {
+    background-image: url(../images/specialization_bg.svg);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding: 55px 0 93px;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.section__title-dark {
+    color: #202020;
+}
+
+.section__title-light {
+    color: #fff;
+}
+
+.specialization__title {
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.specialization__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.specialization__item {
+    width: 280px;
+    text-align: center;
+}
+
+.specialization__item-image--box {
+    height: 160px;
+    margin-bottom: 23px;
+}
+
+.specialization__item-title {
+    color: #202020;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
+.specialization__item-text {
+    color: rgba(39, 39, 39, 0.7);
+    font-size: 15px;
 }

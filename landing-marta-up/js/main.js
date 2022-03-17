@@ -4,6 +4,7 @@ $(function(){
         dots: true,
         dotsClass: 'hero__slider-dots',
         vertical: true,
-        verticalSwiping: true
+        verticalSwiping: true,
+        autoplay: 2000
     });
 });
