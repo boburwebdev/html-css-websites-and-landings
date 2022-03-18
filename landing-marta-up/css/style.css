@@ -3,7 +3,9 @@
 }
 
 body {
+    color: #272727;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
     line-height: 24px;
 }
 
@@ -239,3 +241,52 @@ ul {
     color: rgba(39, 39, 39, 0.7);
     font-size: 15px;
 }
+
+
+.how-we-work {
+    background-image: url(../images/how-we-work_bg.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: #F4F9FD;
+    padding: 64px 0 55px;
+}
+
+.how-we-work__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.how-we-work__item-reversed {
+    flex-direction: row-reverse;
+}
+
+.how-we-work__item-text {
+    background-repeat: no-repeat;
+    max-width: 456px;
+    padding-left: 48px;
+}
+
+.how-we-work__item-text--first {
+    background-image: url(../images/how-we-work__title-bg-1.svg);
+    background-position: 28px 8px;
+}
+.how-we-work__item-text--second {
+    background-image: url(../images/how-we-work__title-bg-2.svg);
+    background-position: 28px 70px;
+}
+.how-we-work__item-text--third {
+    background-image: url(../images/how-we-work__title-bg-3.svg);
+    background-position: 5px 38px;
+}
+
+.how-we-work__item-title {
+    padding-top: 60px;
+    margin-bottom: 27px;
+}
+
+.how-we-work__item-desc {
+    margin-bottom: 12px;
+}
+
