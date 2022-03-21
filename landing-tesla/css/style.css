@@ -11,6 +11,7 @@ sans-serif;
 body {
     background-color: #0B0B0B;
     font-family: 'Roboto Condensed', sans-serif;
+    height: 3000px;
 }
 
 ul {
@@ -36,7 +37,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 10;
 }
 
 .header__top {
@@ -60,7 +61,7 @@ a {
 }
 
 .header__hamburger:hover {
-    background-color:rgba(255, 255, 255, .4);
+    background-color:#770302;
 }
 
 .header__hamburger-line {
@@ -69,6 +70,59 @@ a {
     height: 2px;
     margin: 5px 0;
 }
+
+.header__nav {
+    background-color: #0B0B0B;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 15;
+}
+
+.header__nav-inner {
+    position: relative;
+}
+
+.header__nav-list {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav-link {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    border-bottom: 3px solid #770302;
+    padding-bottom: 24px;
+    display: inline-block;
+}
+
+.header__nav-link:hover {
+    border-bottom: 3px solid #FFF;
+}
+
+.header__nav-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.header__nav-close {
+    width: 50px;
+    height: 50px;
+    margin-top: 55px;
+    margin-left: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
 
 .header__content {
     color: #FFF;
@@ -100,7 +154,7 @@ a {
 }
 
 .btn__header-cta:hover {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: #770302;
 }
 
 .hero__slider {
@@ -123,7 +177,7 @@ a {
     display: flex;
     max-width: 1200px;
     margin: -60px auto 0;
-    z-index: 101;
+    z-index: 11;
     position: relative;
 }
 
