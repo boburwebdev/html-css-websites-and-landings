@@ -244,3 +244,66 @@ a {
 .stats__item-desc {
     color: #B70021;
 }
+
+.advantages__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.advantages__text,
+.advantages__image-box {
+    max-width: 570px;
+    width: 100%;
+}
+
+.advantages__title {
+    color: #B70021;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.advantages__image-right .advantages__desc {
+    max-width: 300px;
+}
+
+.advantages__image-right .advantages__title {
+    margin-bottom: 105px;
+}
+
+.advantages__image-left .advantages__title {
+    text-align: right;
+}
+
+.advantages__image-left .advantages__list {
+    margin-top: 94px;
+    margin-bottom: 40px;
+}
+
+
+.car-info--image-box {
+    margin-bottom: 100px;
+}
+
+.car-info--row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.car-info--item {
+    max-width: 570px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+.car-info--num {
+    color: #B70021;
+}
+
+.car-info--text {
+    width: 430px;
+    padding-top: 30px;
+}
