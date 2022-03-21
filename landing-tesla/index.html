@@ -5,12 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Landing Tesla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a href="#!" class="header__logo-link">
+          <img class="header__logo-image" src="images/logo.png" alt="logo">
+        </a>
+        <div class="header__hamburger">
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
+        </div>
+      </div>
+
+      <div class="header__content">
+        <h1 class="header__content-title">
+          Roadster
+        </h1>
+        <div class="header__content-subtitle">
+          Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью и производительностью.
+        </div>
+
+        <a class="btn btn__header-cta" href="#!">
+          Хочу тест драйв
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero__slider">
+    <div class="hero__slider-item">
+      <img class="hero__slider-item__image" src="images/hero__slide-1.jpg" alt="Roadster">
+    </div>
+    <div class="hero__slider-item">
+      <img class="hero__slider-item__image" src="images/hero__slide-2.jpg" alt="Roadster">
+    </div>
+    <div class="hero__slider-item">
+      <img class="hero__slider-item__image" src="images/hero__slide-3.jpg" alt="Roadster">
+    </div>
+  </div>
+
+
+    <!-- 
+      <div class="hero__slider-item" style="background-image: url(.../images/hero__slide-1.jpg)"></div>
+      <div class="hero__slider-item" style="background-image: url(.../images/hero__slide-2.jpg)"></div>
+      <div class="hero__slider-item" style="background-image: url(.../images/hero__slide-3.jpg)"></div>
+    -->
+    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
