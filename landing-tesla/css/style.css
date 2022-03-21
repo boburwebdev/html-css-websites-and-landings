@@ -139,7 +139,7 @@ a {
     margin-bottom: 25px;
 }
 
-.btn__header-cta {
+.btn__cta {
     background-color: rgba(255, 255, 255, .1);
     font-weight: 700;
     font-size: 24px;
@@ -149,7 +149,7 @@ a {
     display: inline-block;
 }
 
-.btn__header-cta:hover {
+.btn__cta:hover {
     background-color: #770302;
 }
 
@@ -306,4 +306,46 @@ a {
 .car-info--text {
     width: 430px;
     padding-top: 30px;
+}
+
+.footer {
+    background-color: #690102;
+    padding: 83px 0 23px;
+}
+
+.footer__btn {
+    margin-bottom: 83px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn__footer:hover {
+    background-color: #0B0B0B;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__list-item {
+    font-weight: 700;
+    margin: 0 15px;
+    position: relative;
+}
+
+.footer__list-item + .footer__list-item::before {
+    content: '|';
+    position: absolute;
+    top: 0;
+    left: -16px;
+}
+
+.footer__list-link {
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+.footer__list-link:hover {
+    border-bottom: 2px solid #fff;
 }
