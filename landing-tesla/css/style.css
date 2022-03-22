@@ -93,6 +93,8 @@ a {
 }
 
 .header__nav-link {
+    max-width: 370px;
+    width: 100%;
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
@@ -244,6 +246,12 @@ a {
 .stats__item-desc {
     color: #B70021;
 }
+
+
+.car__video {
+    margin-bottom: 100px;
+}
+
 
 .advantages__row {
     display: flex;
