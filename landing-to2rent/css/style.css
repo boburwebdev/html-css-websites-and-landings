@@ -100,3 +100,71 @@ h1, h2, h3, h4, h5, h6 {
 .slick-next {
     right: 20px;
 }
+
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 70px;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+}
+
+.search__form-label {
+    max-width: 160px;
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 84px;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.search__form-input {
+    color: #888888;
+    font-size: 18px;
+    line-height: 24px;
+    width: 430px;
+    height: 70px;
+    display: block;
+    padding: 23px 15px;
+    border: 2px solid #C4C4C4;
+}
+
+.search__form-input::placeholder {
+    color: #888888;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.search__form-button {
+    background-color: #C4C4C4;
+    color: #fff;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    width: 121px;
+    height: 70px;
+    padding: 23px 23px 23px 36px;
+    position: relative;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.search__form-button::before {
+    content: '';
+    background-image: url(../images/icon-search.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 26px;
+    left: 12px;
+}
+
+.search__form-button:hover {
+    background-color: #b4b4b4;
+}
