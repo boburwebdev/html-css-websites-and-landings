@@ -1,0 +1,257 @@
+@media (max-width: 1240px) {
+    .advantages__text,
+    .advantages__image-box {
+        max-width: 520px;
+        width: 100%;
+    }
+
+    .advantages__image-left .advantages__list {
+        margin-left: 30px;
+    }
+
+    .footer__list {
+        flex-wrap: wrap;
+    }
+
+    .footer__list-item {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 970px) {
+    .stats__item-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .stats__item-num {
+        font-size: 72px;
+        line-height: 88px;
+        margin-bottom: 5px;
+    }
+
+    .stats__item-num--sub {
+        font-size: 20px;
+        line-height: 24px;
+        margin-left: -16px;
+    }
+
+    .stats__item-num--speed::before {
+        top: -45px;
+    }
+
+    .stats__item-desc {
+        color: #B70021;
+    }
+
+    .advantages__text,
+    .advantages__image-box {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .advantages__image-left .advantages__list {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+
+    .car-info--item {
+        max-width: 480px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    .header__nav-list {
+        align-items: center;
+    }
+
+    .header__content {
+        margin: 100px auto 0;
+        text-align: center;
+    }
+
+    .header__content-subtitle {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .header__nav-link {
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 14px;
+    }
+
+    .stats {
+        margin: 100px 0 70px;
+    }
+
+    .stats__inner {
+        flex-direction: column;
+    }
+
+    .stats__item {
+        margin-bottom: 40px;
+    }
+
+    .stats__item-title {
+        margin-bottom: 5px;
+    }
+
+    .stats__item-num {
+        line-height: 72px;
+        margin-bottom: 5px;
+    }
+
+    .car__video {
+        margin-bottom: 70px;
+    }
+
+    .advantages__row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+
+    .advantages__image-right .advantages__title {
+        margin-bottom: 20px;
+    }
+
+    .advantages__image-right .advantages__desc {
+        margin: 0 auto 30px;
+    }
+
+    .advantages__image-left {
+        flex-direction: column-reverse;
+    }
+
+    .advantages__image-left .advantages__text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .advantages__image-left .advantages__title {
+        text-align: center;
+    }
+
+    .advantages__image-left .advantages__list {
+        margin: 20px 0px 30px;
+    }
+
+    .car-info--image-box {
+        margin-bottom: 70px;
+    }
+
+    .car-info--row {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .car-info--item:first-child {
+        margin-bottom: 30px;
+    }
+
+    .footer__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__list-item {
+        margin-bottom: 15px;
+    }
+
+    .footer__list-item+.footer__list-item::before {
+        content: '';
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__logo-image {
+        width: 200px;
+        height: auto;
+    }
+
+    .header__content-title {
+        font-size: 72px;
+        line-height: 92px;
+    }
+
+    .header__content-subtitle {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .btn__cta {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 20px 42px;
+    }
+
+    .car__video {
+        margin-bottom: 40px;
+    }
+
+    .advantages__row {
+        margin-bottom: 40px;
+    }
+
+    .advantages__row.advantages__image-left {
+        margin-bottom: 70px;
+    }
+
+    .car-info--image-box {
+        margin-bottom: 40px;
+    }
+
+    .footer {
+        padding: 60px 0 20px;
+    }
+
+    .footer__btn {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .header__logo-image {
+        width: 180px;
+    }
+
+    .header__content-title {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .header__content-subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn__cta {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 12px 24px;
+    }
+
+    .footer {
+        padding-bottom: 10px;
+    }
+}

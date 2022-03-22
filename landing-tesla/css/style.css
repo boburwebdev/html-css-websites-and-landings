@@ -114,7 +114,7 @@ a {
 .header__nav-close {
     width: 50px;
     height: 50px;
-    margin-top: 55px;
+    margin-top: 30px;
     margin-left: auto;
     cursor: pointer;
     position: absolute;
@@ -265,6 +265,10 @@ a {
     width: 100%;
 }
 
+.advantages__image {
+    width: 100%;
+}
+
 .advantages__title {
     color: #B70021;
     font-size: 36px;
@@ -293,6 +297,10 @@ a {
     margin-bottom: 100px;
 }
 
+.car-info--image {
+    width: 100%;
+}
+
 .car-info--row {
     display: flex;
     justify-content: space-between;
@@ -312,7 +320,7 @@ a {
 }
 
 .car-info--text {
-    width: 430px;
+    max-width: 430px;
     padding-top: 30px;
 }
 
