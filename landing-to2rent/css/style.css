@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__list-link {
-    padding: 34px 10px 38px;
+    padding: 34px 15px 38px;
     display: block;
 }
 
@@ -73,4 +73,30 @@ h1, h2, h3, h4, h5, h6 {
 .menu__list-link--active {
     background-color: #020202;
     color: #FFF;
+}
+
+.slider-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    min-height: 600px;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 5;
+}
+
+.slick-next {
+    right: 20px;
 }
