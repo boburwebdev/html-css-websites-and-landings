@@ -21,6 +21,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Serif', serif;
+    font-weight: 400;
 }
 
 .container {
@@ -178,7 +179,6 @@ h1, h2, h3, h4, h5, h6 {
 .popular__title {
     background-color: #000;
     color: #fff;
-    font-weight: 400;
     font-size: 48px;
     line-height: 64px;
     padding: 18px 15px;
@@ -198,13 +198,13 @@ h1, h2, h3, h4, h5, h6 {
     width: 280px;
     height: 280px;
     border-radius: 50%;
+    object-fit: cover;
     display: inline-block;
     margin-bottom: 30px;
 }
 
 .popular__item-title {
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -239,7 +239,6 @@ h1, h2, h3, h4, h5, h6 {
 .advantages__item-title {
     color: #000000;
     padding-left: 140px;
-    font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 20px;
@@ -273,7 +272,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages__item-link {
-    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     text-decoration: underline;
@@ -294,4 +292,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .advantages__item-link:hover {
     padding-left: 46px;
+}
+
+
+.featured {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    min-height: 100vh;
+    padding: 68px 0;
+    text-align: right;
+}
+
+.featured__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+}
+
+.featured__link {
+    background-color: #020202;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 16px 18px;
+    display: inline-block;
+}
+
+.featured__link:hover {
+    background-color: #3d3d3d;
 }
