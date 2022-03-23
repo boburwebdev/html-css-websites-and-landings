@@ -168,3 +168,57 @@ h1, h2, h3, h4, h5, h6 {
 .search__form-button:hover {
     background-color: #b4b4b4;
 }
+
+
+.popular {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.popular__title {
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    padding: 18px 15px;
+    margin-bottom: 100px;
+}
+
+.popular__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular__item {
+    max-width: 23%;
+}
+
+.popular__item-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.popular__item-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.popular__item-link {
+    background-color: #C4C4C4;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    padding: 18px 48px;
+}
+
+.popular__item-link:hover {
+    background-color: #b4b4b4;
+}
