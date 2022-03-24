@@ -1,0 +1,364 @@
+@media (max-width: 1240px) {
+    .popular {
+        padding-bottom: 60px;
+    }
+
+    .popular__title {
+        font-size: 44px;
+        line-height: 54px;
+        padding: 15px 15px 20px;
+    }
+
+    .popular__row {
+        justify-content: center;
+    }
+
+    .popular__item {
+        margin: 0 20px 40px;
+    }
+
+    .popular__item-image,
+    .popular__item-title {
+        margin-bottom: 20px;
+    }
+
+    .advantages__item {
+        padding-right: 50px;
+    }
+
+}
+
+@media (max-width: 1140px) {
+    .advantages__row {
+        flex-direction: column;
+    }
+
+    .advantages__item {
+        max-width: 80%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .advantages__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .advantages__item-title {
+        max-width: 480px;
+        padding-left: 120px
+    }    
+
+    .advantages__item-text {
+        margin-bottom: 20px;
+    }
+
+    .about {
+        padding: 100px 0 80px;
+    }
+
+    .about__row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about__managers,
+    .about__reviews {
+        margin: 0 48px;
+    }
+
+    .about__managers,
+    .about__blog {
+        margin-bottom: 48px;
+    }
+
+    .footer__top {
+        padding-top: 20px;
+    }
+
+    .footer__top-inner {
+        flex-direction: column;
+    }
+
+    .footer__menu {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 860px) {
+    .about__managers,
+    .about__blog {
+        margin: 0 15px 48px;
+    }
+
+    .about__reviews {
+        margin: 0 15px;
+        text-align: center;
+    }
+
+    .about__title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+
+    .about__blog .about__title {
+        margin-bottom: 24px;
+    }
+
+    .about__reviews .about__title {
+        margin-bottom: 24px;
+    }
+
+    .about__blog-list--link {
+        padding-left: 48px;
+    }
+
+    .about__managers-person {
+        margin-bottom: 30px;
+    }
+
+    .footer__form {
+        flex-direction: column;
+    }
+
+    .footer__form-label {
+        margin: 0 0 20px;
+        text-align: center;
+    }
+
+    .footer__form-input {
+        margin-bottom: 20px;
+    }
+
+    .footer__form-button {
+        width: unset;
+        height: unset;
+        padding: 18px 30px 18px 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo {
+        margin: 48px 0 36px;
+    }
+
+    .logo__image {
+        max-width: 250px;
+    }
+
+    .menu__list-link {
+        padding: 24px 15px 28px;
+    }
+
+    .slider-item {
+        min-height: 480px;
+    }
+
+    .slick-arrow {
+        width: 54px;
+        height: 54px;
+        padding: 0
+    }
+
+    .search__form {
+        flex-direction: column;
+    }
+
+    .search__form-label {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .search__form-input {
+        margin-bottom: 20px;
+    }
+
+    .search__form-button {
+        font-size: 24px;
+        line-height: 24px;
+        width: unset;
+        height: unset;
+        padding: 18px 30px 18px 36px;
+    }
+
+    .search__form-button::before {
+        top: 21px
+    }
+
+    .popular {
+        padding-bottom: 20px;
+    }
+
+    .popular__title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 60px;
+    }
+
+    .popular__item-image,
+    .popular__item-title {
+        margin-bottom: 16px;
+    }
+
+    .popular__item-title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .popular__item-link {
+        padding: 10px 36px;
+    }
+
+    .advantages__item-title {
+        font-size: 30px;
+        line-height: 30px;
+        padding-left: 0;
+        margin-bottom: 14px;
+    }
+
+    .advantages__item-title--left::before,
+    .advantages__item-title--right::before {
+        display: none;
+    }
+
+    .featured__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .featured__link {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header .logo {
+        margin: 30px 0 24px;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__list-item {
+        max-width: 100%;
+        border-right: 0;
+        border-bottom: 2px solid #C4C4C4;
+    }
+
+    .menu__list-item:first-child {
+        border-left: 0;
+    }
+
+    .menu__list-link {
+        padding: 18px 15px;
+    }
+
+    .slider-item {
+        min-height: 360px;
+    }
+
+    .slick-arrow {
+        width: 44px;
+        height: 44px;
+    }
+
+    .search__form-label {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .search__form-input {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .search__form-button {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .search__form-button::before {
+        top: 19px;
+    }
+
+    .popular__title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 48px;
+    }
+
+    .advantages__item {
+        text-align: center;
+    }
+
+    .featured__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .about__title {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 20px;
+    }
+
+    .about__blog-list--link::before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .btn__about {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 12px 18px;
+    }
+
+    .footer__form-input {
+        width: 360px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search__form-input {
+        width: 360px;
+    }
+}
+
+@media (max-width: 400px) {
+    .search__form-input,
+    .footer__form-input {
+        width: 280px;
+    }
+
+    .advantages__item-title {
+        font-size: 24px;
+        line-height: 24px;
+        padding-left: 0;
+        margin-bottom: 14px;
+    }
+
+    .advantages__item-text,
+    .advantages__item-link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .advantages__item-link::before {
+        top: -8px;
+    }
+}
