@@ -2,8 +2,45 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'balqis';
+    src: url(../fonts/balqis.woff2) format('woff2'),
+         url(../fonts/balqis.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url(../fonts/RobotoCondensed-Light.woff2) format('woff2'),
+         url(../fonts/RobotoCondensed-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-LightItalic';
+    src: url(../fonts/RobotoCondensed-LightItalic.woff2) format('woff2'),
+         url(../fonts/RobotoCondensed-LightItalic.woff) format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url(../fonts/RobotoCondensed-Regular.woff2) format('woff2'),
+         url(../fonts/RobotoCondensed-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     color: #000;
+    font-family: 'RobotoCondensed-Light', sans-serif;
     font-size: 18px;
     line-height: 21px;
 }
@@ -22,4 +59,78 @@ a {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 72px 0 52px;
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header__menu-item {
+    display: inline-block;
+}
+
+.header__menu-item + .header__menu-item {
+    margin-left: 52px;
+}
+
+.header__menu-link {
+    border-bottom: 2px solid transparent;
+}
+
+.header__menu-link--active,
+.header__menu-link:hover {
+    border-bottom: 2px solid #000;
+}
+
+.header__phone-link {
+    padding-left: 40px;
+    position: relative;
+}
+
+.header__phone-link::before {
+    content: '';
+    background-image: url(../images/icon__phone.svg);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1px;
+    left: 0;
+}
+
+.header__phone-link:hover {
+    padding-left: 45px;
+}
+
+.header__title {
+    font-family: 'balqis';
+    font-weight: 300;
+    font-size: 250px;
+    line-height: 334px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header__subtitle {
+    display: block;
+    text-align: right;
+    font-family: 'RobotoCondensed-LightItalic';
+    font-size: 56px;
+    line-height: 66px;
+    margin-top: -80px;
+    padding-right: 90px;
 }
