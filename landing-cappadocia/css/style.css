@@ -286,3 +286,55 @@ a {
     background-color: #E2AB3F;
     color: #FFF;
 }
+
+
+.hotel__subtitle {
+    margin-top: -25px;
+    margin-left: 122px;
+}
+
+.hotel__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel__image-box {
+    max-width: 500px;
+}
+
+.hotel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel__content {
+    max-width: 600px;
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel__desc {
+    margin-bottom: 60px;
+}
+
+.hotel__text {
+    margin-bottom: 20px;
+}
+
+.hotel__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hotel__images-link {
+    display: inline-block;
+    margin: 20px 0 0;
+}
+
+.hotel__images-item {
+    display: inline-block;
+}
