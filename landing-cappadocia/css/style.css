@@ -267,14 +267,13 @@ a {
     min-height: 1095px;
 }
 
-.our-trip__btn {
+.btn-orange {
     background-color: transparent;
     display: inline-block;
     font-family: 'RobotoCondensed-Light';
     font-weight: 300;
     font-size: 24px;
     line-height: 28px;
-    width: 280px;
     padding: 11px 54px;
     border: 1px solid #E2AB3F;
     outline: none;
@@ -282,9 +281,13 @@ a {
     cursor: pointer;
 }
 
-.our-trip__btn:hover {
+.btn-orange:hover {
     background-color: #E2AB3F;
     color: #FFF;
+}
+
+.our-trip__btn {
+    align-self: flex-start;
 }
 
 
@@ -372,4 +375,80 @@ a {
 
 .price__list-item {
     margin-bottom: 20px;
+}
+
+
+.tour-application__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-application__content,
+.tour-application__image-box {
+    max-width: 600px;
+    width: 100%;
+}
+
+.tour-application__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tour-application__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.tour-application__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-application__date-title {
+    margin-bottom: 20px;
+}
+
+.tour-application__date-subtitle {
+    margin-left: 141px;
+    margin-top: -25px;
+}
+
+.tour-application__price-title {
+    margin-left: 122px;
+}
+
+.tour-application__price-subtitle {
+    margin-left: 122px;
+    margin-top: -21px;
+}
+
+.tour-application__form-title {
+    font-family: 'RobotoCondensed-Regular';
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.tour-application__form-input {
+    color: #000;
+    display: block;
+    font-family: 'RobotoCondensed-Light', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    padding: 14px 30px;
+    margin-bottom: 20px;
+    border: 1px solid #E2AB3F;
+}
+
+.tour-application__form-input::placeholder {
+    color: #000;
+    font-family: 'RobotoCondensed-Light', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
 }
