@@ -338,3 +338,38 @@ a {
 .hotel__images-item {
     display: inline-block;
 }
+
+
+.price {
+    background-image: url(../images/price-bg.png);
+    background-repeat: no-repeat;
+    background-position: 80% bottom;
+}
+
+.price__subtitle {
+    margin-left: 121px;
+    margin-top: -27px;
+}
+
+.price__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__include,
+.price__exclude {
+    max-width: 600px;
+    padding-right: 70px;
+    width: 100%;
+}
+
+.price__inner-title {
+    font-family: 'RobotoCondensed-Regular', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+
+.price__list-item {
+    margin-bottom: 20px;
+}
