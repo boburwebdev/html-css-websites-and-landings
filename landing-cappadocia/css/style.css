@@ -336,17 +336,21 @@ a {
 .hotel__images-link {
     display: inline-block;
     margin: 20px 0 0;
+    width: 280px;
+    height: 150px;
 }
 
 .hotel__images-item {
     display: inline-block;
+    width: 100%;
+    object-fit: cover;
 }
 
 
 .price {
     background-image: url(../images/price-bg.png);
     background-repeat: no-repeat;
-    background-position: 80% bottom;
+    background-position: 85% bottom;
 }
 
 .price__subtitle {
@@ -457,7 +461,7 @@ a {
 .footer {
     background-image: url(../images/footer-bg.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
     min-height: 1180px;
     padding: 96px 0;
 }
