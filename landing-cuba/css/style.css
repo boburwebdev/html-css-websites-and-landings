@@ -36,6 +36,14 @@ a {
     margin: 0 auto;
 }
 
+.section__title {
+    color: #4E5665;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+
 .header__top {
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
@@ -129,10 +137,6 @@ a {
 }
 
 .appealing__title {
-    color: #4E5665;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
     margin-bottom: 22px;
 }
 
@@ -177,4 +181,95 @@ a {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+}
+
+
+.about {
+    padding: 80px 0;
+}
+
+.about__title {
+    margin-bottom: 13px;
+}
+
+.about__desc {
+    margin-bottom: 72px;
+}
+
+
+.about__info {
+    min-height: 428px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.about__info-reverse {
+    justify-content: flex-end;
+}
+
+.about__info-inheritance {
+    background-image: url(../images/about__info-inheritance-bg.jpg);
+    background-position: right top;
+    margin-bottom: 100px;
+}
+
+.about__info-beaches {
+    background-image: url(../images/about__info-beaches-bg.jpg);
+    background-position: left top;
+}
+
+.about__info-content {
+    background-color: #FFF;
+    max-width: 470px;
+    padding: 33px 40px;
+    position: relative;
+}
+
+.about__info-title {
+    color: #4E5665;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.about__info-content::before,
+.about__info-content::after,
+.about__info-content-reverse--borders::before,
+.about__info-content--reverse::after {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+}
+
+.about__info-content--borders::before {
+    border-top: 2px solid #ECB84C;
+    border-left: 2px solid #ECB84C;
+    left: 20px;
+    top: 15px;
+}
+
+.about__info-content--borders::after {
+    border-bottom: 2px solid #ECB84C;
+    border-right: 2px solid #ECB84C;
+    right: 20px;
+    bottom: 20px;
+}
+
+.about__info-content-reverse--borders::before {
+    border: none;
+    border-bottom: 2px solid #ECB84C;
+    border-left: 2px solid #ECB84C;
+    left: 20px;
+    bottom: 20px;
+}
+
+.about__info-content-reverse--borders::after {
+    border: none;
+    border-top: 2px solid #ECB84C;
+    border-right: 2px solid #ECB84C;
+    right: 20px;
+    top: 20px;
 }
