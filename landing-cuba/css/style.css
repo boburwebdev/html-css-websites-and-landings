@@ -186,7 +186,7 @@ a {
 
 
 .about {
-    padding: 80px 0;
+    padding: 80px 0 122px;
 }
 
 .about__title {
@@ -275,6 +275,148 @@ a {
 }
 
 
+.cadillac {
+    max-width: 1170px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(208, 212, 216, .5);
+}
+
+.cadillac__title {
+    margin-bottom: 111px;
+}
+
+.cadillac__image-wrapper {
+    max-width: 1170px;
+    margin: 0 auto 53px;
+    position: relative;
+}
+
+.cadillac__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.cadillac__image-dot {
+    background-color: rgba(236, 184, 76, .75);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.cadillac__image-dot::before {
+    content: '';
+    background-color: #FFD600;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cadillac__image-dot::after {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.cadillac__image-dot__text {
+    position: absolute;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.cadillac__image-dot:hover::after,
+.cadillac__image-dot:hover .cadillac__image-dot__text {
+    opacity: 1;
+}
+
+.cadillac__image-dot--1 {
+    top: 115px;
+    left: 150px;
+}
+
+.cadillac__image-dot--1 .cadillac__image-dot__text {
+    top: -115px;
+    right: -135px;
+}
+
+.cadillac__image-dot--1::after {
+    background-image: url(../images/cadillac__image-dot--line-1.svg);
+    width: 161px;
+    height: 93px;
+    top: -85px;
+    right: -152px;
+}
+
+.cadillac__image-dot--2 {
+    top: 115px;
+    left: 500px;
+}
+
+.cadillac__image-dot--2 .cadillac__image-dot__text {
+    top: -100px;
+    right: -120px;
+}
+
+.cadillac__image-dot--2::after {
+    background-image: url(../images/cadillac__image-dot--line-2.svg);
+    width: 146px;
+    height: 79px;
+    top: -70px;
+    right: -138px;
+}
+
+.cadillac__image-dot--3 {
+    top: 75px;
+    right: 370px;
+}
+
+.cadillac__image-dot--3 .cadillac__image-dot__text {
+    top: -144px;
+    right: -240px;
+}
+
+.cadillac__image-dot--3::after {
+    background-image: url(../images/cadillac__image-dot--line-3.svg);
+    width: 244px;
+    height: 122px;
+    top: -114px;
+    right: -234px;
+}
+
+.cadillac__image-dot--4 {
+    bottom: 28px;
+    right: 300px;
+}
+
+.cadillac__image-dot--4 .cadillac__image-dot__text {
+    bottom: -60px;
+    right: -120px;
+}
+
+.cadillac__image-dot--4::after {
+    background-image: url(../images/cadillac__image-dot--line-4.svg);
+    width: 156px;
+    height: 74px;
+    bottom: -65px;
+    right: -145px;
+}
+
+.cadillac__text {
+    margin-bottom: 81px;
+}
+
+
 .photos {
     padding: 80px;
 }
@@ -356,7 +498,12 @@ a {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
+    text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.footer__col {
+    max-width: 240px;
 }
 
 .footer__col-list-item + .footer__col-list-item {
