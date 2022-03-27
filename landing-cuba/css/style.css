@@ -335,3 +335,48 @@ a {
 .photos__slider .slick-next {
     right: -20px;
 }
+
+
+.footer {
+    background-color: #F8F8F8;
+    color: #505050;
+    padding: 56px 0 32px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer__col-title {
+    color: #4E5665;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__col-list-item + .footer__col-list-item {
+    margin-top: 8px;
+}
+
+.footer__col-list-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__col-list-link:hover {
+    color: #ECB84C;
+}
+
+.footer__col-list-icon {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.footer__copyright{ 
+    text-align: center;
+}
