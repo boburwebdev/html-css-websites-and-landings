@@ -101,6 +101,27 @@ a {
     border-bottom: 1px solid rgba(208, 212, 216, .5);
 }
 
+.menu__hamburger {
+    background-color: #ECB84C;
+    display: none;
+    padding: 12px 14px;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    cursor: pointer;
+}
+
+.menu__hamburger-line {
+    background-color: #FFF;
+    display: block;
+    width: 30px;
+    height: 2px;
+}
+
+.menu__hamburger-line+.menu__hamburger-line {
+    margin-top: 8px;
+}
+
 .menu__list {
     display: flex;
     justify-content: center;
@@ -506,7 +527,7 @@ a {
     max-width: 240px;
 }
 
-.footer__col-list-item + .footer__col-list-item {
+.footer__col-list-item+.footer__col-list-item {
     margin-top: 8px;
 }
 
@@ -524,6 +545,6 @@ a {
     margin-right: 12px;
 }
 
-.footer__copyright{ 
+.footer__copyright {
     text-align: center;
 }
