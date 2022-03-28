@@ -1,0 +1,267 @@
+@media (max-width: 1140px) {
+    .cadillac__image-dot--3 {
+        right: 320px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .cadillac__image-dot--1 {
+        left: 120px;
+    }
+
+    .cadillac__image-dot--2 {
+        left: 350px;
+    }
+
+    .cadillac__image-dot--3 {
+        top: 55px;
+        right: 270px;
+    }
+
+    .cadillac__image-dot--4 {
+        right: 200px;
+    }
+}
+
+@media (max-width: 970px) {
+    .header__title {
+        font-size: 200px;
+        line-height: 230px;
+    }
+
+    .cadillac__image-dot--1 {
+        top: 95px;
+    }
+}
+
+@media (max-width: 858px) {
+    .cadillac__image-dot--1 {
+        top: 75px;
+        left: 120px;
+    }
+
+    .cadillac__image-dot--3 {
+        top: 50px;
+        right: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .section__title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .header__title {
+        font-size: 140px;
+        line-height: 180px;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: -11px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .menu__hamburger {
+        display: block;
+    }
+
+    .menu__list {
+        background-color: #FFF;
+        display: none;
+        width: 80%;
+        margin: 130px auto;
+    }
+
+    .menu__list-item {
+        text-align: center;
+    }
+
+    .menu__list-item+.menu__list-item {
+        margin-left: 0px;
+    }
+
+    .menu__list-item:not(:last-child) {
+        border-bottom: 1px solid rgba(208, 212, 216, .5);
+    }
+
+
+    .appealing {
+        padding-bottom: 40px;
+    }
+
+    .appealing__text {
+        margin-bottom: 10px;
+    }
+
+    .appealing__stats {
+        flex-wrap: wrap;
+    }
+
+    .appealing__stats-item {
+        margin: 0 40px 40px;
+    }
+
+    .appealing__stats-image--box {
+        margin-bottom: 20px;
+    }
+
+    .appealing__stats-num {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
+    .about__info {
+        margin-bottom: 60px;
+        padding-top: 240px;
+    }
+
+    .about__info-content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about {
+        padding: 80px 0 20px;
+    }
+
+
+    .cadillac__title {
+        margin-bottom: 60px;
+    }
+
+    .cadillac__image-wrapper {
+        text-align: center;
+        margin: 0 auto 36px
+    }
+
+    .cadillac__image {
+        width: 90%;
+    }
+
+    .cadillac__image-dot {
+        display: none;
+    }
+
+
+    .photos {
+        padding: 80px 0;
+    }
+
+    .photos__title {
+        margin-bottom: 24px;
+    }
+
+    .photos__desc,
+    .photos__text {
+        margin-bottom: 36px;
+    }
+
+    .photos__slider {
+        max-width: 90%;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__col {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__col:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer__col-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__top {
+        padding: 24px 24px 36px;
+    }
+
+    .header__title {
+        font-size: 100px;
+        line-height: 140px;
+    }
+
+    .header__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: -19px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .header__subtitle::before,
+    .header__subtitle::after {
+        width: 20%;
+    }
+
+    .menu__hamburger {
+        top: 44px;
+        right: 44px;
+    }
+
+    .about__desc {
+        margin-bottom: 48px;
+    }
+
+    .appealing__stats-item {
+        margin: 0 48px 40px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .header__top {
+        padding: 18px 18px 36px;
+    }
+
+    .header__title {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .header__subtitle::before,
+    .header__subtitle::after {
+        width: 10%;
+    }
+
+    .menu__hamburger {
+        top: 38px;
+        right: 38px;
+    }
+
+    .photos__slider .slick-arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu__list {
+        display: flex!important;
+    }
+}
