@@ -106,7 +106,8 @@ a {
 }
 
 .about__info-list {
-    max-width: 220px;
+    color: #E5E5E5;
+    max-width: 300px;
 }
 
 .about__info-list-item {
@@ -123,4 +124,62 @@ a {
 
 .about__text {
     margin-bottom: 20px;
+}
+
+
+.trailer {
+    background-image: url(../images/trailer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.trailer__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.trailer__title {
+    color: #85CCDC;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    margin-bottom: 40px;
+}
+
+.trailer__title span {
+    display: block;
+    margin-left: 250px;
+}
+
+.trailer__cta-link {
+    padding-left: 112px;
+    position: relative;
+}
+
+.trailer__cta-link::before {
+    content: '';
+    background-image: url(../images/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    transition: all .3s;
+}
+
+.trailer__cta-link:hover {
+    padding-left: 120px;
+}
+
+.trailer__cta-link:hover::before {
+    width: 106px;
+    height: 106px;
+    top: -43px;
 }
