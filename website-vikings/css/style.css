@@ -315,3 +315,9 @@ li:nth-child(n+10):before {
 .heroes__info-text:last-child {
     margin-bottom: 0;
 }
+
+
+.footer {
+    text-align: center;
+    padding: 15px;
+}
