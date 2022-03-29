@@ -40,7 +40,7 @@ a {
 }
 
 
-.header {
+.header__main {
     background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,4 +320,74 @@ li:nth-child(n+10):before {
 .footer {
     text-align: center;
     padding: 15px;
+}
+
+
+/*
+    Season 1 styles
+*/
+
+.header__page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+    position: relative;
+}
+
+.header__page::before {
+    content: '';
+    background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header__page-top {
+    padding: 50px 0 58px;
+    font-size: 36px;
+    line-height: 42px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__page-info {
+    background-color: #0e0e0e;
+    padding: 21px 47px 44px 35px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__page-info--season {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.header__page-info--season span {
+    font-size: 36px;
+    line-height: 42px;
+    display: block;
+    margin-top: -33px;
+}
+
+.header__page-info--desc {
+    padding-top: 23px;
+}
+
+.header__page-info--text {
+    margin-bottom: 20px;
 }
