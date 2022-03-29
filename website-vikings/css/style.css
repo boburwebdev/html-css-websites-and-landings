@@ -183,3 +183,70 @@ a {
     height: 106px;
     top: -43px;
 }
+
+
+.seasons__list {
+    list-style: none;
+    counter-reset: seasons-counter;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px 75px;
+}
+
+.seasons__list-item {
+    counter-increment: seasons-counter;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.seasons__list-item::before {
+    content: "0" counter(seasons-counter);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    color: #600E09;
+    position: absolute;
+    top: -72px;
+    left: 0;
+    z-index: -1;
+}
+
+li:nth-child(n+10):before {
+    content: counter(seasons-counter);
+}
+
+.seasons__list-item::after {
+    content: '';
+    background-color: rgba(14, 14, 14, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.seasons__list-link {
+    background-color: #0e0e0e;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 12px 78px;
+    opacity: 0;
+}
+
+.seasons__list-item:hover .seasons__list-link{
+    opacity: 1;
+    z-index: 2;
+}
+
+.seasons__list-item:hover::after {
+    opacity: 1;
+}
