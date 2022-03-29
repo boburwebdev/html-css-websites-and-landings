@@ -185,7 +185,11 @@ a {
 }
 
 
-.seasons__list {
+.seasons__title {
+    margin-bottom: 172px;
+}
+
+.vikings__list {
     list-style: none;
     counter-reset: seasons-counter;
     display: grid;
@@ -193,7 +197,7 @@ a {
     gap: 100px 75px;
 }
 
-.seasons__list-item {
+.vikings__list-item {
     counter-increment: seasons-counter;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,7 +210,7 @@ a {
     position: relative;
 }
 
-.seasons__list-item::before {
+.vikings__list-item::before {
     content: "0" counter(seasons-counter);
     font-weight: 700;
     font-size: 96px;
@@ -218,11 +222,11 @@ a {
     z-index: -1;
 }
 
-li:nth-child(n+10):before {
+.vikings__list-item:nth-child(n+10):before {
     content: counter(seasons-counter);
 }
 
-.seasons__list-item::after {
+.vikings__list-item::after {
     content: '';
     background-color: rgba(14, 14, 14, 0.8);
     position: absolute;
@@ -234,7 +238,7 @@ li:nth-child(n+10):before {
     transition: all .3s;
 }
 
-.seasons__list-link {
+.vikings__list-link {
     background-color: #0e0e0e;
     font-size: 36px;
     line-height: 42px;
@@ -242,12 +246,12 @@ li:nth-child(n+10):before {
     opacity: 0;
 }
 
-.seasons__list-item:hover .seasons__list-link{
+.vikings__list-item:hover .vikings__list-link{
     opacity: 1;
     z-index: 2;
 }
 
-.seasons__list-item:hover::after {
+.vikings__list-item:hover::after {
     opacity: 1;
 }
 
@@ -390,4 +394,9 @@ li:nth-child(n+10):before {
 
 .header__page-info--text {
     margin-bottom: 20px;
+}
+
+
+.episodes__title {
+    margin-bottom: 172px;
 }
