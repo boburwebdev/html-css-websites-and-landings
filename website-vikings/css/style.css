@@ -27,9 +27,15 @@ a {
     margin: 0 auto;
 }
 
+.section__margin {
+    margin: 100px 0;
+}
+
 .section__title {
+    font-weight: 400;
     font-size: 36px;
     line-height: 42px;
+    text-align: center;
     margin-bottom: 100px;
 }
 
@@ -91,4 +97,30 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info-list {
+    max-width: 220px;
+}
+
+.about__info-list-item {
+    margin-bottom: 20px;
+}
+
+.about__info-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.about__desc {
+    max-width: 775px;
+}
+
+.about__text {
+    margin-bottom: 20px;
 }
