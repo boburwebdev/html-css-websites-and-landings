@@ -1,0 +1,363 @@
+@media (max-width: 1230px) {
+  .header__page-top {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+
+  .trailer__title span {
+    margin-left: 100px;
+  }
+
+
+  .seasons__title {
+    margin-bottom: 84px;
+  }
+
+  .vikings__list {
+    gap: 80px 50px;
+  }
+
+  .vikings__list-item::before {
+    font-size: 80px;
+    line-height: 100px;
+    top: -60px
+  }
+
+
+  .heroes__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroes__image-slider {
+    margin-bottom: 40px;
+  }
+
+  .heroes__image-item {
+    min-height: 320px;
+  }
+
+  .heroes__image-slider--image {
+    height: 320px;
+  }
+
+  .heroes__info-name {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+@media (max-width: 970px) {
+  .section__margin {
+    margin: 80px 0;
+  }
+
+  .section__title {
+    margin-bottom: 80px;
+  }
+
+  .header__page-top {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .menu {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .header__logo {
+    width: 80%;
+  }
+
+  .header__logo-img {
+    width: 100%;
+  }
+
+
+  .about__info-list {
+    max-width: 35%;
+  }
+
+  .about__desc {
+    max-width: 65%;
+  }
+
+
+  .trailer__title {
+    font-size: 64px;
+    line-height: 72px;
+    margin-bottom: 48px;
+  }
+
+  .trailer__title span {
+    margin-left: 60px;
+  }
+
+  .trailer__cta-link {
+    padding-left: 82px;
+  }
+
+  .trailer__cta-link::before {
+    width: 72px;
+    height: 72px;
+    top: -25px;
+  }
+
+  .trailer__cta-link:hover {
+    padding-left: 90px;
+  }
+
+  .trailer__cta-link:hover::before {
+    width: 78px;
+    height: 78px;
+    top: -27px;
+  }
+
+
+  .vikings__list-item {
+    height: 320px;
+  }
+
+
+  .heroes {
+    padding-top: 20px;
+  }
+
+
+  .header__page-info {
+    padding: 21px 47px 20px 35px
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .section__margin {
+    margin: 60px 0;
+  }
+
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .menu {
+    position: relative;
+    z-index: 5;
+  }
+
+  .menu__hamburger {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  .menu__hamburger-item {
+    background-color: #fff;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 6px;
+  }
+
+  .menu__list {
+    display: none;
+    background-color: #0e0e0e;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .menu__list-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+
+  .menu__page {
+    position: absolute;
+    width: 100%;
+  }
+
+  .header__page-top .menu__hamburger {
+    top: 15px;
+  }
+
+  .menu__page .menu__list {
+    margin-top: 60px;
+    text-align: center;
+    padding: 50px 0 30px;
+  }
+
+  .trailer {
+    background-position: 75% center;
+    height: 60vh;
+  }
+
+  .trailer__inner {
+    left: 25%;
+  }
+
+  .trailer__title {
+    font-size: 54px;
+    line-height: 62px;
+    margin-bottom: 40px;
+  }
+
+  .trailer__title span {
+    margin-left: 40px;
+  }
+
+  .trailer__cta-link {
+    padding-left: 70px;
+  }
+
+  .trailer__cta-link::before {
+    width: 60px;
+    height: 60px;
+    top: -18px;
+  }
+
+  .trailer__cta-link:hover {
+    padding-left: 78px;
+  }
+
+  .trailer__cta-link:hover::before {
+    width: 66px;
+    height: 66px;
+    top: -22px;
+  }
+
+
+  .seasons__title {
+    margin-bottom: 72px;
+  }
+
+  .vikings__list-item {
+    height: 260px;
+  }
+
+
+  .heroes__info-name {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+
+  .header__page-info--season {
+    font-size: 80px;
+    line-height: 96px;
+    margin-right: 30px;
+  }
+
+  .header__page-info--season span {
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: -24px;
+  }
+
+
+  .episodes__title {
+    margin-bottom: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .vikings__list-item {
+    height: 360px;
+  }
+
+
+  .header__page-info {
+    flex-direction: column;
+    padding: 20px 15px;
+    bottom: -300px;
+  }
+
+  .header__page-info--season {
+    margin-right: 0;
+  }
+
+  .episodes {
+    margin-top: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__info-list,
+  .about__desc {
+    max-width: 90%;
+  }
+
+  .about__info-list {
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  .about__info-list-item {
+    margin-bottom: 14px;
+  }
+
+  .trailer__inner {
+    max-width: 300px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .trailer__title span {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .trailer__cta-link::before {
+    width: 44px;
+    height: 44px;
+    top: -14px;
+  }
+
+  .trailer__cta-link {
+    padding-left: 54px;
+  }
+
+  .trailer__cta-link:hover {
+    padding-left: 62px;
+  }
+
+  .trailer__cta-link:hover::before {
+    width: 54px;
+    height: 54px;
+    top: -18px;
+  }
+
+
+  .vikings__list-item {
+    height: 240px;
+  }
+
+  .header__page-info {
+    bottom: -500px;
+  }
+
+  .episodes {
+    margin-top: 520px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu__list {
+    display: flex !important;
+  }
+}

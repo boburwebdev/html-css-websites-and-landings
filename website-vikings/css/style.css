@@ -21,7 +21,7 @@ a {
     transition: all .3s;
 }
 
-.container{
+.container {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
@@ -108,6 +108,7 @@ a {
 .about__info-list {
     color: #E5E5E5;
     max-width: 300px;
+    margin-right: 20px;
 }
 
 .about__info-list-item {
@@ -193,7 +194,7 @@ a {
     list-style: none;
     counter-reset: seasons-counter;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 100px 75px;
 }
 
@@ -202,7 +203,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 350px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -211,7 +211,7 @@ a {
 }
 
 .vikings__list-item::before {
-    content: "0" counter(seasons-counter);
+    content: "0"counter(seasons-counter);
     font-weight: 700;
     font-size: 96px;
     line-height: 112px;
@@ -246,7 +246,7 @@ a {
     opacity: 0;
 }
 
-.vikings__list-item:hover .vikings__list-link{
+.vikings__list-item:hover .vikings__list-link {
     opacity: 1;
     z-index: 2;
 }
@@ -267,6 +267,7 @@ a {
 
 .heroes__image-slider {
     max-width: 775px;
+    width: 100%;
 }
 
 .heroes__image-item {
@@ -276,7 +277,7 @@ a {
 
 .heroes__image-slider--image {
     width: 100%;
-    height: 100%;
+    height: 450px;
     object-fit: cover;
     object-position: center center;
 }
@@ -301,6 +302,7 @@ a {
 
 .heroes__info-slider {
     max-width: 350px;
+    width: 100%;
 }
 
 .heroes__info-name {
@@ -346,7 +348,7 @@ a {
     height: 150px;
     z-index: 1;
     position: absolute;
-    top: 0; 
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -365,12 +367,14 @@ a {
 .header__page-info {
     background-color: #0e0e0e;
     padding: 21px 47px 44px 35px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
-    max-width: 1200px;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .header__page-info--season {
