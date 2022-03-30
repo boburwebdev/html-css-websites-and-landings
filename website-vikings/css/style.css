@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e0e0e;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section__margin {
+    margin: 100px 0;
+}
+
+.section__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.header__main {
+    background-image: url(../images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50px;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    background: linear-gradient(180deg, #0E0E0E 0%, rgba(17, 17, 17, 0.850295) 16.53%, rgba(32, 31, 33, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+    background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+    padding: 50px 0 58px;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__list-item {
+    margin-right: 25px;
+}
+
+.menu__list-item:last-child {
+    margin-right: 0;
+}
+
+.menu__list-link {
+    border-bottom: 1px solid transparent;
+}
+
+.menu__list-link.active,
+.menu__list-link:hover {
+    color: #85CCDC;
+    border-bottom: 1px solid #85CCDC;
+}
+
+.header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info-list {
+    color: #E5E5E5;
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+.about__info-list-item {
+    margin-bottom: 20px;
+}
+
+.about__info-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.about__desc {
+    max-width: 775px;
+}
+
+.about__text {
+    margin-bottom: 20px;
+}
+
+
+.trailer {
+    background-image: url(../images/trailer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.trailer__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.trailer__title {
+    color: #85CCDC;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 84px;
+    margin-bottom: 40px;
+}
+
+.trailer__title span {
+    display: block;
+    margin-left: 250px;
+}
+
+.trailer__cta-link {
+    padding-left: 112px;
+    position: relative;
+}
+
+.trailer__cta-link::before {
+    content: '';
+    background-image: url(../images/icon-youtube.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    transition: all .3s;
+}
+
+.trailer__cta-link:hover {
+    padding-left: 120px;
+}
+
+.trailer__cta-link:hover::before {
+    width: 106px;
+    height: 106px;
+    top: -43px;
+}
+
+
+.seasons__title {
+    margin-bottom: 172px;
+}
+
+.vikings__list {
+    list-style: none;
+    counter-reset: seasons-counter;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 100px 75px;
+}
+
+.vikings__list-item {
+    counter-increment: seasons-counter;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vikings__list-item::before {
+    content: "0"counter(seasons-counter);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    color: #600E09;
+    position: absolute;
+    top: -72px;
+    left: 0;
+    z-index: -1;
+}
+
+.vikings__list-item:nth-child(n+10):before {
+    content: counter(seasons-counter);
+}
+
+.vikings__list-item::after {
+    content: '';
+    background-color: rgba(14, 14, 14, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.vikings__list-link {
+    background-color: #0e0e0e;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 12px 78px;
+    opacity: 0;
+}
+
+.vikings__list-item:hover .vikings__list-link {
+    opacity: 1;
+    z-index: 2;
+}
+
+.vikings__list-item:hover::after {
+    opacity: 1;
+}
+
+
+.heroes {
+    padding-top: 100px;
+}
+
+.heroes__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heroes__image-slider {
+    max-width: 775px;
+    width: 100%;
+}
+
+.heroes__image-item {
+    max-width: 100%;
+    min-height: 450px;
+}
+
+.heroes__image-slider--image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.heroes__image-slider-arrow {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.heroes__image-slider-arrow--prev {
+    left: 37px;
+    z-index: 2;
+}
+
+.heroes__image-slider-arrow--next {
+    right: 37px;
+}
+
+.heroes__info-slider {
+    max-width: 350px;
+    width: 100%;
+}
+
+.heroes__info-name {
+    color: #85CCDC;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 72px;
+    line-height: 84px;
+    margin-bottom: 44px;
+}
+
+.heroes__info-text {
+    margin-bottom: 20px;
+}
+
+.heroes__info-text:last-child {
+    margin-bottom: 0;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+
+
+/*
+    Season 1 styles
+*/
+
+.header__page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+    position: relative;
+}
+
+.header__page::before {
+    content: '';
+    background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.header__page-top {
+    padding: 50px 0 58px;
+    font-size: 36px;
+    line-height: 42px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__page-info {
+    background-color: #0e0e0e;
+    padding: 21px 47px 44px 35px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__page-info--season {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 112px;
+    margin-right: 45px;
+    text-align: center;
+}
+
+.header__page-info--season span {
+    font-size: 36px;
+    line-height: 42px;
+    display: block;
+    margin-top: -33px;
+}
+
+.header__page-info--desc {
+    padding-top: 23px;
+}
+
+.header__page-info--text {
+    margin-bottom: 20px;
+}
+
+
+.episodes__title {
+    margin-bottom: 172px;
+}
