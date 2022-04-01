@@ -1,7 +1,10 @@
 :root {
-  --color-orange: #FF9900;
-  --color-gray: #544837;
+  --color-white: #FFF;
   --color-black: #2F281E;
+  --color-gray: #544837;
+  --color-orange: #FF9900;
+  --color-blue-light: #BCD0E5;
+  --color-blue-dark: #173A56;
 }
 
 * {
@@ -32,4 +35,91 @@ a {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+}
+
+.btn__transparent {
+  background-color: transparent;
+  color: var(--color-blue-dark);
+  border: 1px solid var(--color-blue-light);
+}
+
+.btn__transparent:hover {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  border: 1px solid var(--color-blue-dark);
+}
+
+.btn__orange {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: 1px solid var(--color-orange);
+}
+
+.btn__orange:hover {
+  background-color: transparent;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+
+
+.header {
+  padding: 15px 0 17px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  transition: all .3s;
+  backface-visibility: hidden;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: 53px;
+}
+
+.menu__list-item {
+  display: inline-block;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 24px;
+}
+
+.menu__list-link {
+  display: inline-block;
+  backface-visibility: hidden;
+}
+
+.menu__list-link:hover {
+  transform: translateY(-2px);
+  backface-visibility: hidden;
+}
+
+.header__auth-item {
+  display: inline-block;
+}
+
+.btn__auth {
+  font-weight: 600;
+  padding: 11px 22px 11px 25px;
+}
+
+.btn__auth-login {
+  margin-right: 14px;
 }
