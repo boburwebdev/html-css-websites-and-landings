@@ -250,3 +250,80 @@ a {
   padding: 15px 34px;
   text-transform: uppercase;
 }
+
+
+.functions {
+  margin: 120px 0 160px;
+}
+
+.functions__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 102px;
+}
+
+.function__image-right {
+  flex-direction: row;
+}
+
+.functions__image-left {
+  flex-direction: row-reverse;
+}
+
+.functions__content {
+  max-width: 486px;
+}
+
+.functions__title {
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 22px;
+}
+
+.functions__subtitle {
+  line-height: 24px;
+  margin-bottom: 3px;
+}
+
+.functions__list {
+  margin-top: 30px;
+}
+
+.functions__list-item {
+  margin-bottom: 25px;
+}
+
+.functions__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.functions__list-item__title {
+  margin-bottom: 12px;
+}
+
+.functions__list--custom-dots .functions__list-item {
+  padding-left: 65px;
+  position: relative;
+}
+
+.functions__list--custom-dots .functions__list-item::before {
+  content: '';
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/icon-tick.svg);
+  background-repeat: none;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.functions__image-wrapper {
+  max-width: 540px;
+}
+
+.function__image {
+  width: 100%;
+}
