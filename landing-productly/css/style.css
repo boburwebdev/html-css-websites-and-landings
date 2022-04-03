@@ -467,3 +467,84 @@ a {
 .team__member-text--left::after {
   right: 30px;
 }
+
+
+.blog {
+  padding: 30px 0 180px;
+}
+
+.blog__title {
+  font-size: 34px;
+  line-height: 51px;
+  margin-bottom: 9px;
+}
+
+.blog__desc {
+  margin-bottom: 55px;
+}
+
+.blog__container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
+
+.blog__slider-item {
+  max-width: 348px;
+  margin: 0 20px;
+}
+
+.blog__item-image--wrapper {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.blog__item-image {
+  width: 100%;
+}
+
+.blog__item-info {
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.blog__item-author {
+  font-weight: 700;
+} 
+
+.blog__item-link {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.blog__item-link:hover {
+  color: var(--color-orange);
+}
+
+.blog__slider-dots {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog__slider-dots li {
+  margin: 0 5px;
+}
+
+.blog__slider-dots li button {
+  background-color: #EFEFEF;
+  width: 16px;
+  height: 16px;
+  border: 0;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.blog__slider-dots li.slick-active button {
+  background-color: var(--color-orange);
+}
