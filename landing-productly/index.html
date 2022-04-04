@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -27,6 +28,11 @@
         </div>
 
         <nav class="menu">
+          <div class="menu__hamburger">
+            <div class="menu__hamburger-line"></div>
+            <div class="menu__hamburger-line"></div>
+            <div class="menu__hamburger-line"></div>
+          </div>
           <ul class="menu__list">
             <li class="menu__list-item">
               <a href="#!" class="menu__list-link">Product</a>
@@ -43,14 +49,20 @@
           </ul>
         </nav>
 
-        <ul class="header__auth">
-          <li class="header__auth-item">
-            <a href="#!" class="btn btn__transparent btn__auth btn__auth-login">Sign In</a>
-          </li>
-          <li class="header__auth-item">
-            <a href="#!" class="btn btn__orange btn__auth btn__auth-registration">Sign Up</a>
-          </li>
-        </ul>
+        <div class="header__auth">
+          <div class="header__auth-icon">
+            <img class="header__auth-image" src="images/icon-user.svg" alt="user">
+          </div>
+
+          <ul class="header__auth-list">            
+            <li class="header__auth-item">
+              <a href="#!" class="btn btn__transparent btn__auth btn__auth-login">Sign In</a>
+            </li>
+            <li class="header__auth-item">
+              <a href="#!" class="btn btn__orange btn__auth btn__auth-registration">Sign Up</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -316,7 +328,7 @@
         </div>
         <div class="team__member team__member--4">
           <img class="team__member-image" src="images/team-member-4.jpg" alt="team member">
-          <div class="team__member-text team__member-text--left">
+          <div class="team__member-text team__member-text--right">
             I can design you website
           </div>
         </div>

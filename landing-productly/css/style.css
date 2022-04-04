@@ -98,9 +98,22 @@ a {
   transform: translateY(-2px);
 }
 
+.logo__link {
+  display: flex;
+  align-items: center;
+}
+
 .menu {
   margin-left: auto;
   margin-right: 53px;
+}
+
+.menu__hamburger {
+  display: none;
+}
+
+.header__auth-icon {
+  display: none;
 }
 
 .menu__list-item {
@@ -121,6 +134,7 @@ a {
 }
 
 .menu__list-link:hover {
+  color: var(--color-orange);
   transform: translateY(-2px);
   backface-visibility: hidden;
 }
@@ -131,7 +145,7 @@ a {
 
 .btn__auth {
   font-weight: 600;
-  padding: 11px 22px 11px 25px;
+  padding: 11px 22px;
 }
 
 .btn__auth-login {
@@ -336,7 +350,7 @@ a {
   max-width: 540px;
 }
 
-.function__image {
+.functions__image {
   width: 100%;
 }
 
@@ -350,7 +364,7 @@ a {
 
 .team__inner {
   position: relative;
-  padding: 230px 0 380px;
+  padding: 220px 0 380px;
 }
 
 .team__content {
@@ -379,28 +393,28 @@ a {
 }
 
 .team__member--1 {
-  top: 157px;
+  top: 120px;
   right: 94px;
 }
 
 .team__member--2 {
-  top: 223px;
+  top: 210px;
   left: 0;
 }
 
 .team__member--3 {
-  bottom: 257px;
+  bottom: 240px;
   right: 0;
 }
 
 .team__member--4 {
-  bottom: 233px;
-  left: 210px;
+  bottom: 220px;
+  left: 60px;
 }
 
 .team__member--5 {
-  bottom: 135px;
-  right: 365px;
+  bottom: 80px;
+  right: 330px;
 }
 
 .team__member-image {
@@ -489,7 +503,6 @@ a {
 }
 
 .blog__slider-item {
-  max-width: 348px;
   margin: 0 20px;
 }
 
