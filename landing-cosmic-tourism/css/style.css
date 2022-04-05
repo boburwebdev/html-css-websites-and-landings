@@ -1,0 +1,30 @@
+:root {
+  --color-white: #FFF;
+  --color-red: #CB0E0E;
+  --color-blue: #036CCA;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* color: var(--color-white); */
+  font-size: 16px;
+  line-height: 19px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
