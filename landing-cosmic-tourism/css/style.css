@@ -391,3 +391,85 @@ g:hover foreignObject p {
 .reservation__content-text + .reservation__content-text {
   margin-left: 50px;
 }
+
+
+.info {
+  background-image: url(../images/info-bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.offer {
+  margin-bottom: 142px;
+}
+
+.offer__title,
+.services__title {
+  max-width: 600px;
+}
+
+.offer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__item {
+  max-width: 500px;
+  width: 100%;
+}
+
+.offer__item-content {
+  text-align: center;
+  min-height: 500px;
+  padding: 43px 40px 38px;
+  margin-bottom: 25px;
+  border: 1px solid var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer__item-text {
+  max-width: 240px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.offer__item-text--accent {
+  color: var(--color-red);
+}
+
+.offer__item-price--old {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  margin-top: auto;
+  margin-bottom: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.offer__item-price--old::before {
+  content: '';
+  background-color: var(--color-red);
+  display: inline-block;
+  width: 69px;
+  height: 1px;
+  transform: rotate(20deg);
+  transform-origin: top left;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+}
+
+.offer__item-price--new {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.btn__offer {
+  width: 100%;
+  padding: 20px 25px;
+}
