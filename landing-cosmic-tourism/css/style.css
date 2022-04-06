@@ -395,7 +395,7 @@ g:hover foreignObject p {
 
 .info {
   background-image: url(../images/info-bg.jpg);
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -412,6 +412,7 @@ g:hover foreignObject p {
 .offer__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .offer__item {
@@ -472,4 +473,76 @@ g:hover foreignObject p {
 .btn__offer {
   width: 100%;
   padding: 20px 25px;
+}
+
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 200px;
+}
+
+.services__desc {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.services__text,
+.services__list {
+  margin-bottom: 25px;
+}
+
+.services__list-item {
+  padding-left: 36px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.services__list-item::before {
+  content: '';
+  background-color: var(--color-white);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.services__caption {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.services__buttons {
+  max-width: 500px;
+  width: 100%;
+  padding: 29px 0;
+  margin-left: 30px;
+}
+
+.btn__services {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.btn__services-photographer {
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.btn__services-photographer::before {
+  content: '';
+  background-image: url(../images/astronaut.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 192px;
+  height: 150px;
+  position: absolute;
+  top: -130px;
+  right: 0;
 }
