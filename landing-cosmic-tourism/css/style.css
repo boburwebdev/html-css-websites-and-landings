@@ -216,7 +216,7 @@ a {
 
 .about {
   background-image: url(../images/about-bg.jpg);
-  background-position: center center;
+  background-position: bottom center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -235,13 +235,13 @@ a {
   flex-direction: row-reverse;
 }
 
-/* .about__item--image-left .about__image-wrapper {
+.about__item--image-left .about__image-wrapper {
   margin-right: 98px;
 }
 
 .about__item--image-right .about__image-wrapper {
   margin-left: 98px;
-} */
+}
 
 .about__image-wrapper {
   max-width: 500px;
@@ -318,10 +318,47 @@ a {
   padding: 20px 45px;
 }
 
-.about__content-subtext {
+.about__content-table--caption {
   font-size: 12px;
   line-height: 14px;
   margin-left: 4px;
-  margin-bottom: 50px;
-  margin-top: -30px;
+  margin-top: 20px;
+  caption-side: bottom;
+  text-align: left;
+}
+
+
+.how-it-works {
+  background-image: url(../images/how-it-works--bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.how-it-works circle {
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.how-it-works text,
+.how-it-works foreignObject p {
+  font-size: 18px;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+g:hover text {
+  fill: var(--color-blue);
+  font-size: 28px;
+}
+
+g:hover circle {
+  r: 20;
+  fill: var(--color-blue);
+}
+
+g:hover foreignObject p {
+  color: var(--color-blue);
+  font-size: 24px;
+  line-height: 30px;
 }
