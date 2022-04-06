@@ -395,7 +395,7 @@ g:hover foreignObject p {
 
 .info {
   background-image: url(../images/info-bg.jpg);
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   padding: 100px 0;
 }
@@ -577,4 +577,71 @@ g:hover foreignObject p {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
+}
+
+
+.contacts {
+  background-color: #010203;
+  padding: 100px 0;
+}
+
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  max-width: 500px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.contacts__title,
+.guarantee__title {
+  margin-bottom: 46px;
+}
+
+.contacts__text,
+.guarantee__text {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.contacts__text {
+  margin-bottom: 84px;
+}
+
+.contacts__form-input {
+  background-color: transparent;
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border: none;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.contacts__form-input::placeholder {
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.btn__contacts {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-top: 69px;
+}
+
+.guarantee {
+  background-image: url(../images/guarantee--elon-musk.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 20px;
 }
