@@ -52,6 +52,15 @@ h4, h5, h6 {
   font-weight: 700;
 }
 
+.section__title {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.section__title-mb {
+  margin-bottom: 100px;
+}
+
 ul {
   list-style: none;
 }
@@ -81,6 +90,9 @@ a {
 .btn__transparent {
   background: none;
   color: var(--color-white);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   border: 1px solid var(--color-white);
 }
 
@@ -199,4 +211,117 @@ a {
 
 .header__desc-text + .header__desc-text {
   margin-left: 52px;
+}
+
+
+.about {
+  background-image: url(../images/about-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.about__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.about__item--image-left {
+  flex-direction: row;
+}
+
+.about__item--image-right {
+  flex-direction: row-reverse;
+}
+
+/* .about__item--image-left .about__image-wrapper {
+  margin-right: 98px;
+}
+
+.about__item--image-right .about__image-wrapper {
+  margin-left: 98px;
+} */
+
+.about__image-wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.about__image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about__content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.about__content-title {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 5px;
+}
+
+.about__content-subtitle {
+  color: var(--color-blue);
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;  
+  margin-bottom: 30px;
+}
+
+.about__content-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.about__content-text {
+  max-width: 165px;
+}
+
+.about__content-table {
+  font-family: 'SF-Pro-Display-Regular';
+  width: 100%;
+  border-top: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  margin-bottom: 50px;
+}
+
+.about__content-table--head {
+  border-bottom: 1px solid var(--color-white);
+}
+
+.about__content-table--head th {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.about__content-table--body td {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  padding: 2px 0 7px;
+}
+
+.about__content-table--body td span {
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+}
+
+.btn__about {
+  padding: 20px 45px;
+}
+
+.about__content-subtext {
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 4px;
+  margin-bottom: 50px;
+  margin-top: -30px;
 }
