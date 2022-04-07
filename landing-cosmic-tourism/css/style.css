@@ -1,5 +1,6 @@
 :root {
   --color-white: #FFF;
+  --color-black: #010203;
   --color-red: #CB0E0E;
   --color-blue: #036CCA;
 }
@@ -196,7 +197,8 @@ a {
 .btn__header-cta {
   font-size: 24px;
   line-height: 29px;
-  padding: 15px 136px;
+  padding: 15px 30px;
+  width: 100%;
 }
 
 .header__desc {
@@ -251,6 +253,7 @@ a {
 .about__image {
   width: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 
 .about__content {
@@ -362,6 +365,11 @@ g:hover foreignObject p {
   font-size: 24px;
   line-height: 30px;
 }
+
+.how-it-works__list {
+  display: none;
+}
+
 
 .reservation {
   background-image: url(../images/reservation-bg.jpg);
@@ -480,7 +488,6 @@ g:hover foreignObject p {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  flex-wrap: wrap;
   margin-bottom: 200px;
 }
 
@@ -581,7 +588,7 @@ g:hover foreignObject p {
 
 
 .contacts {
-  background-color: #010203;
+  background-color: var(--color-black);
   padding: 100px 0;
 }
 

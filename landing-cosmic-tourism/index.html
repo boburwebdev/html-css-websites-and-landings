@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -20,6 +21,11 @@
       <div class="header__inner">
         <div class="header__top">
           <nav class="menu">
+            <div class="menu__hamburger">
+              <div class="menu__hamburger-line"></div>
+              <div class="menu__hamburger-line"></div>
+              <div class="menu__hamburger-line"></div>
+            </div>
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a class="menu__list-link" href="#!">О Нас</a>
@@ -120,23 +126,23 @@
             </thead>
             <tbody class="about__content-table--body">
               <tr>
-                <td>
+                <td aria-label="время в пути">
                   1
                   <span>час</span>
                 </td>
-                <td>
+                <td aria-label="расстояние">
                   80
                   <span>км</span>
                 </td>
-                <td>
+                <td aria-label="в невесомости">
                   4-5
                   <span>мин</span>
                 </td>
-                <td>
+                <td aria-label="стоимость">
                   250
                   <span>тыс. дол</span>
                 </td>
-                <td>
+                <td aria-label="вернешься?">
                   99
                   <span>%</span>
                 </td>
@@ -188,23 +194,23 @@
             </thead>
             <tbody class="about__content-table--body">
               <tr>
-                <td>
+                <td aria-label="время в пути">
                   10
                   <span>мин</span>
                 </td>
-                <td>
+                <td aria-label="расстояние">
                   100
                   <span>км</span>
                 </td>
-                <td>
+                <td aria-label="в невесомости">
                   4-5
                   <span>мин</span>
                 </td>
-                <td>
+                <td aria-label="стоимость">
                   250
                   <span>тыс. дол</span>
                 </td>
-                <td>
+                <td aria-label="вернешься?">
                   99
                   <span>%</span>
                 </td>
@@ -260,23 +266,23 @@
             </thead>
             <tbody class="about__content-table--body">
               <tr>
-                <td>
+                <td aria-label="время в пути">
                   150
                   <span>дней</span>
                 </td>
-                <td>
+                <td aria-label="расстояние">
                   55
                   <span>млн.км</span>
                 </td>
-                <td>
+                <td aria-label="в невесомости">
                   много
                   <span>мин</span>
                 </td>
-                <td>
+                <td aria-label="стоимость">
                   10
                   <span>млрд. дол</span>
                 </td>
-                <td>
+                <td aria-label="вернешься?">
                   1
                   <span>%</span>
                 </td>
@@ -300,7 +306,7 @@
         происходит
       </h3>
       <div class="how-it-works__inner">
-        <svg width="1200" height="640" viewBox="0 0 880 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="960" height="640" viewBox="0 0 880 640" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line x1="20.2474" y1="19.56552" x2="161.247" y2="95.5655" stroke="white" />
           <line x1="161.43" y1="95.7448" x2="215.43" y2="186.745" stroke="white" />
           <line x1="215.439" y1="186.76" x2="286.439" y2="316.76" stroke="white" />
@@ -347,6 +353,15 @@
           </g>
         </svg>
 
+        <ul class="how-it-works__list">
+          <li class="how-it-works__list-item">Выбираете программу</li>
+          <li class="how-it-works__list-item">Оплачиваете</li>
+          <li class="how-it-works__list-item">Какая-то будет подготовка</li>
+          <li class="how-it-works__list-item">Садимся. Летим. Невесомость</li>
+          <li class="how-it-works__list-item">Делаем фото в инстаграм</li>
+          <li class="how-it-works__list-item">Приземляемся, но это не точно</li>
+          <li class="how-it-works__list-item">Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое, обычное)</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -554,7 +569,6 @@
             <a class="footer__list-link" href="#!">МКС</a>
           </li>
         </ul>
-
 
       </div>
     </div>
