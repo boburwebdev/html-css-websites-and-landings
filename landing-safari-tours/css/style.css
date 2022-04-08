@@ -9,11 +9,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -44,3 +49,128 @@ a {
   font-weight: 500;
 }
 
+.btn {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  transition: all .3s;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn__brown {
+  background-color: var(--color-highlight-brown);
+  color: var(--color-white);
+  backface-visibility: hidden;
+}
+
+.btn__brown:hover {
+  /* background-color: #684724; */
+  backface-visibility: hidden;
+  transform: translateY(-2px);
+}
+
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+
+.header__inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__top {
+  padding: 16px 0 15px;
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__phone {
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+}
+
+.btn__header-phone {
+  padding: 12px 31px;
+  border-radius: 22px;
+  margin-left: 19px;
+}
+
+.header__phone-text {
+  font-weight: 700;
+}
+
+.menu {
+  border-top: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-white);
+  padding: 27px 0 24px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 120px;
+}
+
+.menu__list-link {
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-block;
+  backface-visibility: hidden;
+}
+
+.menu__list-link:hover {
+  backface-visibility: hidden;
+  transform: translateY(-2px);
+}
+
+.header__title {
+  font-family: 'PT Serif', serif;
+  font-size: 90px;
+  line-height: 117px;
+  text-align: center;
+  margin-top: 49px;
+}
+
+.header__bottom {
+  margin-top: auto;
+  margin-bottom: 74px;
+}
+
+.header__bottom-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.btn__header-cta {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 55px;
+  border-radius: 30px;
+}
+
+.arrow__down {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.destinations {
+  padding: 100px 0;
+}

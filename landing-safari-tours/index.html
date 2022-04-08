@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,88 @@
   <title>African Safari Tours - Landing Page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+
+  <header class="header">
+    <div class="container">
+
+      <div class="header__inner">
+        <div class="header__top">
+          <div class="logo">
+            <a class="logo__link" href="#!">
+              <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+          </div>
+
+          <div class="header__phone">
+            <div class="header__phone-text">
+              Заказ туров и бронирование:
+            </div>
+            <a class="btn btn__brown btn__header-phone" href="tel:80508543543">
+              тел. 8-050-8-543-543
+            </a>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#!">Бронирование</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#!">Экскурсии</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#!">Туры</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#!">Об Африке</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#!">О Нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">
+          Сафари по Африке
+        </h1>
+
+        <div class="header__bottom">
+          <div class="header__bottom-text">
+            Туры по самомым экзотическим местам <br>
+            Поехали с нами за новыми впечатлениями!
+          </div>
+          <button class="btn btn__brown btn__header-cta">
+            Оставить Заявку
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="arrow__down" href="#destinations">
+      <img class="arrow__down-img" src="images/icon-arrow-down.svg" alt="down">
+    </a>
+  </header>
+
+  <section class="destinations" id="destinations">
+    <div class="container">
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
