@@ -343,3 +343,16 @@ a {
 .popular__item-duration {
   margin-top: 15px;
 }
+
+
+.map {
+  padding: 100px 0;
+}
+
+.map__title {
+  margin-bottom: 46px;
+}
+
+.map__iframe {
+  height: 610px;
+}
