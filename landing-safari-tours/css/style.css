@@ -427,3 +427,60 @@ a {
 .about__video:hover .about__video-bg::before {
   background-color: rgba(31, 30, 30, .4);
 }
+
+
+.gallery {
+  background-color: var(--color-highlight-brown);
+  color: var(--color-white);
+  padding: 49px 0 106px;
+}
+
+.gallery__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 39px;
+}
+
+.gallery__top-link {
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 163px;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.gallery__top-link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.gallery__item-inner {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(352px, 1fr));
+  gap: 32px;
+}
+
+.gallery__item-link {
+  min-height: 256px;
+}
+
+.gallery__item-img {
+  width: 100%;
+}
+
+.gallery__slider .slick-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  position: absolute;
+  z-index: 5;
+  top: -80px;
+}
+
+.gallery__slider .slick-prev {
+  right: 60px;
+}
+
+.gallery__slider .slick-next {
+  right: 0px;
+}
