@@ -1,5 +1,5 @@
 $(function(){
-  $('.about__video').magnificPopup({
+  $('.about-tours__video').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
