@@ -257,9 +257,12 @@ a {
   transform: scale(1.2);
 }
 
+.popular {
+  padding-top: 100px;
+}
 
 .popular__inner {
-  padding: 100px 0;
+  padding-bottom: 100px;
   border-bottom: 1px solid var(--color-gray-borders);
 }
 
@@ -461,10 +464,13 @@ a {
 
 .gallery__item-link {
   min-height: 256px;
+  overflow: hidden;
 }
 
 .gallery__item-img {
   width: 100%;
+  height: 256px;
+  object-fit: cover;
 }
 
 .gallery__slider .slick-btn {
@@ -485,9 +491,14 @@ a {
   right: 0px;
 }
 
+.slick-arrow-image {
+  width: 100%;
+  object-fit: cover;
+}
+
 
 .about-us {
-  padding: 100px 0 75px;
+  padding: 100px 0;
 }
 
 .about-us__title {
@@ -523,13 +534,13 @@ a {
 
 .about-us__stats {
   display: grid;
-  grid-template-columns: repeat(5, minmax(min-content, max-content));
+  grid-template-columns: repeat(5, minmax(min-content, 1fr));
   gap: 70px;
 }
 
 .about-us__stats-item {
   text-align: center;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .about-us__stats-number {
@@ -538,6 +549,7 @@ a {
   font-weight: 700;
   font-size: 58px;
   line-height: 75px;
+  white-space: nowrap
 }
 
 .about-us__stats-text {

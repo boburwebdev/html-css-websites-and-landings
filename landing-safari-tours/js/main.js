@@ -29,7 +29,11 @@ $(function(){
 
   $('.gallery__slider').slick({
     arrows: true,
-    prevArrow: `<button type="button" class="slick-btn slick-prev"><img class="slick-arrow-image--prev" src="images/gallery-slider__arrow-prev.svg" alt="prev"></button>`,
-    nextArrow: `<button type="button" class="slick-btn slick-next"><img class="slick-arrow-image--next" src="images/gallery-slider__arrow-next.svg" alt="next"></button>`
-  })
+    prevArrow: `<button type="button" class="slick-btn slick-prev"><img class="slick-arrow-image slick-arrow-image--prev" src="images/gallery-slider__arrow-prev.svg" alt="prev"></button>`,
+    nextArrow: `<button type="button" class="slick-btn slick-next"><img class="slick-arrow-image slick-arrow-image--next" src="images/gallery-slider__arrow-next.svg" alt="next"></button>`
+  });
+
+	$('.menu__hamburger').on('click', function() {
+		$('.menu__list').slideToggle();
+	})
 });
