@@ -1,0 +1,436 @@
+@media (max-width: 1160px) {
+  .popular__inner {
+    gap: 20px;
+  }
+
+  .popular__item-link--big {
+    grid-column: span 1;
+  }
+
+  .gallery__item-inner {
+    gap: 24px;
+  }
+
+  .about-us__stats {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .header__title {
+    font-size: 74px;
+    line-height: 96px;
+  }
+
+  .header__phone-text {
+    display: none;
+  }
+
+  .menu__list-item+.menu__list-item {
+    margin-left: 80px;
+  }
+
+  .destinations__item-image-wrapper {
+    height: 140px;
+  }
+
+  .destinations__item-img {
+    height: 140px;
+  }
+  
+  .directions__inner {
+    gap: 48px 40px;
+  }
+
+  .map {
+    padding: 80px 0;
+  }
+
+  .map__title {
+    margin-bottom: 30px;
+  }
+
+  .about-tours__text {
+    margin-bottom: 16px;
+  }
+
+  .about-us__title {
+    margin-bottom: 40px;
+  }
+
+  .about-us__desc-column {
+    column-gap: 36px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .about-us__stats {
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  }
+
+  .reservation__form-input {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .reservation__form-textarea {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    padding: 48px 0 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .header {
+    background-image: linear-gradient(rgba(136, 98, 57, 0), rgba(136, 98, 57, .75)), url(../images/header-bg.jpg);
+  }
+
+  .btn__header-phone {
+    padding: 12px 12px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 48px 0 15px;
+  }
+
+  .btn__header-phone--icon {
+    display: inline-block;
+    line-height: 0;
+  }
+
+  .btn__header-phone--text {
+    display: none;
+  }
+
+  .menu {
+    padding: 0;
+    border: 0;
+  }
+
+  .menu__hamburger {
+    width: 32px;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+  }
+
+  .menu__hamburger-line {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 2px;
+    margin-bottom: 8px;
+  }
+
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    left: 15px;
+  }
+
+  .menu__list-item+.menu__list-item {
+    margin-left: 0px;
+    border-top: 1px solid var(--color-black);
+  }
+
+  .menu__list-item {
+    text-align: center;
+  }
+
+  .menu__list-link {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    display: block;
+    padding: 16px 0;
+  }
+
+  .menu__list-link:hover {
+    transform: none;
+  }
+
+  .header__title {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .header__bottom {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .header__bottom-text {
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+
+  .btn__header-cta {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 36px;
+  }
+
+  .destinations {
+    padding: 80px 0;
+  }
+
+  .destinations__inner {
+    gap: 20px;
+  }
+
+  .popular {
+    padding-top: 80px;
+  }
+
+  .popular__title {
+    margin-bottom: 24px;
+  }
+
+  .popular__inner {
+    padding-bottom: 80px;
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+    gap: 20px;
+  }
+
+  .map {
+    padding: 60px 0;
+  }
+  
+  .map__iframe {
+    height: 380px;
+  }
+
+  .about-tours {
+    padding-bottom: 80px;
+  }
+
+  .about-tours__title {
+    margin-bottom: 10px;
+  }
+
+  .about-tours__video {
+    min-height: 380px;
+  }
+
+  .gallery {
+    padding: 40px 0 80px;
+  }
+
+  .gallery__top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .gallery__title  {
+    margin-bottom: 5px;
+  }
+
+  .gallery__item-inner {
+    grid-template-columns: repeat(auto-fill, minmax(246px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery__slider .slick-btn {
+    top: -94px;
+  }
+
+  .about-us {
+    padding: 80px 0;
+  }
+
+  .about-us__desc-column {
+    column-count: 1;
+  }
+
+  .about-us__stats {
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+  }
+
+  .reservation {
+    padding: 60px 0;
+  }
+
+  .reservation__title {
+    margin-bottom: 30px;
+  }
+
+  .reservation__form {
+    justify-content: center;
+  }
+
+  .reservation__form-label {
+    order: 1;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-bottom: 0;
+  }
+
+  .btn__reservation {
+    order: 2;
+    width: 100%;
+    padding: 14px 28px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__info-item + .footer__info-item {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .logo__link {
+    display: inline-block;
+  }
+
+  .logo__img {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .menu__hamburger {
+    top: 30px;
+  }
+
+  .header__title {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .header__bottom-text {
+    font-weight: 400;
+  }
+
+  .destinations {
+    padding: 60px 0;
+  }
+
+  .destinations__inner {
+    gap: 12px;
+  }
+  
+  .directions__inner {
+    gap: 40px;
+  }
+
+  .directions__item {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .directions__item-icon-wrapper {
+    margin: 0 auto 15px;
+  }
+
+  .popular {
+    padding-top: 60px;
+  }
+
+  .popular__inner {
+    padding-bottom: 60px;
+  }
+
+  .popular__item-info {
+    display: none;
+  }
+
+  .map {
+    padding: 40px 0;
+  }
+
+  .map__iframe {
+    height: 320px;
+  }
+
+  .about-tours {
+    padding-bottom: 60px;
+  }
+
+  .about-tours__inner {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .about-tours__video {
+    min-height: 320px;
+  }
+
+  .gallery {
+    padding: 40px 0 60px;
+  }
+
+  .gallery__slider .slick-btn {
+    top: -94px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .gallery__top-link {
+    border-bottom: 0;
+  }
+
+  .gallery__slider .slick-prev {
+    right: 48px;
+  }
+
+  .about-us {
+    padding: 60px 0;
+  }
+
+  .about-us__stats {
+    grid-template-columns: repeat(1, minmax(min-content, 1fr));
+    gap: 30px;
+  }
+
+  .reservation {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .reservation__form-label-span {
+    top: 4px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu__list {
+    display: flex!important;
+  }
+}
