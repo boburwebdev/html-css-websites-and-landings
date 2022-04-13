@@ -10,6 +10,7 @@
 }
 
 body {
+  color: var(--color-black);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -61,6 +62,17 @@ a {
 .btn__white:hover {
   background-color: rgba(255, 255, 255, 1);
   color: var(--color-highlight-blue);
+}
+
+.btn__transparent {
+  background-color: transparent;
+  color: var(--color-highlight-blue);
+  border: 1px solid var(--color-highlight-blue);
+}
+
+.btn__transparent:hover {
+  background-color: var(--color-highlight-blue);
+  color: var(--color-white);
 }
 
 .header__inner {
@@ -232,4 +244,101 @@ a {
   position: absolute;
   right: 30px;
   bottom: 80px;
+}
+
+
+.products__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.products__name {
+  max-width: 400px;
+  width: 100%;
+  padding-top: 41px;
+}
+
+.products__name .slick-current {
+  color: var(--color-highlight-blue);
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.products__name-item {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.products__name-item + .products__name-item {
+  margin-top: 20px;
+}
+
+.products__slider-arrow {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.products__slider-arrow--prev {
+  top: 0;
+}
+
+/* .products__slider-arrow--next {
+  bottom: 0;
+} */
+
+.products__content {
+  max-width: 600px;
+}
+
+.products__content-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.products__content-info__img {
+  display: block;
+  width: 260px;
+  height: 215px;
+  object-fit: cover;
+}
+
+.products__content-info__details-item + .products__content-info__details-item {
+  margin-top: 30px;
+}
+
+.products__content-info__details-title {
+  color: var(--color-highlight-blue);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.products__content-info__details-text span {
+  display: block;
+}
+
+.products__content-item__title {
+  color: var(--color-highlight-blue);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+.products__content-item__text {
+  margin-bottom: 27px;
 }
