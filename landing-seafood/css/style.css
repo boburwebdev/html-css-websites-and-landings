@@ -443,3 +443,40 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+
+
+.contacts  {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__img {
+  width: calc(50% + 198px);
+  background-image: url(../images/contacts-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+}
+
+.contacts__content {
+  max-width: 382px;
+  margin-left: 20px;
+}
+
+.contacts__title {
+  color: var(--color-highlight-blue);
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contacts__text {
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__link {
+  display: block;
+}
