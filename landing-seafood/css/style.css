@@ -424,3 +424,22 @@ a {
 .info__item-conten-right {
   margin-right: 180px;
 }
+
+
+.quote {
+  max-width: 800px;
+  padding: 0 0 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote__img {
+  width: 100%;
+}
+
+.quote__text {
+  max-width: 696px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  line-height: 24px;
+}
