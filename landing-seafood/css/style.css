@@ -342,3 +342,35 @@ a {
 .products__content-item__text {
   margin-bottom: 27px;
 }
+
+
+.features {
+  background-image: url(../images/features-bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  padding: 290px 0 98px;
+}
+
+.features__inner {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.features__item {
+  background-image: url(../images/features-item-bg.svg);
+  background-position: center;
+  background-size: cover;
+  color: var(--color-white);
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 180px;
+  min-height: 165px;
+  padding: 0 20px;
+}
