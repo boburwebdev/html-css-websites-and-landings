@@ -448,6 +448,7 @@ a {
 .contacts  {
   display: flex;
   align-items: center;
+  margin-bottom: 29px;
 }
 
 .contacts__img {
@@ -479,4 +480,43 @@ a {
 
 .contacts__link {
   display: block;
+}
+
+
+.footer {
+  margin-bottom: 109px;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 45px 0 23px;
+}
+
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.footer__social-item + .footer__social-item {
+  margin-left: 10px;
+}
+
+.footer__social-link svg {
+  fill: #C4C4C4;
+  transition: all .3s;
+}
+
+.footer__social-link svg:hover {
+  fill: #001E64;
+}
+
+.footer__menu {
+  margin-bottom: 31px;
+}
+
+.footer__menu .menu__list-link {
+  color: var(--color-black);
 }
