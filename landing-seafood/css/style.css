@@ -75,6 +75,14 @@ a {
   color: var(--color-white);
 }
 
+.logo {
+  display: block;
+}
+
+.logo__img {
+  width: 100%;
+}
+
 .header__inner {
   padding-top: 27px;
   display: flex;
@@ -83,6 +91,10 @@ a {
 
 .header__logo {
   margin-left: 16px;
+}
+
+.menu__hamburger {
+  display: none;
 }
 
 .menu__list {
@@ -421,14 +433,19 @@ a {
   width: 100%;
 }
 
-.info__item-conten-right {
+.info__item-content-left {
+  margin-right: 20px;
+}
+
+.info__item-content-right {
   margin-right: 180px;
+  margin-left: 20px;
 }
 
 
 .quote {
-  max-width: 800px;
-  padding: 0 0 100px;
+  max-width: 830px;
+  padding: 0 15px 100px;
   margin: 0 auto;
   text-align: center;
 }
