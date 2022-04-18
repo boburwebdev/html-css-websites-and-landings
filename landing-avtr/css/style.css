@@ -305,3 +305,35 @@ a {
 .design__info-img {
   width: 100%;
 }
+
+
+.design__slider {
+  padding-bottom: 175px;
+}
+
+.design__slider .slick-track {
+  margin-left: -35px;
+}
+
+.design__slider-item {
+  margin: 0 30px;
+}
+
+.design__slider-arrow {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  bottom: 145px;
+  left: 50%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.design__slider-arrow--prev {
+  transform: translateX(30px);
+}
+
+.design__slider-arrow--next {
+  transform: translateX(-80px);
+}
