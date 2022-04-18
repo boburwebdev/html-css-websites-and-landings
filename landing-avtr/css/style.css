@@ -181,3 +181,42 @@ a {
 .privacy__link:hover {
   color: var(--color-pink);
 }
+
+
+.premier {
+  padding-bottom: 150px;
+}
+
+.premier__inner {
+  display: flex;
+  gap: 60px;
+}
+
+.premier__desc {
+  margin-bottom: 25px;
+}
+
+.premier__text + .premier__text {
+  margin-top: 21px;
+}
+
+.premier__img {
+  margin-bottom: 25px;
+}
+
+.premier__link {
+  color: var(--color-pink);
+  font-family: 'Corporate-A-Bold';
+  font-family: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  border: 1px solid var(--color-pink);
+  padding: 14px 28px;
+}
+
+.premier__link:hover {
+  color: var(--color-blue-light);
+  border: 1px solid var(--color-blue-light);
+}
