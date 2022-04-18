@@ -214,9 +214,57 @@ a {
   display: block;
   border: 1px solid var(--color-pink);
   padding: 14px 28px;
+  transition: all .5s;
 }
 
 .premier__link:hover {
   color: var(--color-blue-light);
   border: 1px solid var(--color-blue-light);
+  transition: all .5s;
+}
+
+
+.video {
+  padding-bottom: 150px;
+}
+
+.video__img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.btn__video {
+  background-color: transparent;
+  color: var(--color-pink);
+  font-family: 'Corporate-A-Bold';
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 14px 28px;
+  border: 1px solid var(--color-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.btn__video-text {
+  margin-left: 9px;
+}
+
+.btn__video:hover {
+  color: var(--color-blue-light);
+  border: 1px solid var(--color-blue-light);
+  transition: all .5s;
+}
+
+.btn__video path {
+  transition: all .5s;
+}
+
+.btn__video:hover path {
+  fill: var(--color-blue-light);
+  transition: all .5s;
 }
