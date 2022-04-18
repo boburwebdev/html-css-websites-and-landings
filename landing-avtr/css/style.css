@@ -6,6 +6,15 @@
   --color-blue-light: #53A1CB;
 }
 
+@font-face {
+  font-family: 'Corporate-A-Bold';
+  src: url(../fonts/SF-Pro-Display-Bold.woff2) format('woff2'),
+       url(../fonts/SF-Pro-Display-Bold.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -81,4 +90,45 @@ a {
 
 .header__social-link:hover {
   background-color: var(--color-pink-light);
+}
+
+
+.hero {
+  background-image: url(../images/hero-bg.png);
+  background-size: cover;
+  background-position: top center;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 49px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  background-image: url(../images/mercedez-logo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero__title {
+  font-family: 'Corporate-A-Bold';
+  font-size: 72px;
+  line-height: 86px;
+  margin-bottom: 5px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__subtitle {
+  font-size: 24px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
