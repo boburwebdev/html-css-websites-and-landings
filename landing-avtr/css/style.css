@@ -356,3 +356,10 @@ a {
 .design__desc-text + .design__desc-text {
   margin-top: 21px;
 }
+
+
+.design__img-big {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
