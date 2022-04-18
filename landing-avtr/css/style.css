@@ -70,15 +70,15 @@ a {
   margin-top: 8px;
 }
 
-.header__social-list {
+.social-media__list {
   display: flex;
 }
 
-.header__social-item + .header__social-item {
+.social-media__item + .social-media__item {
   margin-left: 30px;
 }
 
-.header__social-link {
+.social-media__link {
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -88,7 +88,7 @@ a {
   border-radius: 50%;
 }
 
-.header__social-link:hover {
+.social-media__link:hover {
   background-color: var(--color-pink-light);
 }
 
@@ -131,4 +131,20 @@ a {
   font-size: 24px;
   line-height: 29px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.footer {
+  background-color: var(--color-black);
+  padding: 130px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy__link:hover {
+  color: var(--color-pink);
 }
