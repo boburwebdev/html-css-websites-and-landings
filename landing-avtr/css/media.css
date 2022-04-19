@@ -1,0 +1,324 @@
+@media (max-width: 1024px) {
+  .concept {
+    padding: 100px 0;
+  }
+
+  
+  .premier {
+    padding-bottom: 100px;
+  }
+
+
+  .video {
+    padding-bottom: 100px;
+  }
+
+  
+  .design__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding-bottom: 80px;
+    gap: 20px 30px;
+  }
+
+  .design__info-img--big {
+    grid-column: span 2;
+  }
+
+  .design__info-img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+ 
+  .design__slider {
+    padding-bottom: 125px;
+  }
+
+  .design__slider .slick-track {
+    margin-left: 0;
+  }
+
+  .design__slider-item {
+    margin: 0 20px;
+  }
+
+  .design__desc {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+  }
+
+  .header__inner {
+    height: 80px;
+  }
+
+  .hamburger__line {
+    width: 24px;
+  }
+
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .social-media__link {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-media__item + .social-media__item {
+    margin-left: 16px;
+  }
+
+  
+  .hero {
+    height: calc(100vh - 80px);
+  }
+
+  .hero__title {
+    font-size: 54px;
+    line-height: 68px;
+    margin-bottom: 2px;
+  }
+
+  .hero__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+
+  .concept {
+    padding: 80px 0;
+  }
+
+  .concept__text {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+
+  .premier {
+    padding-bottom: 80px;
+  }
+
+  .premier__inner {
+    flex-direction: column;
+  }
+
+  .premier__text + .premier__text {
+    margin-top: 15px;
+  }
+
+  .premier__img {
+    margin-bottom: 20px;
+  }
+  
+
+  .video {
+    padding-bottom: 80px;
+  }
+
+
+  .design__info {
+    display: block;
+  }
+
+  .design__info-desc--long,
+  .design__info-img--big,
+  .design__info-desc--short {
+    margin-bottom: 20px;
+  }
+
+  .design__info-text + .design__info-text {
+    margin-top: 15px;
+  }
+
+  .design__slider {
+    padding-bottom: 100px;
+  }
+
+  .design__desc {
+    padding-bottom: 80px;
+  }
+
+
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    order: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__social-media__list {
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .privacy {
+    order: 2;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .section__title {
+    margin-bottom: 15px;
+  }
+
+
+  .header__inner {
+    height: 60px;
+  }
+
+  .social-media__list {
+    order: 1;
+  }
+
+  .social-media__item + .social-media__item {
+    margin-left: 8px;
+  }
+
+  .header__logo {
+    width: 120px;
+    order: 0;
+  }
+
+  .hamburger {
+    order: 2;
+  }
+
+  .hamburger__line {
+    width: 20px;
+  }
+
+  .hero {
+    height: calc(100vh - 60px);
+  }
+
+  .hero__title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 0px;
+  }
+
+
+  .concept {
+    padding: 60px 0;
+  }
+
+  .concept__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+
+  .premier {
+    padding-bottom: 60px;
+  }
+
+  .premier__inner {
+    gap: 40px;
+  }
+
+  .premier__text + .premier__text {
+    margin-top: 10px;
+  }
+
+  .premier__img {
+    margin-bottom: 15px;
+  }
+
+  .premier__link {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 16px;
+  }
+
+  
+  .design__slider {
+    padding-bottom: 80px;
+  }
+
+  .design__desc {
+    flex-direction: column;
+    gap: 15px;
+    padding-bottom: 60px;
+  }
+
+  .design__desc-text + .design__desc-text {
+    margin-top: 15px;
+  }
+
+  .video {
+    padding-bottom: 60px;
+  }
+
+  .btn__video {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+
+  .btn__video svg {
+    width: 15px;
+    height: 19px;
+  }
+
+
+  .design__info {
+    padding-bottom: 40px;
+  }
+
+  .design__info-desc--long,
+  .design__info-img--big,
+  .design__info-desc--short {
+    margin-bottom: 15px;
+  }
+
+  .design__info-text + .design__info-text {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero__title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+
+  .premier__inner {
+    gap: 30px;
+  }
+}

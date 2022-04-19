@@ -36,6 +36,10 @@ a {
   transition: all .3s;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -75,6 +79,14 @@ a {
 
 .hamburger__line + .hamburger__line {
   margin-top: 8px;
+}
+
+.header__logo {
+  margin-left: 80px;
+}
+
+.logo__img {
+  display: block;
 }
 
 .social-media__list {
@@ -162,21 +174,6 @@ a {
   margin-bottom: 25px;
 }
 
-.concept__img {
-  width: 100%;
-}
-
-
-.footer {
-  background-color: var(--color-black);
-  padding: 130px 0;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .privacy__link:hover {
   color: var(--color-pink);
@@ -201,13 +198,14 @@ a {
 }
 
 .premier__img {
+  display: block;
   margin-bottom: 25px;
 }
 
 .premier__link {
   color: var(--color-pink);
   font-family: 'Corporate-A-Bold';
-  font-family: 18px;
+  font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
   text-align: center;
@@ -229,7 +227,6 @@ a {
 }
 
 .video__img {
-  width: 100%;
   margin-bottom: 25px;
 }
 
@@ -297,18 +294,17 @@ a {
   grid-column-end: -1;
 }
 
-
 .design__info-text + .design__info-text {
   margin-top: 21px;
-}
-
-.design__info-img {
-  width: 100%;
 }
 
 
 .design__slider {
   padding-bottom: 175px;
+}
+
+.design__slider-item {
+  width: auto;
 }
 
 .design__slider .slick-track {
@@ -359,7 +355,18 @@ a {
 
 
 .design__img-big {
-  width: 100%;
   display: block;
   object-fit: cover;
+}
+
+
+.footer {
+  background-color: var(--color-black);
+  padding: 130px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
