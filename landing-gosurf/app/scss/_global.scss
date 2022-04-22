@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $color-white;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.subtext__lined-left {
+  color: rgba($color-white, .5);
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding-left: 103px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: rgba($color-white, .5);
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.section__title {
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.slider-arrow {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  z-index: 5;
+}
