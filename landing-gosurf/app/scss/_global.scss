@@ -9,6 +9,25 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-overlay {
+  color: $color-white;
+  font-weight: 800;
+  font-size: 200px;
+  line-height: 156px;
+  text-transform: uppercase;
+  opacity: .02;
+}
+
 .subtext__lined-left {
   color: rgba($color-white, .5);
   font-size: 22px;
