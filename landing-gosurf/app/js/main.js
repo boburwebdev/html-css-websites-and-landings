@@ -15,11 +15,19 @@ $(function(){
     focusOnSelect: true
   });
 
+  $('.map__dots-slider').slick({
+    slidesToShow: 8,
+    arrows: false,
+    asNavFor: '.beaches-slider',
+    focusOnSelect: true
+  })
+
   $('.beaches-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: `<button class="slider-arrow beaches-slider__arrow beaches-slider__arrow--prev"><img class="slider-arrow-img" src="img/arrow-left.svg" alt="prev"></button>`,
     nextArrow: `<button class="slider-arrow beaches-slider__arrow beaches-slider__arrow--next"><img class="slider-arrow-img" src="img/arrow-right.svg" alt="next"></button>`,
+    asNavFor: '.map__dots-slider',
   })
   
 });
