@@ -7,7 +7,7 @@
     max-width: 467px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -15px;
     opacity: 0.07;
     z-index: 3;
   }
@@ -104,6 +104,10 @@
   &__slider-title {
     line-height: 86px;
     margin-bottom: 48px;
+    position: static;
+    &::before {
+      display: none;
+    }
 
     &--subtext {
       margin-bottom: 5px;

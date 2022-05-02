@@ -13,6 +13,13 @@ $(function(){
     arrows: false,
     asNavFor: '.header__slider',
     focusOnSelect: true
+  });
+
+  $('.beaches-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: `<button class="slider-arrow beaches-slider__arrow beaches-slider__arrow--prev"><img class="slider-arrow-img" src="img/arrow-left.svg" alt="prev"></button>`,
+    nextArrow: `<button class="slider-arrow beaches-slider__arrow beaches-slider__arrow--next"><img class="slider-arrow-img" src="img/arrow-right.svg" alt="next"></button>`,
   })
   
 });
