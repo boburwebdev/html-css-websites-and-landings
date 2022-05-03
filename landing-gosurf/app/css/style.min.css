@@ -4491,6 +4491,7 @@ body {
   background-color: #171919;
   color: #FFF;
   font-family: 'Fira Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -4815,6 +4816,22 @@ ul {
   padding: 160px 0;
 }
 
+.surf__subinfo {
+  position: relative;
+}
+
+.surf__subinfo::before {
+  content: '';
+  background-image: url(../img/icon-poi-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 295px;
+  height: 350px;
+  position: absolute;
+  right: -220px;
+  top: -95px;
+}
+
 .map {
   background-image: url(../img/world-map-dots.png);
   background-repeat: no-repeat;
@@ -4835,6 +4852,18 @@ ul {
 
 .map__dots-slider .slick-current .map__dots-slider__item-info {
   display: block;
+}
+
+.map__dots-slider .slick-current .map__dots-slider__item-circle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 18px solid #4AF6CD;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
 }
 
 .map__dots-slider__item {
@@ -4863,11 +4892,13 @@ ul {
 .map__dots-slider__item-info {
   background-color: rgba(15, 16, 16, 0.7);
   padding: 28px 32px 2px;
-  max-width: 285px;
-  width: 100%;
+  width: 285px;
   border-radius: 6px;
   position: absolute;
+  top: -241px;
+  left: -129px;
   display: none;
+  z-index: 5;
 }
 
 .map__dots-slider__item-info-beach {
