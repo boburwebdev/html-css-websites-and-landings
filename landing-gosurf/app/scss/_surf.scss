@@ -239,51 +239,13 @@
     }
 
     &-link {
-      font-weight: 800;
-      font-size: 40px;
-      line-height: 36px;
-      text-transform: uppercase;
+      opacity: 0;
       max-width: 280px;
-      display: block;
       margin: 0 auto;
       position: absolute;
       bottom: 0;
       left: 45px;
       right: 45px;
-      opacity: 0;
-      transition: all .3s;
-      white-space: nowrap;
-
-      &--highlight {
-        background-color: $color-green;
-        display: inline-block;
-        padding: 17px 57px 17px 17px;
-        margin-left: 19px;
-        position: relative;
-
-        &::before,
-        &::after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-
-        &::before {
-          background-color: $color-white;
-          width: 20px;
-          height: 1px;
-          left: -11px;
-        }
-
-        &::after {
-          background-image: url(../img/arrow-right.svg);
-          background-repeat: no-repeat;
-          width: 24px;
-          height: 20px;
-          right: 17px;
-        }
-      }
     }
 
   }

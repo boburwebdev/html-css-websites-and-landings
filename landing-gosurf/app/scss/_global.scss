@@ -21,6 +21,17 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container__inner {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .text-overlay {
   color: $color-white;
   font-weight: 800;
@@ -57,6 +68,21 @@ ul {
       transform: translateY(-50%);
     }
   }
+
+  &--right {
+    padding-right: 103px;
+
+    &::before {
+      content: '';
+      background-color: rgba($color-white, .5);
+      width: 80px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .section__title {
@@ -74,6 +100,10 @@ ul {
     top: 0;
     right: 0;
   }
+}
+
+.section__info {
+  position: relative;
 }
 
 .section__subinfo {
@@ -95,10 +125,98 @@ ul {
   }
 }
 
+.section__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &-item {
+    min-height: 200px;
+    position: relative;
+    padding-left: 32px;
+
+    &--main {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 36px;
+      text-transform: uppercase;
+
+      &-sub {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: right;
+        letter-spacing: 5.25px;
+        text-transform: uppercase;
+        opacity: .75;
+        display: block;
+      }
+    }
+
+    &--sub {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      text-align: right;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      transform: rotate(-90deg);
+      transform-origin: left;
+      white-space: nowrap;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+    }
+  }
+}
+
 .slider-arrow {
   background-color: transparent;
   border: 0;
   padding: 0;
   cursor: pointer;
   z-index: 5;
+}
+
+.btn {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
+  text-transform: uppercase;
+  display: block;
+  transition: all .3s;
+  white-space: nowrap;
+
+  &--highlight {
+    background-color: $color-green;
+    display: inline-block;
+    padding: 17px 57px 17px 17px;
+    margin-left: 19px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      background-color: $color-white;
+      width: 20px;
+      height: 1px;
+      left: -11px;
+    }
+
+    &::after {
+      background-image: url(../img/arrow-right.svg);
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 20px;
+      right: 17px;
+    }
+  }
 }
