@@ -91,6 +91,7 @@ ul {
   text-transform: uppercase;
   position: absolute;
   left: 245px;
+
   &::before {
     content: '';
     background-color: $color-green;
@@ -109,7 +110,7 @@ ul {
 .section__subinfo {
   position: absolute;
 
-  &--right{ 
+  &--right {
     right: 80px;
     text-align: right;
   }
@@ -125,52 +126,109 @@ ul {
   }
 }
 
-.section__details {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.module {
+  &__slider {
+    &-item {
+      position: relative;
+    }
 
-  &-item {
-    min-height: 200px;
-    position: relative;
-    padding-left: 32px;
+    &__arrow {
+      position: absolute;
+      top: 400px;
+      opacity: .5;
+      transition: all .3s;
 
-    &--main {
-      font-weight: 800;
-      font-size: 40px;
-      line-height: 36px;
-      text-transform: uppercase;
+      &--prev {
+        right: 125px;
+      }
 
-      &-sub {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 36px;
-        text-align: right;
-        letter-spacing: 5.25px;
-        text-transform: uppercase;
-        opacity: .75;
-        display: block;
+      &--next {
+        right: 80px;
+      }
+
+      &:hover {
+        opacity: 1;
       }
     }
+  }
 
-    &--sub {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 18px;
-      text-align: right;
-      letter-spacing: 8px;
-      text-transform: uppercase;
-      opacity: 0.5;
-      transform: rotate(-90deg);
-      transform-origin: left;
-      white-space: nowrap;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 200px;
+  &__destination {
+    position: relative;
+    padding-top: 185px;
+
+    &-subinfo {
+      top: 275px;
+      right: 80px;
     }
   }
+
+  &__middle {
+    background-position: right center;
+    background-repeat: no-repeat;
+    position: relative;
+    min-height: 400px;
+    margin-top: -300px;
+    margin-left: 132px;
+
+    &-subinfo {
+      top: 200px;
+      left: 0;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &-item {
+      min-height: 200px;
+      position: relative;
+      padding-left: 32px;
+
+      &--main {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+        text-transform: uppercase;
+
+        &-sub {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 36px;
+          text-align: right;
+          letter-spacing: 5.25px;
+          text-transform: uppercase;
+          opacity: .75;
+          display: block;
+        }
+      }
+
+      &--sub {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: right;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+        transform-origin: left;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+      }
+    }
+  }
+
+  &__book {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
+
 
 .slider-arrow {
   background-color: transparent;
@@ -219,4 +277,64 @@ ul {
       right: 17px;
     }
   }
+}
+
+
+.quantity {
+  display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  background-color: transparent;
+  color: $color-white;
+  width: 45px;
+  height: 42px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 800;
+  line-height: 36px;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  top: 50px;
+  right: 25px;
 }

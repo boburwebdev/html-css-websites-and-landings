@@ -1,0 +1,42 @@
+.sleep {
+  padding: 300px 0 0;
+  position: relative;
+
+  &__flowers {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 345px;
+    height: 548px;
+    position: absolute;
+    right: -145px;
+    bottom: -180px;
+  }
+
+  &__rating-subtitle {
+    display: flex;
+    align-items: center;
+
+    & &__icon {
+      display: inline-block;
+      margin-left: 20px;
+      margin-bottom: -5px;
+    }
+  }
+
+  &__rating__stars-list {
+    display: flex;
+    margin-left: 30px;
+
+    &-item + &-item {
+      margin-left: 11px;
+    }
+  }
+
+  &__details-item {
+    &--main {
+      font-size: 34px;
+      line-height: 36px;
+      letter-spacing: 6px;
+    }
+  }
+}
