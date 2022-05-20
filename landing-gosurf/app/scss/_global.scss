@@ -338,3 +338,11 @@ input[type=number]
   top: 50px;
   right: 25px;
 }
+
+.rating__stars-list {
+  display: flex;
+
+  &-item + &-item {
+    margin-left: 11px;
+  }
+}

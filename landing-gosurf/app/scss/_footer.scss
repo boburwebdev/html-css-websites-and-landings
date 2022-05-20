@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+
+  &__btn {
+    font-size: 32px;
+
+    .btn--highlight {
+      padding: 14px 18px;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__copy {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1.05px;
+    text-transform: uppercase;
+    opacity: .5;
+    margin-top: 30px;
+  }
+}

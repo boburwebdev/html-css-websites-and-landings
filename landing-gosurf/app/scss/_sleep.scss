@@ -24,12 +24,7 @@
   }
 
   &__rating__stars-list {
-    display: flex;
     margin-left: 30px;
-
-    &-item + &-item {
-      margin-left: 11px;
-    }
   }
 
   &__details-item {

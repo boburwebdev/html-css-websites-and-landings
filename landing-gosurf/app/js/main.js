@@ -85,4 +85,8 @@ $(function () {
     $('.sleep__sum', parents).html(sleepSum);
   });
 
+  $('.shop__item-img__circle').on('click', function() {
+    $(this).toggleClass('active');
+  })
+
 });
