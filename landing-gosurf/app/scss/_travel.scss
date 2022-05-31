@@ -1,0 +1,55 @@
+.travel {
+  padding: 120px 0 0;
+  position: relative;
+
+  &__slider {
+    &-item {
+      position: relative;
+    }
+
+    &__arrow {
+      position: absolute;
+      top: 400px;
+      opacity: .5;
+      transition: all .3s;
+
+      &--prev {
+        right: 125px;
+      }
+
+      &--next {
+        right: 80px;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__airline {
+    & &-subtitle__icon {
+      display: inline-block;
+      margin-left: 25px;
+      margin-bottom: -5px;
+    }
+  }
+
+  &__details {
+    &-item--main-price {
+      font-size: 34px;
+      line-height: 36px;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__cocktail {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 290px;
+    height: 455px;
+    position: absolute;
+    right: -145px;
+    bottom: -180px;
+  }
+}
