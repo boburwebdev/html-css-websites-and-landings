@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Xiaomi Himo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <picture class="picture">
+                <source
+                  type="image/avif"
+                  srcset="../images/logo@1x.avif 1x, ../images/logo@2x.avif 2x"
+                />
+                <source
+                  type="image/webp"
+                  srcset="../images/logo@1x.webp 1x, ../images/logo@2x.webp 2x"
+                />
+                <img
+                  class="logo__img"
+                  src="../images/logo@1x.png"
+                  srcset="../images/logo@2x.png 2x"
+                  alt="logo"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Описание</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Характеристики</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">Стоимость</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

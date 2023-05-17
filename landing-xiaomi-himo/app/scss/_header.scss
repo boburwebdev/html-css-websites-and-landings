@@ -1,0 +1,29 @@
+.header {
+  margin-bottom: 97px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-right: 73px;
+    
+    &-list {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    &-link {
+      color: $color-black;
+      padding: 41px 25px;
+
+      &:hover {
+        background-color: $color-black;
+        color: $color-white;
+      }
+    }
+  }
+}

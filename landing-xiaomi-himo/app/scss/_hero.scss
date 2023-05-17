@@ -1,0 +1,104 @@
+.hero {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    max-width: 540px;
+    margin-right: 30px;
+  }
+
+  &__right {
+    max-width: 630px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin-top: 72px;
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    color: $color-gray;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    max-width: 420px;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__slider {
+    margin-bottom: 25px;
+  }
+
+  &__slider-item {
+    cursor: pointer;
+  }
+
+  &__slider .slick-dots {
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    li.slick-active button {
+      background-color: $color-red;
+    }
+
+    button {
+      background-color: $color-black;
+      font-size: 0;
+      line-height: 0;
+      width: 2px;
+      height: 25px;
+      margin: 5px 0;
+      border: 0;
+      border-radius: 7px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-red;
+      }
+    }
+  }
+
+  &__features {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  &__features-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  &__features-item {
+    text-align: center;
+    margin: 0 5px;
+  }
+
+  &__features-highlight {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+
+  &__features-subtext {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+  }
+}
