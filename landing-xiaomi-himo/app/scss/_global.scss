@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $color-black;
   font-family: "Inter", sans-serif;
@@ -31,8 +35,8 @@ a {
   margin: 0 auto;
 }
 
-.section__mb {
-  margin-bottom: 150px;
+.section__pt {
+  padding-top: 150px;
 }
 
 .btn {
@@ -43,7 +47,7 @@ a {
   &__cta {
     background-color: $color-black;
     color: $color-white;
-    padding: 28px 81px;
+    padding: 28px 61px 28px 81px;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.1em;

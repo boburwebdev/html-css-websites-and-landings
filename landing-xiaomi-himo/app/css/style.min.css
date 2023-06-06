@@ -99,6 +99,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #131313;
   font-family: "Inter", sans-serif;
@@ -124,8 +128,8 @@ a {
   margin: 0 auto;
 }
 
-.section__mb {
-  margin-bottom: 150px;
+.section__pt {
+  padding-top: 150px;
 }
 
 .btn {
@@ -136,7 +140,7 @@ a {
 .btn__cta {
   background-color: #131313;
   color: #FFFFFF;
-  padding: 28px 81px;
+  padding: 28px 61px 28px 81px;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 1.1em;
@@ -374,4 +378,164 @@ a {
 }
 .product-images .slick-dots li.slick-active button {
   background-color: #FF4040;
+}
+
+.order {
+  margin-bottom: 100px;
+}
+.order__inner {
+  position: relative;
+}
+.order__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.order .form__order {
+  max-width: 420px;
+}
+.order .form__order-desc {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+.order .form__order-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+.order .form__order-input {
+  width: 100%;
+  padding: 0 0 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #6F6F6F;
+}
+.order .form__order-input::placeholder {
+  color: #6F6F6F;
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  opacity: 0.5;
+}
+.order .form__order-text {
+  color: #6F6F6F;
+  margin-bottom: 10px;
+  opacity: 0.5;
+}
+.order .form__order-btn {
+  background-color: #131313;
+  color: #FFFFFF;
+  padding: 28px 61px 28px 81px;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 1.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.order .form__order-radio[type=radio]:checked + .form__order-bike {
+  display: block;
+}
+.order .form__order-bike {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.order .form__order-bike--price {
+  width: 221px;
+  height: 100px;
+  border: 1px solid #FF4040;
+  border-radius: 50%;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  right: 0;
+  transform: translateX(-50%);
+}
+.order .form__order-bike--price::after {
+  content: "";
+  width: 221px;
+  height: 100px;
+  border: 1px solid #FF4040;
+  border-radius: 50%;
+  position: absolute;
+  top: 12px;
+}
+.order .form__order-colors {
+  display: flex;
+  margin-bottom: 50px;
+}
+.order .form__order-label + .form__order-label {
+  margin-left: 23px;
+}
+.order .form__order-label--color {
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.order .form__order-label--color-gray {
+  background-color: #6F6F6F;
+}
+.order .form__order-label--color-white {
+  background-color: #FFFFFF;
+  border: 1px solid #6F6F6F;
+}
+.order .form__order-label--color-red {
+  background-color: #FF4040;
+}
+
+.footer {
+  background-color: #131313;
+  color: #FFFFFF;
+  padding: 21px 0;
+}
+.footer__inner {
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__privacy {
+  text-transform: lowercase;
+  border-bottom: 1px solid #FFFFFF;
+}
+.footer__privacy:hover {
+  border-bottom: 1px solid transparent;
+}
+.footer__social-media-list {
+  display: flex;
+}
+.footer__social-media-list .footer__social-media-list__item + .footer__social-media-list__item {
+  margin-left: 28px;
+}
+.footer__social-media-list__icon {
+  display: inline-block;
+  transition: all 0.3s;
+}
+.footer__social-media-list__icon:hover {
+  transform: scale(1.1);
+}
+.footer__contacts-list__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer__contacts-list__link:hover .footer__contacts-list__icon {
+  transform: scale(1.1);
+}
+.footer__contacts-list__icon {
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.3s;
 }

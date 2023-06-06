@@ -1,0 +1,132 @@
+.order {
+  margin-bottom: 100px;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  .form__order {
+    max-width: 420px;
+
+    &-desc {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+
+    &-radio {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    &-input {
+      width: 100%;
+      padding: 0 0 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 1px solid $color-gray;
+
+      &::placeholder {
+        color: $color-gray;
+        font-family: "Inter", "sans-serif";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        opacity: 0.5;
+      }
+    }
+
+    &-text {
+      color: $color-gray;
+      margin-bottom: 10px;
+      opacity: 0.5;
+    }
+
+    &-btn {
+      background-color: $color-black;
+      color: $color-white;
+      padding: 28px 61px 28px 81px;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 1.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .form__order-radio[type="radio"]:checked + .form__order-bike {
+    display: block;
+  }
+
+  .form__order-bike {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &--price {
+      width: 221px;
+      height: 100px;
+      border: 1px solid $color-red;
+      border-radius: 50%;
+      font-size: 32px;
+      line-height: 39px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 28px;
+      left: 0;
+      right: 0;
+      transform: translateX(-50%);
+
+      &::after {
+        content: "";
+        width: 221px;
+        height: 100px;
+        border: 1px solid $color-red;
+        border-radius: 50%;
+        position: absolute;
+        top: 12px;
+      }
+    }
+  }
+
+  .form__order-colors {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .form__order-label + .form__order-label {
+    margin-left: 23px;
+  }
+
+  .form__order-label--color {
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    &-gray {
+      background-color: $color-gray;
+    }
+
+    &-white {
+      background-color: $color-white;
+      border: 1px solid $color-gray;
+    }
+
+    &-red {
+      background-color: $color-red;
+    }
+  }
+}

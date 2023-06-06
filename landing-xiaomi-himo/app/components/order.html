@@ -1,0 +1,120 @@
+<section class="order" id="order">
+  <div class="container">
+    <div class="order__inner">
+      <form class="form__order">
+        <h4 class="order__title">Заказать</h4>
+        <p class="form__order-desc">
+          Если Вы хотите заказать велосипед, оставьте свой контакт и наш
+          менеджер перезвонит вам в ближайшее время
+        </p>
+
+        <input
+          class="form__order-input"
+          id="form__order-input--name"
+          type="text"
+          placeholder="Имя"
+        />
+        <input
+          class="form__order-input"
+          id="form__order-input--phone"
+          type="text"
+          placeholder="Телефон"
+        />
+
+        <div class="form__order-text">выберите желаемый цвет</div>
+
+        <div class="form__order-colors">
+          <label class="form__order-label">
+            <input class="form__order-radio" type="radio" name="bike" checked/>
+            <div class="form__order-bike">
+              <div class="form__order-bike--price">33 999 грн.</div>
+              <picture class="form__order-bike--picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    ../images/form-order-bike-02-@1x.avif 1x,
+                    ../images/form-order-bike-02-@2x.avif 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../images/form-order-bike-02-@1x.webp 1x,
+                    ../images/form-order-bike-02-@2x.webp 2x
+                  "
+                />
+                <img
+                  class="form__order-bike--img"
+                  src="../images/form-order-bike-02-@1x.jpg"
+                  srcset="../images/form-order-bike-02-@2x.jpg 2x"
+                  alt="form-order-bike"
+                />
+              </picture>
+            </div>
+            <div class="form__order-label--color form__order-label--color-gray"></div>
+          </label>
+          <label class="form__order-label">
+            <input class="form__order-radio" type="radio" name="bike" />
+            <div class="form__order-bike">
+              <div class="form__order-bike--price">32 999 грн.</div>
+              <picture class="form__order-bike--picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    ../images/form-order-bike-01-@1x.avif 1x,
+                    ../images/form-order-bike-01-@2x.avif 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../images/form-order-bike-01-@1x.webp 1x,
+                    ../images/form-order-bike-01-@2x.webp 2x
+                  "
+                />
+                <img
+                  class="form__order-bike--img"
+                  src="../images/form-order-bike-01-@1x.jpg"
+                  srcset="../images/form-order-bike-01-@2x.jpg 2x"
+                  alt="form-order-bike"
+                />
+              </picture>
+            </div>
+            <div class="form__order-label--color form__order-label--color-white"></div>
+          </label>
+          <label class="form__order-label">
+            <input class="form__order-radio" type="radio" name="bike" />
+            <div class="form__order-bike">
+              <div class="form__order-bike--price">35 999 грн.</div>
+              <picture class="form__order-bike--picture">
+                <source
+                  type="image/avif"
+                  srcset="
+                    ../images/form-order-bike-03-@1x.avif 1x,
+                    ../images/form-order-bike-03-@2x.avif 2x
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ../images/form-order-bike-03-@1x.webp 1x,
+                    ../images/form-order-bike-03-@2x.webp 2x
+                  "
+                />
+                <img
+                  class="form__order-bike--img"
+                  src="../images/form-order-bike-03-@1x.jpg"
+                  srcset="../images/form-order-bike-03-@2x.jpg 2x"
+                  alt="form-order-bike"
+                />
+              </picture>
+            </div>
+            <div class="form__order-label--color form__order-label--color-red"></div>
+          </label>
+        </div>
+
+        <button class="btn btn__cta">ЗАКАЗАТЬ</button>
+      </form>
+    </div>
+  </div>
+</section>
