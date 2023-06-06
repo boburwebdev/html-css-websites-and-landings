@@ -1,0 +1,43 @@
+.info {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__img-wrapper {
+    max-width: 570px;
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    max-width: 570px;
+    
+    &-item {
+      margin-bottom: 50px;
+    }
+
+    &-item:last-child {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      padding-right: 120px;
+    }
+  }
+}

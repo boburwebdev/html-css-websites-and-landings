@@ -1,9 +1,8 @@
 $(document).ready(function(){
-  $('.hero__slider').slick({
+  $('.hero__slider, .product-images__slider').slick({
     arrows: false,
     dots: true,
-    vertical: true,
-    verticalSwiping: true,
+    fade: true,
     autoplay: true,
     pauseOnHover: true
   });
