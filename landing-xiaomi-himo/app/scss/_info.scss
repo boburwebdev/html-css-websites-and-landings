@@ -9,6 +9,7 @@
   }
 
   &__picture {
+    display: inline-block;
     width: 100%;
   }
 
@@ -19,6 +20,7 @@
 
   &__content {
     max-width: 570px;
+    margin-left: 60px;
     
     &-item {
       margin-bottom: 50px;

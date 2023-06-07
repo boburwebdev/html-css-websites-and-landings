@@ -73,6 +73,10 @@
     top: 0;
     right: 0;
 
+    &--picture {
+      display: block;
+    }
+
     &--price {
       width: 221px;
       height: 100px;

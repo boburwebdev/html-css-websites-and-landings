@@ -12,8 +12,9 @@
   }
 
   &__list {
-    width: 570px;
-    max-width: 100%;
+    max-width: 570px;
+    width: 100%;
+    margin-right: 60px;
   }
 
   &__list-item {
@@ -38,7 +39,12 @@
     }
 
     &__text {
-      flex: 1;
+      width: 50%;
+      word-break: break-word;
+
+      &:first-child {
+        padding-right: 10px;
+      }
     }
   }
 
