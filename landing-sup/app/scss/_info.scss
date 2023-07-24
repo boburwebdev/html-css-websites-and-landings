@@ -1,0 +1,74 @@
+.info {
+  background-image: url(../images/info__bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  margin-top: 180px;
+  padding-top: 75px;
+
+  &__top {
+    display: flex;
+    gap: 82px;
+    margin-bottom: 60vh;
+
+    &-left {
+      margin-right: 5px;
+      padding-bottom: 120px;
+      position: relative;
+
+      .btn__play-info {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    &-text {
+      max-width: 290px;
+      padding-top: 260px;
+    }
+
+    &-middle {
+      border-bottom: 1px solid $color-white;
+      padding-bottom: 30px;
+    }
+
+    &-picture {
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 162px;
+    padding-bottom: 50px;
+
+    &-title {
+      font-family: $font-comforta;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 67px;
+    }
+
+    &-list {
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 30px 0;
+      border-top: 1px solid $color-white;
+      border-bottom: 1px solid $color-white;
+      
+      &-item {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 15px;
+      }
+    }
+
+    &-spec-title {
+      width: 192px;
+    }
+  }
+}
