@@ -43,6 +43,7 @@ a {
   text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .btn__small {
@@ -58,11 +59,23 @@ a {
 .btn__black {
   background-color: $color-dark;
   color: $color-white;
+
+  &:hover {
+    background-color: $color-light-green;
+    color: $color-dark;
+  }
 }
 
-.btn__light-green {
-  background-color: $color-light-green;
-  color: $color-dark;
+.btn__transparent {
+  background-color: transparent;
+  color: $color-teal;
+  border: 2px solid $color-teal;
+
+  &:hover {
+    background-color: $color-light-green;
+    color: $color-dark;
+    border: 2px solid $color-light-green;
+  }
 }
 
 .btn__play {
@@ -82,8 +95,10 @@ a {
     margin-top: 12px;
   }
 
-  span, path, circle {
-    transition: all .3s;
+  span,
+  path,
+  circle {
+    transition: all 0.3s;
   }
 
   &:hover span {
@@ -101,7 +116,7 @@ a {
 
 .logo {
   & path {
-    transition: all .3s;
+    transition: all 0.3s;
   }
 
   &:hover path {
