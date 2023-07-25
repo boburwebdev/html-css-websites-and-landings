@@ -48,6 +48,12 @@
     position: absolute;
     left: 277px;
     bottom: 130px;
+    transition: transform .3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__picture {

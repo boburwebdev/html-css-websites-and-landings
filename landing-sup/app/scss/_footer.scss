@@ -1,0 +1,97 @@
+.footer {
+  background-color: $color-dark;
+  color: $color-white;
+  padding: 88px 0 83px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__form {
+    max-width: 500px;
+    margin-bottom: 98px;
+
+    &-input {
+      background-color: transparent;
+      color: $color-white;
+      font-family: $font-inter;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: uppercase;
+      border: none;
+      border-bottom: 1px solid rgba($color-white, 0.4);
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      margin-bottom: 58px;
+
+      &::placeholder {
+        color: rgba($color-white, 0.2);
+        font-family: $font-inter;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+      }
+    }
+
+    .btn__footer-form {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      padding: 10px 66px;
+      margin-top: -8px;
+
+      &:hover {
+        background-color: $color-light-green;
+      }
+    }
+  }
+
+  &__logo {
+    & path {
+      transition: all 0.3s;
+    }
+
+    &:hover path {
+      fill: $color-teal;
+    }
+  }
+
+  &__instagram {
+    margin-bottom: 48px;
+
+    &-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    &-images {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 52px;
+    }
+  }
+
+  &__links-list {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links-item {
+    transition: color 0.3s;
+
+    &:hover {
+      color: $color-teal;
+    }
+  }
+}
