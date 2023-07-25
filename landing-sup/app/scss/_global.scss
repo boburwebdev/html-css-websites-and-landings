@@ -29,11 +29,22 @@ a {
   transition: all 0.3s;
 }
 
+img {
+  object-fit: cover;
+}
+
 .container {
   max-width: 90%;
   width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section__title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -90,6 +101,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
 
   span {
     margin-top: 12px;

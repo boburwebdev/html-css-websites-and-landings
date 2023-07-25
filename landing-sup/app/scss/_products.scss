@@ -1,5 +1,5 @@
 .products {
-  padding: 150px 0;
+  padding: 150px 0 171px;
 
   &__info {
     position: relative;
@@ -7,9 +7,6 @@
 
   &__title {
     color: $color-teal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 67px;
     margin-bottom: 50px;
   }
 

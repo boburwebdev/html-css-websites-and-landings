@@ -18,7 +18,6 @@
       position: relative;
 
       .btn__play-info {
-        position: absolute;
         right: 0;
         bottom: 0;
       }
@@ -45,13 +44,6 @@
     align-items: center;
     gap: 162px;
     padding-bottom: 50px;
-
-    &-title {
-      font-family: $font-comforta;
-      font-weight: 400;
-      font-size: 60px;
-      line-height: 67px;
-    }
 
     &-list {
       text-transform: uppercase;
