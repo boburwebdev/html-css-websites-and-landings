@@ -1,0 +1,48 @@
+.hero {
+  background-image: url(../images/hero__bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  
+  &__inner {
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .title {
+    font-weight: 700;
+    font-family: "Impact";
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0px;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-family: "Impact";
+    font-size: 48px;
+    border-bottom: 1px solid $color-black;
+    margin-bottom: 10px;
+
+    &-date {
+      color: $color-gold;
+      display: block;
+      font-size: 34px;
+      line-height: 34px;
+      padding: 10px 0;
+    }
+  }
+
+  &__location-text {
+    color: $color-dark-grey;
+    font-size: 16px;
+  }
+
+  &__link-to-bottom {
+    margin: auto 10px 30px;
+  }
+}

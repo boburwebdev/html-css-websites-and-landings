@@ -1,0 +1,25 @@
+.header {
+  background-image: linear-gradient(
+    180deg,
+    #d8d4ca 0%,
+    rgba(217, 217, 217, 0) 100%
+  );
+  padding: 25px 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  .nav {
+    color: $color-dark-grey;
+    font-size: 16px;
+    padding: 0 86px 0 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu__list {
+    padding-top: 25px;
+    display: flex;
+    gap: 0 40px;
+  }
+}
