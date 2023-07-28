@@ -24,11 +24,23 @@ a {
 
 img {
   object-fit: cover;
+  max-width: 100%;
 }
 
-.container {
+img.logo__img {
+  max-width: unset;
+}
+
+.container__big {
   max-width: 90%;
   width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container__small {
+  max-width: 80%;
+  width: 935px;
   padding: 0 15px;
   margin: 0 auto;
 }
