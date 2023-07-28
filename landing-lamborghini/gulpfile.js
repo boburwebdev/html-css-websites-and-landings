@@ -24,11 +24,9 @@ function pages() {
     .pipe(browserSync.stream());
 }
 
-// .pipe(scss({ outputStyle: "expanded" }))
-
 function styles() {
   return src([
-    "node_modules/swiper/swiper.css",
+    "node_modules/swiper/swiper-bundle.min.css",
     "app/scss/**/style.scss"
   ])
     .pipe(concat("style.min.css"))
