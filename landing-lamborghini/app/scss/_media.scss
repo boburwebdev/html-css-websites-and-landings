@@ -1,0 +1,453 @@
+@media (max-width: 1200px) {
+  .header {
+    .nav {
+      padding: 0 15px;
+      align-items: center;
+    }
+
+    &__logo {
+      width: 60px;
+
+      .logo__img {
+        width: 100%;
+      }
+    }
+
+    .menu__list {
+      display: none;
+    }
+
+    .menu__mobile {
+      display: flex;
+      gap: 0 20px;
+    }
+  }
+
+  .hero {
+    &__inner {
+      padding-top: 120px;
+    }
+  }
+
+  .evo {
+    &__black {
+      &-list {
+        gap: 30px;
+      }
+    }
+
+    &__white {
+      &-inner {
+        &::after {
+          display: none;
+        }
+      }
+
+      &-video {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .events {
+    &__calendar {
+      flex-direction: column;
+
+      &-list {
+        &-item {
+          gap: 10px;
+
+          &__stage {
+            min-width: unset;
+            width: 20%;
+          }
+          &__location {
+            min-width: unset;
+            width: 50%;
+            padding: 0 5px;
+          }
+          &__date {
+            min-width: unset;
+            width: 30%;
+          }
+        }
+      }
+    }
+
+    &__title,
+    &__text {
+      max-width: 100%;
+    }
+  }
+
+  .track {
+    &__car-picture {
+      width: 45%;
+      bottom: 15px;
+    }
+  }
+
+  .evo {
+    &__black {
+      &-list {
+        gap: 30px 60px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .section__paddings {
+    padding: 60px 0;
+  }
+
+  .header {
+    &__logo {
+      z-index: 6;
+    }
+
+    .menu__hamburger {
+      background-color: transparent;
+      border: 0;
+      width: 30px;
+      height: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 6;
+
+      span {
+        background-color: $color-gold;
+        width: 100%;
+        height: 3px;
+      }
+    }
+
+    .menu__mobile {
+      background-color: rgba($color-black, 0.9);
+      color: $color-white;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0 20px;
+      width: 100%;
+      height: 100vh;
+      transition: all 0.3s;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+
+      &-item {
+        font-size: 3vh;
+        padding: 20px 0;
+      }
+
+      &.show {
+        display: flex;
+      }
+    }
+  }
+
+  .hero {
+    background-position: left bottom;
+
+    .title {
+      font-size: 64px;
+      letter-spacing: 0.03em;
+    }
+
+    &__subtitle {
+      font-size: 42px;
+
+      &-date {
+        font-size: 30px;
+        padding: 5px 0;
+      }
+    }
+
+    &__location-text {
+      font-size: 15px;
+    }
+  }
+
+  .track {
+    &__car-picture {
+      width: 40%;
+      bottom: 35px;
+      left: 25%;
+    }
+  }
+
+  .evo {
+    &__white {
+      &-video {
+        &::before {
+          background-position: center bottom;
+        }
+      }
+    }
+  }
+
+  .blog {
+    &__slider {
+      padding: 50px 0 75px;
+    }
+
+    &__quote {
+      flex-direction: column-reverse;
+
+      &-picture {
+        max-width: unset;
+      }
+    }
+  }
+
+  .footer {
+    padding: 60px 0 40px;
+
+    &__content {
+      flex-direction: column;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__info {
+      &-list {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__address {
+      flex-basis: unset;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container__small {
+    max-width: 90%;
+  }
+
+  .header {
+    padding: 15px 0 0;
+
+    &__logo {
+      width: 50px;
+    }
+  }
+
+  .hero {
+    .title {
+      font-size: 48px;
+      letter-spacing: 0.02em;
+    }
+
+    &__subtitle {
+      font-size: 34px;
+
+      &-date {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .events {
+    &__first {
+      margin-bottom: 60px;
+
+      &-desc {
+        flex-direction: column;
+      }
+    }
+
+    &__second {
+      flex-direction: column;
+
+      &-desc,
+      &-picture {
+        flex: unset;
+      }
+
+      &-picture {
+        max-width: 100%;
+        height: 220px;
+      }
+    }
+  }
+
+  .track {
+    &__inner {
+      padding: 40px 0;
+      min-height: 60vh;
+    }
+
+    &__roadmap {
+      margin: 100px auto 0;
+    }
+
+    &__car-picture {
+      display: none;
+    }
+  }
+
+  .evo {
+    &__black {
+      &-inner {
+        &::after {
+          display: none;
+        }
+      }
+
+      &-top {
+        flex-direction: column;
+        margin-bottom: 100px;
+      }
+
+      &-picture {
+        margin: 0 auto 40px;
+      }
+
+      &-list {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    &__white {
+      padding: 60px 0;
+
+      &-inner {
+        &::before {
+          display: none;
+        }
+      }
+
+      &-text {
+        &--first,
+        &--second,
+        &--third {
+          max-width: 100%;
+        }
+      }
+
+      &-video {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .blog {
+    &__item {
+      &-img {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    &__bottom {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+
+    &__logo {
+      order: 1;
+    }
+
+    &__ui-author {
+      order: 2;
+    }
+
+    &__privacy-policy {
+      order: 3;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    .menu__mobile {
+      &-item {
+        font-size: 3vh;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .hero {
+    background-position: center bottom;
+
+    &__inner {
+      padding-top: 100px;
+    }
+
+    .title {
+      font-size: 40px;
+      letter-spacing: 0.03em;
+    }
+
+    &__subtitle {
+      font-size: 30px;
+
+      &-date {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .track {
+    &__inner {
+      min-height: 40vh;
+    }
+
+    &__roadmap {
+      margin: 60px auto 0;
+
+      svg {
+        height: 180px;
+      }
+    }
+  }
+
+  .evo {
+    &__white {
+      &-video {
+        height: 180px;
+
+        &::before {
+          height: 100%;
+        }
+
+        &__link {
+          bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .blog {
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__slider {
+      padding: 50px 0;
+    }
+
+    &__quote {
+      &-picture {
+        height: 200px;
+      }
+    }
+  }
+}

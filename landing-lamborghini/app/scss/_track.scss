@@ -1,0 +1,36 @@
+.track {
+  background-image: url(../images/track__bg.jpg);
+  background-size: cover;
+  background-position: center top;
+
+  &__title {
+    max-width: 435px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    max-width: 435px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 47px 0 90px;
+  }
+
+  &__roadmap {
+    margin: auto auto 0;
+    position: relative;
+
+    svg {
+      max-width: 100%;
+    }
+  }
+
+  &__car-picture {
+    position: absolute;
+    bottom: 10px;
+    left: 20%;
+  }
+}
