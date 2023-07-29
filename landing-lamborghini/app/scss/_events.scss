@@ -87,21 +87,22 @@
         justify-content: space-between;
         gap: 20px;
         margin-bottom: 20px;
+        
+        div {
+          word-wrap: break-word;
+        }
 
         &:last-child {
           margin-bottom: 0;
         }
 
         &__stage {
-          // flex-basis: 112px;
           min-width: 112px;
         }
         &__location {
-          // flex-basis: 161px;
           min-width: 161px;
         }
         &__date {
-          // flex-basis: 136px;
           min-width: 136px;
         }
       }

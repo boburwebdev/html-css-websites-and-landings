@@ -22,4 +22,12 @@
     display: flex;
     gap: 0 40px;
   }
+
+  .menu__hamburger {
+    display: none;
+  }
+
+  .menu__mobile {
+    display: none;
+  }
 }
