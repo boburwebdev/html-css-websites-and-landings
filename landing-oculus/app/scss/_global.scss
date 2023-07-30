@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-helvetica;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
