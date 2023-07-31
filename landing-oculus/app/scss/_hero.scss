@@ -1,0 +1,57 @@
+.hero {
+  background-image: url(../images/hero__bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+
+  &__inner {
+    color: $color-grey;
+    min-height: calc(100vh - 80px);
+    padding: 245px 0 50px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 90px;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 36px;
+  }
+
+  &__subtext {
+    font-size: 13px;
+  }
+
+  &__subtitle + &__subtext {
+    margin-top: -4px;
+    margin-bottom: 30px;
+  }
+
+  &__cta {
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  .btn__hero {
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+
+    &-cta {
+      background-image: $gradient-pink-purple;
+      color: $color-white;
+      border: 1px solid;
+      border-image: $gradient-pink-purple 1;
+    }
+
+    &-price {
+      color: $color-grey;
+      border: 1px solid;
+      border-image: $gradient-pink-purple 1;
+    }
+  }
+}

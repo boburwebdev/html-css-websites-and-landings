@@ -1,6 +1,6 @@
 .header {
   border-bottom: 1px solid $color-light-grey;
-  padding: 19px 0;
+  padding: 19px 0 12px;
 
   .nav {
     display: flex;
@@ -10,15 +10,19 @@
     &__menu {
       text-transform: uppercase;
       display: flex;
-      gap: 20px;
+      gap: 22px;
     }
+  }
+
+  &__logo {
+    margin-right: 21%;
   }
 
   .cart {
     position: relative;
 
     span {
-      background-image: linear-gradient(180deg, rgba(188, 16, 216, 1), rgba(80, 0, 250, 0.93));
+      background-image: $gradient-pink-purple;
       color: $color-white;
       font-size: 11px;
       line-height: 11px;
