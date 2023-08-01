@@ -49,6 +49,18 @@ img {
   text-transform: uppercase;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    text-transform: uppercase;
+    display: flex;
+    gap: 22px;
+  }
+}
+
 .buy {
   margin-bottom: 10px;
   display: flex;

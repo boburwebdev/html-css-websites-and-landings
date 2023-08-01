@@ -2,18 +2,6 @@
   border-bottom: 1px solid $color-light-grey;
   padding: 19px 0 12px;
 
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    &__menu {
-      text-transform: uppercase;
-      display: flex;
-      gap: 22px;
-    }
-  }
-
   &__logo {
     margin-right: 21%;
   }
