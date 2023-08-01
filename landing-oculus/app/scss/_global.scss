@@ -48,3 +48,55 @@ img {
   font-size: 16px;
   text-transform: uppercase;
 }
+
+.buy {
+  margin-bottom: 10px;
+  display: flex;
+
+  .btn__buy {
+    width: 300px;
+    padding: 20px 0;
+    text-align: center;
+
+    &-cta {
+      background-image: $gradient-pink-purple;
+      color: $color-white;
+      border: 1px solid;
+      border-image: $gradient-pink-purple 1;
+    }
+
+    &-price {
+      color: $color-grey;
+      border: 1px solid;
+      border-image: $gradient-pink-purple 1;
+      position: relative;
+      transition: color 0.3s;
+      z-index: 1;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        background-image: $gradient-pink-purple;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        transition: all 0.3s;
+        z-index: -1;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+
+      &:hover::before {
+        right: 0;
+      }
+    }
+  }
+
+  &__subtext {
+    font-size: 13px;
+  }
+}

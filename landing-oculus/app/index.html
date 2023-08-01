@@ -65,15 +65,15 @@
             <p class="hero__subtext">
               For a limited time only, save $59.99 USD. Offer ends 1/19/23
             </p>
-            <div class="hero__cta">
-              <button class="btn btn__hero btn__hero-cta">
+            <div class="buy hero__buy">
+              <button class="btn btn__buy btn__buy-cta btn__hero btn__hero-cta">
                 Buy Now
               </button>
-              <button class="btn btn__hero btn__hero-price">
+              <button class="btn btn__buy btn__buy-price btn__hero btn__hero-price">
                 399,99 USD
               </button>
             </div>
-            <p class="hero__subtext">
+            <p class="buy__subtext">
               Meta Quest 2 is for ages 13+
             </p>
           </div>
@@ -476,6 +476,32 @@
           </div>
         </div>
       </section>
+      
+      <div class="cta">
+        <div class="cta__bg-text">Oculus</div>
+        <picture class="cta__picture">
+          <source
+            type="image/avif"
+            srcset="../images/cta__img@1x.avif 1x, ../images/cta__img@2x.avif 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="../images/cta__img@1x.webp 1x, ../images/cta__img@2x.webp 2x"
+          />
+          <img
+            class="cta__img"
+            src="../images/cta__img@1x.png"
+            srcset="../images/cta__img@2x.png 2x"
+            alt="Oculus"
+          />
+        </picture>
+      
+        <div class="buy cta__buy">
+          <button class="btn btn__buy btn__buy-cta">Buy Now</button>
+          <button class="btn btn__buy btn__buy-price">399,99 USD</button>
+        </div>
+        <p class="buy__subtext">Meta Quest 2 is for ages 13+</p>
+      </div>
       
     </main>
 
