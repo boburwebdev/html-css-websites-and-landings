@@ -1,0 +1,27 @@
+.promo {
+  margin-bottom: 100px;
+
+  &__inner {
+    background-image: url(../images/promo__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+  }
+
+  .btn__promo {
+    background-image: $gradient-pink-purple;
+    color: $color-white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    margin: 0 auto;
+  }
+}
