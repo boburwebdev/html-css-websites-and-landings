@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid $color-light-grey;
+  padding: 19px 0 12px;
+
+  .nav {
+    &__menu-hamburger {
+      display: none;
+    }
+  }
+
+  &__logo {
+    margin-right: 21%;
+  }
+
+  .cart {
+    position: relative;
+
+    span {
+      background-image: $gradient-pink-purple;
+      color: $color-white;
+      font-size: 11px;
+      line-height: 11px;
+      min-width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -7px;
+      right: -12px;
+    }
+  }
+}
