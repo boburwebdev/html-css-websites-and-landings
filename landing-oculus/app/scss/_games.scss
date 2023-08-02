@@ -6,12 +6,11 @@
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   &__desc {
-    flex-basis: 300px;
     padding-right: 15px;
 
     &-title {
@@ -43,7 +42,6 @@
   }
 
   &__item {
-    flex: 1;
     padding: 20px;
     border: 1px solid;
     border-image: $gradient-pink-purple 1;

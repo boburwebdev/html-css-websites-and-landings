@@ -1,5 +1,5 @@
 .cta {
-  padding: 55px 0 110px;
+  padding: 55px 15px 110px;
   text-align: center;
   position: relative;
   overflow-x: hidden;
@@ -23,6 +23,10 @@
   &__picture {
     margin-bottom: 30px;
     display: block;
+  }
+
+  &__img {
+    max-width: 100%;
   }
 
   &__buy {

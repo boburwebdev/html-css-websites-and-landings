@@ -23,6 +23,10 @@
       align-self: stretch;
     }
   
+    &-img {
+      max-width: 100%;
+    }
+
     &-name {
       color: $color-grey;
     }

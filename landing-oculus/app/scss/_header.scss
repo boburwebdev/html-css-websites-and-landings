@@ -2,6 +2,12 @@
   border-bottom: 1px solid $color-light-grey;
   padding: 19px 0 12px;
 
+  .nav {
+    &__menu-hamburger {
+      display: none;
+    }
+  }
+
   &__logo {
     margin-right: 21%;
   }
