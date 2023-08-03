@@ -4,6 +4,11 @@
 
   &__home {
     background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
   }
 
   &__inner {
@@ -22,6 +27,14 @@
       &-item {
         font-weight: 700;
         text-transform: uppercase;
+      }
+
+      &-link {
+        transition: color .3s;
+        
+        &:hover {
+          color: $color-blue;
+        }
       }
     }
   }
