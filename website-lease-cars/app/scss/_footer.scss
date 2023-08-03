@@ -2,12 +2,12 @@
   background-color: $color-black;
   color: $color-white;
   padding: 50px 0 32px;
-  margin-top: 134px;
 
   &__top {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
+    gap: 40px;
 
     &-list {
       &-title {
@@ -16,6 +16,7 @@
 
       &-item {
         margin-bottom: 20px;
+        max-width: 240px;
 
         &:last-child {
           margin-bottom: 0;
