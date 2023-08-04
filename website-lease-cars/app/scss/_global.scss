@@ -19,6 +19,15 @@ body {
   line-height: 1.3;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .wrapper {
   height: 100%;
   display: flex;
@@ -29,9 +38,17 @@ body {
   flex: 1;
 }
 
+.container {
+  max-width: 96%;
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .section__title {
   font-weight: 700;
   font-size: 48px;
+  text-align: center;
 }
 
 .secondary__title {
@@ -39,20 +56,16 @@ body {
   font-size: 24px;
 }
 
-ul {
-  list-style: none;
+.section__margin-bottom {
+  margin-bottom: 150px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.section__title-margin--big {
+  margin-bottom: 50px;
 }
 
-.container {
-  max-width: 96%;
-  width: 1230px;
-  padding: 0 15px;
-  margin: 0 auto;
+.section__title-margin--small {
+  margin-bottom: 50px;
 }
 
 .btn {

@@ -52,7 +52,7 @@
 
   .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet {
-    background-color: $color-black;
+    background-color: $color-white;
     border-radius: 0;
     height: 3px;
     width: 120px;
@@ -62,7 +62,7 @@
 
   .swiper-pagination-horizontal.swiper-pagination-bullets
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: $color-white;
+    background-color: $color-blue;
     height: 6px;
   }
 
