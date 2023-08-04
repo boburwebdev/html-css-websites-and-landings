@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
 .wrapper {
   height: 100%;
   display: flex;

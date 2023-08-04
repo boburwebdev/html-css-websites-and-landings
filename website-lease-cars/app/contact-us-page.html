@@ -46,43 +46,117 @@
         </div>
       </header>
       
-      
+
       <main class="main">
-        <div class="container">
-          <section class="contact-us section__margin-bottom">
-            <div class="container">
-              <h3 class="section__title contact-us__title section__title-margin--small">
-                Contact Us
-              </h3>
-              <h5
-                class="secondary__title contact-us__secondary-title section__title-margin--big"
-              >
-                Feel free to contact us with questions, potencial partnerships or media
-                inquiries
-              </h5>
-          
-              <form class="contact-us__form">
-                <input
-                  class="contact-us__form-input"
-                  type="text"
-                  placeholder="Name"
-                /><input
-                  class="contact-us__form-input"
-                  type="email"
-                  placeholder="E-mail"
-                /><textarea
-                  class="contact-us__form-textarea"
-                  id="contact-us__form-message"
-                  placeholder="Your text"
-                ></textarea>
-                <button class="btn btn__small btn__black btn__contact-us" type="submit">
-                  Submit
-                </button>
-              </form>
+        <section class="contact-us section__margin-bottom">
+          <div class="container">
+            <h3 class="section__title contact-us__title section__title-margin--small">
+              Contact Us
+            </h3>
+            <h5
+              class="secondary__title contact-us__secondary-title"
+            >
+              Feel free to contact us with questions, potencial partnerships or media
+              inquiries
+            </h5>
+        
+            <form class="contact-us__form">
+              <input
+                class="contact-us__form-input"
+                type="text"
+                placeholder="Name"
+              /><input
+                class="contact-us__form-input"
+                type="email"
+                placeholder="E-mail"
+              /><textarea
+                class="contact-us__form-textarea"
+                id="contact-us__form-message"
+                placeholder="Your text"
+              ></textarea>
+              <button class="btn btn__small btn__black btn__contact-us" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+        
+        <div class="recommended-posts section__margin-bottom">
+          <div class="container">
+            <div class="recommended-posts__inner">
+              <div class="recommended-posts__item">
+                <picture class="recommended-posts__item-picture">
+                  <source
+                    type="image/avif"
+                    srcset="
+                      ../images/recommended-posts__img-01@1x.avif 1x,
+                      ../images/recommended-posts__img-01@2x.avif 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ../images/recommended-posts__img-01@1x.webp 1x,
+                      ../images/recommended-posts__img-01@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="recommended-posts__item-img"
+                    src="../images/recommended-posts__img-01@1x.jpg"
+                    srcset="../images/recommended-posts__img-01@2x.jpg 2x"
+                    alt="post image"
+                  />
+                </picture>
+        
+                <h5 class="secondary__title recommended-posts__item-title">
+                  An easier way to buy your next Toyota
+                </h5>
+        
+                <a class="recommended-posts__item-link" href="#!">more</a>
+              </div>
+        
+              <div class="recommended-posts__item">
+                <picture class="recommended-posts__item-picture">
+                  <source
+                    type="image/avif"
+                    srcset="
+                      ../images/recommended-posts__img-02@1x.avif 1x,
+                      ../images/recommended-posts__img-02@2x.avif 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ../images/recommended-posts__img-02@1x.webp 1x,
+                      ../images/recommended-posts__img-02@2x.webp 2x
+                    "
+                  />
+                  <img
+                    class="recommended-posts__item-img"
+                    src="../images/recommended-posts__img-02@1x.jpg"
+                    srcset="../images/recommended-posts__img-02@2x.jpg 2x"
+                    alt="post image"
+                  />
+                </picture>
+        
+                <h5 class="secondary__title recommended-posts__item-title">
+                  A Guide to Road-Tripping With Pets
+                </h5>
+        
+                <a class="recommended-posts__item-link" href="#!">more</a>
+              </div>
             </div>
-          </section>
-          
+        
+            <div class="recommended-posts__show-more">
+              <a
+                class="btn btn__small btn__black btn__recommended-posts__show-more"
+                href="#!"
+                >Show More</a
+              >
+            </div>
+          </div>
         </div>
+        
       </main>
 
       <footer class="footer">
