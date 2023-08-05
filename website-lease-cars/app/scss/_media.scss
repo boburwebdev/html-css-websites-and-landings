@@ -1,0 +1,462 @@
+@media (max-width: 1240px) {
+  .recommended-posts {
+    &__item-title {
+      flex-basis: 100%;
+      margin-bottom: 14px;
+    }
+  }
+
+  .choose-car {
+    &__tabs {
+      &-headings {
+        margin-bottom: 80px;
+      }
+
+      &-body {
+        &-item {
+          gap: 80px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .section__title {
+    font-size: 44px;
+  }
+
+  .secondary__title {
+    font-size: 22px;
+  }
+
+  .section__margin-bottom {
+    margin-bottom: 100px;
+  }
+
+  .section__title-margin--big {
+    margin-bottom: 44px;
+  }
+
+  .section__title-margin--small {
+    margin-bottom: 18px;
+  }
+
+  .btn__big {
+    font-size: 28px;
+    padding: 18px 100px;
+  }
+
+  .header {
+    .nav {
+      &__menu {
+        gap: 30px;
+
+        &-item {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .things-to-consider {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+
+      &-item__img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .choose-car {
+    &__tabs {
+      &-headings {
+        gap: 40px;
+      }
+
+      &-body {
+        &-item {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    &__inner {
+      align-items: center;
+    }
+    .nav {
+      &__menu {
+        background-color: $color-black;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        padding-top: 200px;
+        z-index: 11;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+
+        &.show {
+          transform: translateY(0%);
+        }
+
+        &-item {
+          font-size: 20px;
+        }
+
+        &-hamburger {
+          width: 30px;
+          height: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+
+          span {
+            background-color: $color-white;
+            width: 100%;
+            height: 3px;
+          }
+        }
+      }
+    }
+
+    .logo,
+    .nav__menu-hamburger {
+      position: relative;
+      z-index: 12;
+    }
+  }
+
+  .hero {
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      width: 60px;
+      margin: 0 10px;
+    }
+  }
+
+  .footer {
+    &__top {
+      width: 80%;
+      margin: 0 auto 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 20px;
+      align-items: center;
+      text-align: center;
+
+      &-list {
+        align-self: start;
+
+        &-title {
+          margin-bottom: 20px;
+        }
+
+        &-item {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .welcome-video {
+    &__content iframe {
+      height: 420px;
+    }
+  }
+
+  .contact-us {
+    &__form {
+      gap: 20px 30px;
+    }
+  }
+
+  .choose-car {
+    &__tabs {
+      &-headings {
+        gap: 40px;
+        margin-bottom: 50px;
+      }
+
+      &-body {
+        &-item {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 40px;
+  }
+
+  .secondary__title {
+    font-size: 20px;
+  }
+
+  .section__margin-bottom {
+    margin-bottom: 80px;
+  }
+
+  .section__title-margin--big {
+    margin-bottom: 40px;
+  }
+
+  .section__title-margin--small {
+    margin-bottom: 16px;
+  }
+
+  .btn__big {
+    font-size: 24px;
+    padding: 16px 80px;
+  }
+
+  .btn__small {
+    font-size: 14px;
+    padding: 12px 50px;
+  }
+
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .hero {
+    &__title {
+      font-size: 66px;
+      margin-bottom: 26px;
+    }
+  }
+
+  .why-lease {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 40px;
+
+      &-item {
+        &__img,
+        &__title {
+          margin-bottom: 10px;
+        }
+
+        &__text {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .how-it-works {
+    &__list-item {
+      padding-left: 160px;
+    }
+  }
+
+  .welcome-video {
+    &__content iframe {
+      height: 370px;
+    }
+  }
+
+  .footer {
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__legal-list {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .recommended-posts {
+    &__inner {
+      gap: 30px;
+    }
+
+    &__item-picture {
+      margin-bottom: 10px;
+    }
+  }
+
+  .choose-car {
+    &__tabs {
+      &-headings {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .welcome-video {
+    &__content iframe {
+      height: 260px;
+    }
+  }
+
+  .recommended-posts {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__item {
+      &-picture {
+        margin-bottom: 4px;
+      }
+
+      &-title {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  .contact-us {
+    &__secondary-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  .choose-car {
+    &__tabs {
+      &-body {
+        &-item {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 14px;
+  }
+
+  .section__title {
+    font-size: 30px;
+  }
+
+  .secondary__title {
+    font-size: 18px;
+  }
+
+  .section__margin-bottom {
+    margin-bottom: 60px;
+  }
+
+  .section__title-margin--big {
+    margin-bottom: 30px;
+  }
+
+  .section__title-margin--small {
+    margin-bottom: 12px;
+  }
+
+  .btn__big {
+    font-size: 20px;
+    padding: 14px 60px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .hero {
+    &__title {
+      font-size: 48px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .swiper-pagination-horizontal.swiper-pagination-bullets
+      .swiper-pagination-bullet {
+      width: 30px;
+      margin: 0 5px;
+    }
+  }
+
+  .why-lease {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 40px;
+    }
+  }
+
+  .how-it-works {
+    &__list {
+      margin: 30px 0 40px;
+
+      &-item {
+        padding-left: 68px;
+        min-height: 60px;
+
+        &::before {
+          font-size: 24px;
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+  }
+
+  .welcome-video {
+    &__content iframe {
+      height: 190px;
+    }
+  }
+
+  .things-to-consider {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+
+      &-item {
+        &__img {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__top {
+      width: 100%;
+    }
+  }
+
+  .contact-us {
+    &__form-input {
+      flex: unset;
+      width: 100%;
+    }
+  }
+}

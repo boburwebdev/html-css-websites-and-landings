@@ -22,6 +22,10 @@
 
   .nav {
     &__menu {
+      &-hamburger {
+        display: none;
+      }
+
       display: flex;
       gap: 35px;
 
