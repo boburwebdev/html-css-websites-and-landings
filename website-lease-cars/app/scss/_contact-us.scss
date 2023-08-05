@@ -1,0 +1,49 @@
+.contact-us {
+  text-align: center;
+
+  &__secondary-title {
+    max-width: 960px;
+    margin: 0 auto 50px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 580px;
+    margin: 0 auto;
+    gap: 40px;
+
+    &-input,
+    &-textarea {
+      color: $color-black;
+      font-family: "Inter", "sans-serif";
+      font-size: 16px;
+      margin-bottom: 10px;
+      border: 1px solid $color-blue;
+    }
+
+    &-input {
+      flex: 1;
+      padding: 18px 20px;
+    }
+    
+    &-textarea {
+      width: 100%;
+      padding: 28px 20px;
+      height: 290px;
+      resize: none;
+    }
+
+    &-input::placeholder,
+    &-textarea::placeholder {
+      color: rgba($color-black, 0.5);
+      font-family: "Inter", "sans-serif";
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .btn__contact-us {
+      margin: 0 auto;
+    }
+  }
+}

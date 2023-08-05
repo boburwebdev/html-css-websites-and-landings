@@ -1,0 +1,34 @@
+.recommended-posts {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: start;
+    margin-bottom: 70px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-title {
+      flex-basis: 446px;
+    }
+
+    &-picture {
+      margin-bottom: 30px;
+    }
+
+    &-link {
+      background-color: $color-blue;
+      color: $color-white;
+      padding: 4px 21px;
+    }
+  }
+
+  &__show-more {
+    text-align: center;
+  }
+}

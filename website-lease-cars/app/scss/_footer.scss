@@ -1,0 +1,47 @@
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+  padding: 50px 0 32px;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    gap: 40px;
+
+    &-list {
+      &-title {
+        margin-bottom: 40px;
+      }
+
+      &-item {
+        margin-bottom: 20px;
+        max-width: 240px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__mobile-apps-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    font-size: 12px;
+    text-align: center;
+    max-width: 806px;
+    margin: 0 auto 30px;
+  }
+
+  &__legal-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}

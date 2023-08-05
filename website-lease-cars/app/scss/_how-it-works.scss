@@ -1,0 +1,49 @@
+.how-it-works {
+  &__inner {
+    max-width: 594px;
+    margin: 0 auto;
+  }
+
+  &__secondary-title {
+    margin-top: 50px;
+  }
+
+  &__list {
+    margin: 50px 0 70px;
+    counter-reset: myCounter;
+    list-style: none;
+
+    &-item {
+      margin-bottom: 40px;
+      position: relative;
+      padding-left: 240px;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        background-color: $color-blue;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 48px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

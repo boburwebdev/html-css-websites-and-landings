@@ -1,0 +1,74 @@
+.hero {
+  color: $color-white;
+
+  &__content {
+    position: absolute;
+    top: 247px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    font-size: 96px;
+    margin-bottom: 38px;
+  }
+
+  &__slider {
+    position: relative;
+
+    height: 100vh;
+
+    &-item {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      position: relative;
+
+      &::after {
+        content: "";
+        background-color: rgba($color-black, 0.3);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    cursor: pointer;
+  }
+
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    background-color: $color-white;
+    border-radius: 0;
+    height: 3px;
+    width: 120px;
+    margin: 0 15px;
+    opacity: 1;
+  }
+
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: $color-blue;
+    height: 6px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: unset;
+    bottom: 90px;
+  }
+}
