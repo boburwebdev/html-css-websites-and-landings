@@ -1,0 +1,38 @@
+.footer {
+  background-color: #fff;
+  padding: 39px 0 30px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 15px;
+
+    &-link path {
+      transition: all 0.3s;
+    }
+
+    &-link:hover path {
+      fill: $color-brown;
+    }
+  }
+
+  &__phone,
+  &__email {
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-brown;
+    }
+  }
+}
