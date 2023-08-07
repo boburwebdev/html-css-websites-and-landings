@@ -1,3 +1,65 @@
-<header>
-  <div class="container">Header</div>
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo header__logo" href="#!">
+        <picture class="logo__picture">
+          <source
+            type="image/avif"
+            srcset="../images/logo@1x.avif 1x, ../images/logo@2x.avif 2x"
+          />
+          <source
+            type="image/webp"
+            srcset="../images/logo@1x.webp 1x, ../images/logo@2x.webp 2x"
+          />
+          <img
+            class="logo__img"
+            src="../images/logo@1x.png"
+            srcset="../iamges/logo@2x.png 2x"
+            alt="logo"
+          />
+        </picture>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Про нас</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Каталог</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Команда</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Відгуки</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Курси</a>
+          </li>
+          <li class="nav__menu-item">
+            <a class="nav__menu-link" href="#!">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="phone header__phone" href="tel:++4565789876">
+        <span class="phone__icon">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.4999 13.8612L13.1083 13.3532L11.0083 15.4519C8.64258 14.2495 6.71973 12.3278 5.51659 9.96356L7.62492 7.8565L7.11659 3.48413H2.52492C2.04159 11.9624 9.01658 18.9332 17.4999 18.4501V13.8612Z"
+              fill="#BEA495"
+            />
+          </svg>
+        </span>
+        +45 65 78 98 76
+      </a>
+    </div>
+  </div>
 </header>

@@ -1,0 +1,24 @@
+.header {
+  padding-top: 4px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+    & span {
+      transition: all .3s;
+      transform: scale(1);
+    }
+
+    &:hover span{
+      transform: scale(1.15);
+    }
+  }
+}
