@@ -1,0 +1,114 @@
+@media (max-width: 1000px) {
+  .container {
+    width: 990px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 12px;
+  }
+
+  .nav {
+    &__menu {
+      gap: 14px;
+    }
+  }
+
+  .footer {
+    &__inner {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    &__contacts {
+      width: 100%;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 10px;
+  }
+
+  .container {
+    width: 640px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    &__logo {
+      order: 1;
+    }
+
+    &__phone {
+      order: 2;
+    }
+
+    .nav {
+      order: 3;
+
+      &__menu {
+        background-color: $color-brown-dark;
+        color: $color-white;
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px 32px 45px 46px;
+        position: fixed;
+        top: 80px;
+        right: 20px;
+        transform: translateX(calc(100% + 30px));
+        transition: all 0.3s;
+
+        &-link {
+          &:hover {
+            color: $color-white;
+            border-bottom: 1px solid $color-white;
+          }
+        }
+
+        &-hamburger {
+          display: flex;
+        }
+
+        &.active {
+          display: flex;
+          left: unset;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 50px 0;
+
+    &__inner {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    .nav {
+      &__menu {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 510px) {
+  .container {
+    width: 490px;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 360px;
+  }
+}
