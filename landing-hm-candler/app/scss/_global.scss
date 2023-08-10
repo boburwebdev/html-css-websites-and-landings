@@ -51,12 +51,55 @@ img {
     margin-bottom: 15px;
   }
 
-  &__content {
-    max-width: 370px;
-  }
-
   &__margin-bottom {
     margin-bottom: 150px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__desc {
+    max-width: 370px;
+    flex: 0 0 auto;
+  }
+
+  &__content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 20px;
+  }
+
+  &__decor {
+    padding-bottom: 80px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      background-image: url(../images/about-us__images-decor.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 22px;
+      height: 30px;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      background-color: $color-brown-dark;
+      width: 1000%;
+      height: 1px;
+      bottom: 9px;
+      left: 22px;
+    }
   }
 }
 

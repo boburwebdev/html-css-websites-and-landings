@@ -8,10 +8,6 @@
     align-items: center;
   }
 
-  &__content {
-    min-width: 370px;
-  }
-
   &__text + &__text {
     margin-top: 16px;
   }
@@ -22,31 +18,6 @@
       align-items: center;
       gap: 20px;
       padding: 0 0 58px 110px;
-      position: relative;
-
-      &::before,
-      &::after {
-        content: "";
-        position: absolute;
-      }
-
-      &::before {
-        background-image: url(../images/about-us__images-decor.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 22px;
-        height: 30px;
-        left: 0;
-        bottom: 0;
-      }
-
-      &::after {
-        background-color: $color-brown-dark;
-        width: 1000%;
-        height: 1px;
-        bottom: 9px;
-        left: 22px;
-      }
     }
 
     &-picture {

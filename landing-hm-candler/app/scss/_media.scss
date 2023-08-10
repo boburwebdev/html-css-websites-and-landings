@@ -10,13 +10,27 @@
   }
 
   .about-us {
-    &__content {
-      min-width: 300px;
-    }
-
     &__images {
       &-list {
         padding: 0 0 58px 40px;
+      }
+    }
+  }
+
+  .products {
+    &__content.section__decor {
+      padding-bottom: 47px;
+    }
+
+    &__item {
+      text-align: center;
+
+      &:nth-child(odd) {
+        padding: 0 24px 15px 0;
+      }
+
+      &:nth-child(even) {
+        padding: 0 0 15px 24px;
       }
     }
   }
@@ -24,7 +38,7 @@
 
 @media (max-width: 1020px) {
   .section {
-    &__content {
+    &__desc {
       max-width: 300px;
     }
   }
@@ -79,6 +93,12 @@
     font-size: 12px;
   }
 
+  .section {
+    &__content {
+      gap: 25px 20px;
+    }
+  }
+
   .nav {
     &__menu {
       gap: 14px;
@@ -107,26 +127,52 @@
       padding: 30px 0 300px;
     }
   }
+
+  .products {
+    &__item {
+      &:nth-child(odd),
+      &:nth-child(even) {
+        padding: 0 0 5px;
+      }
+
+      &-picture {
+        height: 260px;
+      }
+    }
+
+    &__content.section__decor {
+      padding-bottom: 57px;
+    }
+  }
 }
 
-@media (max-width: 788px) {
+@media (max-width: 768px) {
   body {
     font-size: 10px;
   }
 
   .section {
-    &__title {
-      font-size: 20px;
-      margin-bottom: 20px;
+    &__inner {
+      gap: 30px;
     }
 
-    &__content {
-      max-width: 230px;
+    &__title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__desc {
+      max-width: 200px;
     }
   }
 
   .container {
-    width: 640px;
+    width: 670px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 11px 26px;
   }
 
   .hero {
@@ -149,12 +195,9 @@
   }
 
   .about-us {
-    &__content {
-      min-width: 200px;
-    }
-
     &__images {
       &-list {
+        margin-left: 25px;
         gap: 10px;
       }
 
@@ -176,9 +219,48 @@
       }
     }
   }
+
+  .products {
+    &__item {
+      &-picture {
+        width: 190px;
+        height: 220px;
+      }
+
+      &-price,
+      &-title {
+        font-size: 12px;
+      }
+
+      &-price {
+        margin-bottom: 7px;
+      }
+
+      &-title {
+        margin-bottom: 10px;
+      }
+
+      &-desc {
+        margin-bottom: 19px;
+        font-size: 8px;
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {
+  .section {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__desc {
+      max-width: 360px;
+      text-align: center;
+    }
+  }
+
   .header {
     &__logo {
       order: 1;
@@ -274,6 +356,14 @@
       }
     }
   }
+
+  .products {
+    &__desc {
+      &-text {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 510px) {
@@ -287,7 +377,7 @@
       margin-bottom: 10px;
     }
 
-    &__content {
+    &__desc {
       max-width: 300px;
     }
 
@@ -324,8 +414,8 @@
   }
 
   .about-us {
-    &__content {
-      min-width: 180px;
+    &__desc {
+      max-width: 180px;
     }
 
     &__images {
@@ -354,6 +444,15 @@
       }
     }
   }
+
+  .products {
+    &__item {
+      &-picture {
+        width: 150px;
+        height: 180px;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -370,9 +469,18 @@
   }
 
   .section {
-    &__content {
+    &__inner {
+      gap: 20px;
+    }
+
+    &__desc {
       max-width: 205px;
     }
+  }
+
+  .btn {
+    font-size: 8px;
+    padding: 10px 22px;
   }
 
   .hero {
@@ -402,7 +510,7 @@
 
   .about-us {
     padding: 25px 0 12px;
-    
+
     &__text {
       font-size: 8px;
 
@@ -410,9 +518,9 @@
         margin-top: 10px;
       }
     }
-    
-    &__content {
-      min-width: 235px;
+
+    &__desc {
+      max-width: 235px;
     }
 
     &__images {
@@ -430,6 +538,42 @@
 
       &-text {
         display: none;
+      }
+    }
+  }
+
+  .products {
+    &__desc {
+      max-width: 235px;
+
+      &-text {
+        font-size: 8px;
+      }
+    }
+
+    &__content.section__decor {
+      padding-bottom: 42px;
+    }
+
+    &__item {
+      &:nth-child(odd),
+      &:nth-child(even) {
+        padding: 0 0 20px;
+      }
+
+      &-picture {
+        width: 100%;
+        height: 160px;
+      }
+
+      &-price,
+      &-title {
+        font-size: 10px;
+      }
+
+      &-desc {
+        font-size: 6px;
+        margin-bottom: 16px;
       }
     }
   }
