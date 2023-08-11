@@ -183,6 +183,40 @@
       }
     }
   }
+
+  .courses {
+    &__content {
+      &-item {
+        &__picture {
+          width: 195px;
+          height: 265px;
+        }
+
+        &__title {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+  
+        &__text {
+          max-width: 220px;
+          font-size: 12px;
+          margin-bottom: 15px;
+        }
+      }
+
+
+      &-img-box {
+        &__info {
+          top: 100px;
+        }
+
+        &__price {
+          right: -5px;
+          bottom: -5px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -296,6 +330,39 @@
       }
     }
   }
+
+  .courses {
+    &__content {
+      &-item {
+        &__title {
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+  
+        &__text {
+          font-size: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+
+      &-img-box {
+        margin-bottom: 20px;
+
+        &__info {
+          font-size: 8px;
+        }
+
+        &__title {
+          margin-bottom: 5px;
+        }
+
+        &__price {
+          font-size: 8px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 680px) {
@@ -400,6 +467,10 @@
           height: 160px;
         }
       }
+    }
+
+    &__text {
+      text-align: left;
     }
   }
 
@@ -530,6 +601,25 @@
       right: -100px;
     }
   }
+
+  .courses {
+    &__content {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 30px;
+
+      &-item {
+        &__picture {
+          width: 245px;
+          height: 335px;
+        }
+
+        &__text {
+          max-width: 270px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 390px) {
@@ -544,6 +634,10 @@
 
     &__desc {
       max-width: 205px;
+    }
+
+    &__decor {
+      padding-bottom: 60px;
     }
   }
 
@@ -578,7 +672,7 @@
   }
 
   .about-us {
-    padding: 25px 0 12px;
+    padding: 25px 0 20px;
 
     &__text {
       font-size: 8px;
@@ -589,7 +683,7 @@
     }
 
     &__desc {
-      max-width: 235px;
+      max-width: 210px;
     }
 
     &__images {
