@@ -1,0 +1,32 @@
+.certificates {
+  &__content {
+    padding-bottom: 124px;
+  }
+
+  &__slider {
+    width: 1185px;
+    overflow: hidden;
+
+    .swiper-slide {
+      width: 375px;
+    }
+
+    &-item {
+      &__picture {
+        width: 100%;
+        display: block;
+      }
+
+      &__img {
+        width: 100%;
+      }
+    }
+
+
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: 70px;
+      text-align: left;
+    }
+  }
+}

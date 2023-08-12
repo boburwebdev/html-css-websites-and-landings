@@ -168,3 +168,16 @@ img {
     }
   }
 }
+
+.swiper-pagination-bullet {
+  background-color: $color-brown;
+  width: 53px;
+  height: 4px;
+  margin: 0 5px;
+  border-radius: 0;
+  cursor: pointer;
+
+  &.swiper-pagination-bullet-active {
+    background-color: $color-brown-dark;
+  }
+}
