@@ -1,0 +1,61 @@
+.steps {
+  &__list {
+    list-style: none;
+    counter-reset: steps__counter;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 20px;
+    position: relative;
+
+    &--odd {
+      &::before {
+        left: 0;
+      }
+    }
+
+    &--even {
+      flex-direction: row-reverse;
+
+      &::before {
+        right: 0;
+      }
+    }
+
+    &::before {
+      counter-increment: steps__counter;
+      content: "0" counter(steps__counter);
+      color: $color-brown;
+      position: absolute;
+      font-family: "Yeseva One", cursive;
+      font-size: 30px;
+      bottom: 0;
+    }
+
+    &:nth-child(n + 10) {
+      &::before {
+        content: counter(steps__counter);
+      }
+    }
+
+    &__text {
+      margin-bottom: 35px;
+      flex-shrink: 1;
+      word-break: break-all;
+    }
+
+    &__picture {
+      flex-basis: 160px;
+      flex-shrink: 0;
+      height: 220px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

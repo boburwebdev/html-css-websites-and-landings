@@ -1,0 +1,46 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Створіть атмосферу затишку та гармонії!
+        </h1>
+        <div class="hero__text">
+          Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та
+          якісною продукцією зі 100% натуральної соєвого воску.
+        </div>
+        <button class="btn btn__orange btn__hero-cta">Купити</button>
+      </div>
+
+      <picture class="hero__picture">
+        <source
+          media="(max-width: 390px)"
+          srcset="
+            ../images/hero__img-small@1x.png 1x,
+            ../images/hero__img-small@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 390px) and (max-width: 510px)"
+          srcset="
+            ../images/hero__img-mid@1x.png 1x,
+            ../images/hero__img-mid@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 510px)"
+          srcset="
+            ../images/hero__img-large@1x.png 1x,
+            ../images/hero__img-large@2x.png 2x
+          "
+        />
+        <img
+          class="hero__img"
+          src="../images/hero__img-large@1x.png"
+          srcset="../images/hero__img-large@2x.png 2x"
+          alt="hero img"
+        />
+      </picture>
+    </div>
+  </div>
+</section>

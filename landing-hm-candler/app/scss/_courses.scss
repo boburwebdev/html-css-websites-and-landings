@@ -1,0 +1,84 @@
+.courses {
+  &__content {
+    &-item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__title {
+        font-family: "Yeseva One", cursive;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+
+      &__text {
+        max-width: 270px;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+
+      &__picture {
+        display: block;
+        width: 268px;
+        height: 366px;
+      }
+
+      &__img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-img-box {
+      text-align-last: left;
+      position: relative;
+      margin-bottom: 28px;
+
+      &__info,
+      &__price {
+        position: absolute;
+      }
+
+      &__title,
+      &__time,
+      &__price {
+        background-color: $color-brown;
+        color: $color-white;
+        font-family: "Yeseva One", cursive;
+        font-size: 11px;
+
+        span {
+          font-family: "Comforta", cursive;
+          font-size: 10px;
+        }
+      }
+
+      &__title {
+        padding: 15px 15px 15px 10px;
+        margin-bottom: 15px;
+      }
+
+      &__time {
+        display: inline-block;
+        padding: 8px 16px 8px 10px;
+      }
+
+      &__price {
+        padding: 19px 19px 19px 10px;
+        right: -14px;
+        bottom: -13px;
+      }
+
+      &__info {
+        top: 166px;
+        left: -1px;
+      }
+    }
+  }
+
+  .btn__courses-cta {
+    padding: 13px 16px;
+    margin-top: auto;
+  }
+}
