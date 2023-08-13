@@ -1,0 +1,20 @@
+.promo {
+  background-image: url(../images/promo__bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  padding: 128px 0 145px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 117px 0 56px;
+  }
+
+  &__title {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+}
