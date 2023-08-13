@@ -1450,11 +1450,58 @@
         </div>
       </section>
       
-      <section class="promo">
+      <section class="promo section__margin-bottom">
         <div class="container">
           <div class="promo__inner">
             <h3 class="promo__title section__title">Купуйте більше, економте більше</h3>
             <button class="btn btn__orange btn__promo-cta">В каталог</button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="contact-us">
+        <div class="container">
+          <div class="contact-us__inner section__inner">
+            <form class="contact-us__form">
+              <h3 class="contact-us__title section__title">
+                Підпишись на наші акції
+              </h3>
+      
+              <input class="contact-us__form-input" type="text" placeholder="Імя" />
+              <input
+                class="contact-us__form-input"
+                type="email"
+                placeholder="Е-mail"
+              />
+      
+              <button class="btn btn__orange btn__contact-us" type="submit">
+                Підписатись
+              </button>
+            </form>
+      
+            <picture class="contact-us__picture">
+              <source
+                type="image/avif"
+                srcset="
+                  ../images/contact-us__img@1x.avif 1x,
+                  ../images/contact-us__img@2x.avif 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ../images/contact-us__img@1x.webp 1x,
+                  ../images/contact-us__img@2x.webp 2x
+                "
+              />
+      
+              <img
+                class="contact-us__img"
+                src="../images/contact-us__img@1x.jpg"
+                srcset="../images/contact-us__img@2x.jpg 2x"
+                alt="contact-us img"
+              />
+            </picture>
           </div>
         </div>
       </section>
