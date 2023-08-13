@@ -552,6 +552,16 @@
     }
   }
 
+  .faq {
+    &__content {
+      &-item {
+        &__question {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
   .promo {
     padding: 55px 0;
 
@@ -734,6 +744,12 @@
           font-size: 8px;
         }
       }
+    }
+  }
+
+  .faq {
+    &__content {
+      flex-basis: auto;
     }
   }
 

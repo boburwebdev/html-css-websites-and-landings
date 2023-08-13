@@ -37,3 +37,22 @@ const swiperCertificates = new Swiper('.certificates__slider', {
     }
   }
 });
+
+const faqQuestions = document.querySelectorAll(".faq__content-item__question");
+
+faqQuestions.forEach(question => {
+  question.addEventListener("click", e => {
+    console.log(e.currentTarget.parentElement);
+    const currentParent = e.currentTarget.parentElement;
+    const currentAnswer = currentParent.querySelector(".faq__content-item__answer");
+    
+    e.currentTarget.classList.toggle("opened");
+    currentAnswer.classList.toggle("visible");
+
+    if (e.currentTarget.classList.contains("opened")) {
+      currentAnswer.style.maxHeight = currentAnswer.scrollHeight + "px";
+    } else {
+      currentAnswer.style.maxHeight = 0;
+    }
+  });
+});
