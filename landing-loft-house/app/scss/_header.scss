@@ -1,0 +1,74 @@
+.header {
+  background: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url(../images/header__bg.jpg), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner {
+    min-height: 90vh;
+    padding: 30px 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__menu {
+    &-list {
+      display: flex;
+      gap: 40px;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+    }
+
+    &-link {
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-accent;
+      }
+    }
+  }
+
+  &__mid {
+    text-align: center;
+  }
+
+  &__title {
+    color: $color-accent;
+    font-size: 40px;
+    max-width: 560px;
+    margin: 0 auto 81px;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-left: 35px;
+
+      
+      &--right {
+        padding-left: 0;
+        padding-right: 35px;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
