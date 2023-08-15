@@ -1,0 +1,31 @@
+.benefits {
+  margin-bottom: 120px;
+
+  &__inner {
+    max-width: 794px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 70px;
+  }
+
+  &__decor {
+    right: -147px;
+    bottom: -175px;
+  }
+
+  &__item {
+    text-align: center;
+
+    &-img {
+      margin-bottom: 53px;
+    }
+
+    &-text {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}

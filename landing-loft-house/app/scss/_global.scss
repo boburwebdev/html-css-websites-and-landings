@@ -34,6 +34,7 @@ a {
   width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section {
@@ -43,6 +44,14 @@ a {
     color: $color-accent;
     font-family: "Playfair Display", serif;
     font-size: 36px;
+  }
+
+  &__decor {
+    color: rgba($color-white, 0.02);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 400px;
+    position: absolute;
   }
 }
 
