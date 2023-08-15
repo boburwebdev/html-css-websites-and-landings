@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  object-fit: cover;
+}
+
 .container {
   max-width: 96%;
   width: 1140px;
