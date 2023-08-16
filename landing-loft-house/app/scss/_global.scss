@@ -65,9 +65,45 @@ img {
   font-size: inherit;
   cursor: pointer;
   padding: 12px 54px;
+  transition: all .3s;
 
   &__orange {
     background-color: $color-accent;
     color: $color-white;
+
+    &:hover {
+      background-color: darken($color-accent, 20%);
+    }
+  }
+}
+
+.form {
+  display: grid;
+  gap: 30px;
+
+  &-input {
+    background-color: rgba($color-white, 0.2);
+    color: $color-white;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.9;
+    border: none;
+    padding: 12px;
+    text-align: center;
+
+    &::placeholder {
+      color: $color-placeholder;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+  }
+
+  &-text {
+    color: $color-form-text;
+    font-size: 13px;
+    line-height: 1.25;
+    text-align: center;
+    align-self: center;
   }
 }
