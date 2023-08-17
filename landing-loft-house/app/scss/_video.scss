@@ -1,0 +1,55 @@
+.video {
+  text-align: center;
+
+  &__decor {
+    top: 30px;
+    right: -190px;
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      background-color: rgba($color-dark, 0.8);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      .video__img {
+        transform: scale(0.9);
+      }
+
+      .video__icon {
+        filter: saturate(1.5);
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+
+      &::before {
+        transform: scale(0.9);
+        background-color: rgba($color-dark, 0.6);
+      }
+    }
+  }
+
+  &__img {
+    transition: all 0.3s;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: all 0.3s;
+  }
+}
