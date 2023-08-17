@@ -33,6 +33,10 @@ img {
   object-fit: cover;
 }
 
+.main {
+  overflow-x: clip;
+}
+
 .container {
   max-width: 96%;
   width: 1140px;
