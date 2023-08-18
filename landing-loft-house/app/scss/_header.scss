@@ -29,16 +29,6 @@
     &-list {
       display: flex;
       gap: 40px;
-      font-size: 14px;
-      letter-spacing: 0.7px;
-    }
-
-    &-link {
-      transition: all 0.3s;
-
-      &:hover {
-        color: $color-accent;
-      }
     }
   }
 

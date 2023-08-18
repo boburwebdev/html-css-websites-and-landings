@@ -27,6 +27,10 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+
+  &.link--bold {
+    font-weight: 700;
+  }
 }
 
 img {
@@ -69,7 +73,7 @@ img {
   font-size: inherit;
   cursor: pointer;
   padding: 12px 54px;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &__orange {
     background-color: $color-accent;
@@ -77,6 +81,21 @@ img {
 
     &:hover {
       background-color: darken($color-accent, 20%);
+    }
+  }
+}
+
+.nav__menu {
+  &-list {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+
+  &-link {
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-accent;
     }
   }
 }
