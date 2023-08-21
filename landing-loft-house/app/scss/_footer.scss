@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color-footer-bg;
+  padding: 72px 0 51px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  &__logo {
+    margin-top: -12px;
+  }
+
+  .nav__menu {
+    .nav__menu-item + .nav__menu-item {
+      margin-top: 15px;
+    }
+
+    &-link {
+      &__footer-email {
+        color: $color-accent;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+
+    &-list--socials {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      margin-top: 20px;
+
+      .nav__menu-item + .nav__menu-item {
+        margin-top: 0;
+      }
+
+      & path {
+        transition: all .3s;
+      }
+
+      .nav__menu-link:hover path {
+        fill: $color-accent;
+      }
+    }
+  }
+}

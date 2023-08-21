@@ -1,0 +1,18 @@
+.map {
+  padding: 180px 0;
+
+  &__decor {
+    top: -70px;
+    left: -130px;
+  }
+
+  &__title {
+    margin-bottom: 88px;
+  }
+
+  &__content {
+    &-iframe {
+      width: 100%;
+    }
+  }
+}

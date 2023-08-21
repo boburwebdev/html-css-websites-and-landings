@@ -1,0 +1,74 @@
+.apartments {
+  &__title {
+    margin-bottom: 88px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__decor {
+    top: -68px;
+    left: -206px;
+  }
+
+  &__item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: linear-gradient(
+        180deg,
+        rgba(36, 43, 51, 0) 0%,
+        #242b33 100%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      border: 4px double transparent;
+      transition: border 0.3s;
+      z-index: 5;
+    }
+
+    &-title {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: 44px;
+      z-index: 5;
+    }
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+    }
+
+    &:hover &-img {
+      transform: scale(1.1);
+    }
+
+    &:hover::after {
+      border: 4px double $color-white;
+    }
+  }
+}
