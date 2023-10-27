@@ -32,6 +32,11 @@ ul {
   list-style: none;
 }
 
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -41,6 +46,7 @@ ul {
 .section__title {
   font-size: 64px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -172,4 +178,29 @@ ul {
   border-radius: 20px;
   border: 1px solid var(--color-grey);
   cursor: pointer;
+}
+
+
+.composition {
+  padding: 100px 0 80px;
+}
+
+.composition__desc {
+  max-width: 655px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.composition__inner {
+  max-width: 625px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.composition__inner-left {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
