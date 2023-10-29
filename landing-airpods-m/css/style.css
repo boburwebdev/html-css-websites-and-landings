@@ -197,6 +197,7 @@ img {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .composition__inner-left {
@@ -272,6 +273,7 @@ img {
   bottom: 300px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
 }
 
 .cta__desc {
