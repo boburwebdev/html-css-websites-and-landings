@@ -37,10 +37,34 @@ img {
   max-width: 100%;
 }
 
+.header.theme-pink {
+  background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header.theme-skyblue {
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header.theme-spacegray {
+  background: linear-gradient(180deg, #b6b6b6 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header.theme-green {
+  background: linear-gradient(180deg, #ddead9 0%, rgba(235, 235, 235, 0) 100%);
+}
+
+.header.theme-silver {
+  background: linear-gradient(180deg, #fafafa 0%, rgba(235, 235, 235, 0) 100%);
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.hide {
+  display: none;
 }
 
 .section__title {
@@ -82,7 +106,6 @@ img {
 }
 
 .header {
-  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
   min-height: 100vh;
   padding: 40px 0 0;
 }
