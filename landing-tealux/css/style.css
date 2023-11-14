@@ -91,3 +91,72 @@ a {
 .user-actions__item-search {
   margin-left: 5rem;
 }
+
+.hero {
+  background-image: url(../images/hero__bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--colorWhite);
+  min-height: 31.25rem;
+  position: relative;
+}
+
+.hero__inner {
+  position: absolute;
+  bottom: 3rem;
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+  max-width: 50rem;
+}
+
+.hero__desc {
+  font-family: var(--titleFont);
+  font-size: 1.5rem;
+  max-width: 35rem;
+}
+
+.blockquote__text {
+  font-family: var(--titleFont);
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 44rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.blockquote__text::after {
+  content: "";
+  background-color: rgba(247, 241, 232, .5);
+  width: 22.5rem;
+  height: 3.75rem;
+  position: absolute;
+  bottom: -1rem;
+  right: -2.5rem;
+  z-index: -1;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    margin-bottom: 7.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 360px) {
+
+}
