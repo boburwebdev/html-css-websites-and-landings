@@ -8,11 +8,87 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay"></div>
       <div class="container">
         <div class="header__inner">
           <a href="#!" class="logo">
             <img class="logo__img" src="./images/logo.svg" alt="Tealux" />
           </a>
+
+          <div class="nav__hamburger">
+            <span class="nav__hamburger-item"></span>
+            <span class="nav__hamburger-item"></span>
+            <span class="nav__hamburger-item"></span>
+            <span class="nav__hamburger-item"></span>
+          </div>
+
+          <nav class="nav__mobile">
+            <button class="btn btn__close-nav">
+              <img class="btn__close-icon" src="./images/icon__close.svg" alt="close">
+            </button>
+            <ul class="nav__mobile-list">
+              <li class="nav__mobile-list__item">
+                <a href="#!" class="nav__mobile-list__link">Black</a>
+              </li>
+              <li class="nav__mobile-list__item">
+                <a href="#!" class="nav__mobile-list__link">Green</a>
+              </li>
+              <li class="nav__mobile-list__item">
+                <a href="#!" class="nav__mobile-list__link">White</a>
+              </li>
+              <li class="nav__mobile-list__item">
+                <a href="#!" class="nav__mobile-list__link">Oolong</a>
+              </li>
+              <li class="nav__mobile-list__item">
+                <a href="#!" class="nav__mobile-list__link">Pu-erh</a>
+              </li>
+            </ul>
+
+            <ul class="nav__mobile-list__about">
+              <li class="nav__mobile-list__about-item">
+                <a href="#!" class="nav__mobile-list__about-link">Contact Us</a>
+              </li>
+              <li class="nav__mobile-list__about-item">
+                <a href="#!" class="nav__mobile-list__about-link">Our Blog</a>
+              </li>
+              <li class="nav__mobile-list__about-item">
+                <a href="#!" class="nav__mobile-list__about-link"
+                  >Shipping and Delivery</a
+                >
+              </li>
+            </ul>
+
+            <ul class="nav__mobile-list__user-actions">
+              <li class="nav__mobile-list__user-actions__item">
+                <a href="#!">
+                  <img
+                    src="images/icon__cart.svg"
+                    alt="cart"
+                    class="nav__mobile-list__user-actions__icon"
+                  />
+                </a>
+              </li>
+              <li class="nav__mobile-list__user-actions__item">
+                <a href="#!">
+                  <img
+                    src="images/icon__cabinet.svg"
+                    alt="cabinet"
+                    class="nav__mobile-list__user-actions__icon"
+                  />
+                </a>
+              </li>
+              <li class="nav__mobile-list__user-actions__item">
+                <a href="#!">
+                  <img
+                    src="images/icon__search.svg"
+                    alt="search"
+                    class="nav__mobile-list__user-actions__icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+
           <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__list-item">
@@ -81,7 +157,7 @@
       <blockquote class="blockquote section">
         <p class="blockquote__text">
           "Tea is not just a drink, it's a way of life and a way to connect with
-          our loved ones."
+          <span class="blockquote__text--bg-decor">our loved ones."</span>
         </p>
       </blockquote>
     </main>
