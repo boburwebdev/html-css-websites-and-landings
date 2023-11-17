@@ -382,7 +382,7 @@ a {
 .newsletter__form-top {
   display: flex;
   gap: 0 1.5rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .newsletter__form-input {
@@ -392,13 +392,13 @@ a {
   font-size: 1.25rem;
   line-height: 1.5;
   border: 0;
-  border-bottom: 1px solid #B8B58B;
-  padding: .25rem 1rem;
+  border-bottom: 1px solid #b8b58b;
+  padding: 0.25rem 1rem;
   flex-grow: 2;
 }
 
 .newsletter__form-input::placeholder {
-  color: #B8B58B;
+  color: #b8b58b;
   font-family: inherit;
   font-weight: 300;
   font-size: inherit;
@@ -440,8 +440,30 @@ a {
 }
 
 .newsletter__privacy-text {
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   padding-left: 1.25rem;
+}
+
+.priority__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.875rem 3rem;
+}
+
+.priority__list-item {
+  text-align: center;
+}
+
+.priority__list-item__title {
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.priority__list-item__subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1140px) {
@@ -456,6 +478,14 @@ a {
   .blog__list-item__img {
     width: 14.375rem;
     height: 9.675rem;
+  }
+
+  .priority__list {
+    flex-wrap: wrap;
+  }
+
+  .priority__list-item {
+    flex-basis: calc(50% - 24px);
   }
 }
 
@@ -731,12 +761,12 @@ a {
     margin-bottom: 1rem;
   }
 
-  .newsletter__form-input, 
+  .newsletter__form-input,
   .newsletter__form-input::placeholder {
     font-size: 2rem;
   }
 
-  .newsletter__privacy-text  {
+  .newsletter__privacy-text {
     padding-left: 2rem;
   }
 }
@@ -784,6 +814,14 @@ a {
 
   .blog__list-item:nth-child(even) {
     padding-left: 0;
+  }
+
+  .priority__list {
+    gap: 5rem;
+  }
+
+  .priority__list-item {
+    flex-basis: 100%;
   }
 }
 
@@ -882,5 +920,17 @@ a {
 
   .blog__list {
     margin-bottom: 30px;
+  }
+
+  .priority__list-item__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .priority__list-item__subtitle {
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
   }
 }
